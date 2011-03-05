@@ -1,0 +1,78 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2009-08-05
+%
+
+\fulltitle{Magnificat}
+ \author{Johann Pachelbel, 1653--1706}
+ \shortauthor{Johann Pachelbel}
+ \title{Magnificat}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{4}
+\interstaff{11}
+\generalmeter{\meterC}
+\generalsignature{2}
+\setclef{1}{\bass}
+%\setclefsymbol{2}{\treblelowoct}
+%\setclefsymbol{3}{\treblelowoct}
+%\setname{1}{Basso}
+%\setname{2}{Tenore}
+%\setname{3}{Alto}
+%\setname{4}{Soprano}
+
+%\elemskip=.9\elemskip
+%\overfullrule=0pt
+
+\grouptop{1}{4}
+\groupbottom{1}{1}
+\barnumbers
+\startbarno=1
+\def\freqbarno{5}
+\sepbarrules
+\stafftopmarg=5\Interligne
+\interinstrument=2\Interligne
+\startmuflex
+
+\def\everystaff{\znotes\nextinstrument\zchar{-6}{\eightrm\kern-2\Interligne 8}\en}%
+
+\setlyrics{lsoprano}{Ma-gni-fi-cat, ma-gni-fi-cat, ma-gni-fi-cat}
+\setlyrics{lalto}{Ma-gni-fi-cat, ma-gni-fi-cat, ma-gni-fi-cat}
+\setlyrics{ltenore}{Ma-gni-fi-cat, ma-gni-fi-cat, ma-gni-fi-cat}
+\setlyrics{lbasso}{Ma-gni-fi-cat, ma-gni-fi-cat, ma-gni-fi-cat}
+
+\assignlyrics{1}{lbasso}
+\assignlyrics{2}{ltenore}
+\assignlyrics{3}{lalto}
+\assignlyrics{4}{lsoprano}
+
+\startpiece
+\NOtes\qp\qa{K}%
+\nextinstrument\qp\qa{k}%
+\nextinstrument\qp\qa{f}%
+\nextinstrument\qp\qa{h}\en%
+\Notesp\clp{N}%
+\nextinstrument\clp{k}%
+\nextinstrument\cup{g}%
+\nextinstrument\clp{i}\en%
+\notes\cca{N}%
+\nextinstrument\cca{k}%
+\nextinstrument\cca{g}%
+\nextinstrument\cca{i}\en%
+\Notes\ca{NG}%
+\nextinstrument\ca{kk}%
+\nextinstrument\ca{gg}%
+\nextinstrument\ca{ii}\en%
+\bar% 2
+\Endpiece
+\bye
