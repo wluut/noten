@@ -1,0 +1,174 @@
+
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixcpt
+  \input musixsty
+\fi
+
+\ifx\pdfoutput\undefined
+\immediate\write16{Standard TeX/LaTeX}
+\else
+\immediate\write16{--------------------}
+\immediate\write16{Running PDF[la]TeX}
+\immediate\write16{--------------------}
+\fi
+
+\fullauthor{Daniel TAUPIN -- Camille Saint-Saens\\Compos\'e en juin 2002}
+\shortauthor{D. Taupin -- St-Saens --   \aujourdhui}
+\shorttitle{Fantaisie concertante}
+\title{Fantaisie concertante}
+\subtitle{pour orgue \`a 2 claviers sur
+les th\`emes du final du 4\fup{e} concerto pour piano de St-Saens}
+
+
+\maketitle
+\def\ShortVersion{\relax}
+
+\parindent 18mm
+\tracingstats=2\relax
+%
+% formes fr\'equentes
+%
+%au moins deux croches basses et hautes
+\def\dqb#1#2{\Ibl0{#1}{#2}1\qb0{#1}\tqb0{#2}}%
+\def\dqh#1#2{\Ibu0{#1}{#2}1\qh0{#1}\tqh0{#2}}%
+%au moins deux croches basses et hautes
+\def\Dqb#1#2{\Ibl0{#1}{#2}1{\advance\transpose 7\zq{#1}}\qb0{#1}{\advance\transpose 7\zq{#2}}\tqb0{#2}}%
+\def\Dqh#1#2{\Ibu0{#1}{#2}1{\advance\transpose -7\zq{#1}}\qh0{#1}{\advance\transpose -7\zq{#2}}\tqh0{#2}}%
+%au moins trois croches basses et hautes
+\def\tql#1#2#3{\Ibl0{#1}{#3}2\qb0{#1}\qb0{#2}\tqb0{#3}}%
+\def\tqu#1#2#3{\Ibu0{#1}{#3}2\qh0{#1}\qh0{#2}\tqh0{#3}}%
+%au moins deux doubles croches basses et hautes
+\def\dqbb#1#2{\Ibbl0{#1}{#2}1\qb0{#1}\tqb0{#2}}%
+\def\dqhh#1#2{\Ibbu0{#1}{#2}1\qh0{#1}\tqh0{#2}}%
+%au moins trois doubles croches basses et hautes
+\def\tqbb#1#2#3{\Ibbl0{#1}{#3}2\qb0{#1#2}\tqb0{#3}}%
+\def\Tqbb#1#2#3{\ibbl0{#2}0\qb0{#1#2}\tqb0{#3}}%
+\def\sTqbb#1#2#3{{\smallnotesize\Tqbb{#1}{#2}{#3}}}%
+%au moins quatre croches basses et hautes
+\def\qqb#1#2#3#4{\Ibl0{#1}{#4}3\qb0{#1#2#3}\tqb0{#4}}%
+\def\Qqb#1#2#3#4{\Ibl0{#1}{#3}2\qb0{#1#2#3}\tqb0{#4}}%
+\def\qqB#1#2#3#4{\Ibl0{#2}{#4}2\qb0{#1#2#3}\tqb0{#4}}%
+\def\qqh#1#2#3#4{\Ibu0{#1}{#4}3\qh0{#1#2#3}\tqh0{#4}}%
+\def\Qqh#1#2#3#4{\Ibu0{#1}{#3}2\qh0{#1#2#3}\tqh0{#4}}%
+\def\qqH#1#2#3#4{\Ibu0{#2}{#4}2\qh0{#1#2#3}\tqh0{#4}}%
+%au moins quatre doubles croches basses et hautes
+\def\qqbb#1#2#3#4{\Ibbl0{#1}{#4}3\qb0{#1#2#3}\tqb0{#4}}%
+\def\sqqbb#1#2#3#4{{\smallnotesize\qqbb{#1}{#2}{#3}{#4}}}%
+\def\Qqbb#1#2#3#4{\Ibbl0{#1}{#3}2\qb0{#1#2#3}\tqb0{#4}}%
+\def\sQqbb#1#2#3#4{{\smallnotesize\Qqbb{#1}{#2}{#3}{#4}}}%
+\def\qqBB#1#2#3#4{\Ibbl0{#2}{#4}2\qb0{#1#2#3}\tqb0{#4}}%
+\def\sqqBB#1#2#3#4{{\smallnotesize\qqBB{#1}{#2}{#3}{#4}}}%
+\def\qqhh#1#2#3#4{\Ibbu0{#1}{#4}3\qh0{#1#2#3}\tqh0{#4}}%
+\def\qqhhlow#1#2#3#4{{\advance\transpose -2\Ibbu0{#1}{#4}3}\qh0{#1#2#3}\tqh0{#4}}%
+\def\Qqhh#1#2#3#4{\Ibbu0{#1}{#3}2\qh0{#1#2#3}\tqh0{#4}}%
+\def\qqHH#1#2#3#4{\Ibbu0{#2}{#4}2\qh0{#1#2#3}\tqh0{#4}}%
+\def\sqqHH#1#2#3#4{{\smallnotesize\qqHH{#1}{#2}{#3}{#4}}}%
+%
+\def\PlusH{\multnoteskip{1.5}}
+\def\Double{\multnoteskip{2}}
+\def\Triple{\multnoteskip{3}}
+\def\Quadr{\multnoteskip{4}}
+%
+\instrumentnumber 3\relax
+\setstaffs11\relax
+\setstaffs22\relax
+\setstaffs31\relax
+\setclef1{6000}
+\setclef2{6000}
+\setclef3{0000}
+
+%
+\signaturegenerale{-3}\relax % ut mineur
+\def\quatretemps{\generalmeter{\meterfrac{4}{4}}}%
+\def\troistemps{\generalmeter{\meterfrac{3}{4}}}%
+\def\deuxtemps{\generalmeter{\meterfrac{2}{4}}}%
+\def\Quatretemps{\generalmeter{\meterfrac{4}{2}}}%
+\def\Troistemps{\generalmeter{\meterfrac{3}{2}}}%
+\def\Deuxtemps{\generalmeter{\meterfrac{2}{2}}}%
+\def\GO{{\bf I}}
+\def\REC{{\bf III}}
+\def\POS{{\bf II}}
+\def\GO{{\bf GO}}
+\def\REC{{\bf R\'ec.}}
+\def\POS{{\bf Pos.}}
+\def\Go{(\GO)}
+\def\Rec{(\REC)}
+\def\Pos{(\POS)}
+%\check
+\setname1{\vbox{\hbox{P\'ed. 16' }\hbox{8, 4, mix.}\hbox{sans acc.}}}%
+\setname2{M. gauche}%
+\setname3{M. droite}%
+%\check
+
+\hbox to \hsize{\rm I (G.O.): Plein jeu, fonds 16' {\sl ad libitum.}\hss \rm
+\ifx\pdfoutput\undefined Reg. dom~: 5-1, AA, sans tirasses, sans anches\fi
+}
+
+
+\hbox to \hsize{\rm II (Pos.) et III (R\'ecit): fonds 8', mixtures\hss}%
+
+\hbox to \hsize{\rm Claviers accoupl\'es \hss
+ \ifx\pdfoutput\undefined\rm Reg. Gif~: 1, 2, 4, 5/ 9---14, 16, 18---20, 22---25, 28/\fi
+}%
+
+\hbox to \hsize{\rm P\'ed.: fonds 16, 6, 4, mixtures [anches 8, 4
+annul\'ees]\hss
+ \ifx\pdfoutput\undefined\rm 32, 33, 35---39,
+41/ 46, 47, 48, 54\fi
+}%
+\smallskip
+
+%
+\def\trioskip{\multiply\noteskip by 2\relax\divide\noteskip by 3\relax}%
+\def\doubler{\multiply\noteskip by 2\relax}%
+\staffbotmarg=10pt
+\setstaffs11\relax
+\setstaffs21\relax
+\setstaffs31\relax
+\setclef1{6000}
+\setclef2{6000}
+\setclef3{0000}
+\setname2{M. gauche}%
+\setname3{M. droite}%
+\generalsignature{0}
+\troistemps
+ %\check
+  % mesure-2 111
+ \def\thefirstlinegoal{7}%
+\debutmorceau
+\systemnumbers\relax
+\let\writebarnoOrg\writebarno
+\def\writebarno{\vbox to 0pt{\vss\hbox{\writebarnoOrg}}}%
+\def\freqbarno{9999}%
+ \NOtes&\zcharnote C{\kern -0.5em\GO}\zmidtwotext{\f}\relax
+ &\zcharnote n{\kern -0.5em\POS}\relax
+ \Uptext{\raise 10\Internote\hbox{\kern -16mm\moyen Allegro maestoso
+    \bf(\metron{\qu}{90})}}\enotes
+\nspace
+\nspace
+\notes\Double\itenl1G\hup G\relax
+ &\sk\pause\relax
+ &\itenu2t\hlp t\enotes
+ \input cstsaen2.tex
+%\def\freqbarno{4}%
+%\barre
+ \znotes\zcharnote A{\null}\relax
+ &\zcharnote C{\kern -0.5em\POS}\zmidtwotext{\f}\relax
+ &\zcharnote n{\kern -0.5em\GO}\enotes
+\input cstsaen3.tex
+ % \mulooseness -1\relax
+\finmorceau
+
+
+
+
+
+\rightline{\sk\sk\sk\aujourdhui}\vfil\eject
+
+
+
+\bye
+
+\endinput
+
