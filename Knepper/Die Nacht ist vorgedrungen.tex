@@ -1,0 +1,148 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.2 2008-11-29
+%
+
+\fulltitle{Die Nacht ist vorgedrungen}
+ \author{Lothar Knepper}
+ \shortauthor{Lothar Knepper}
+ \title{Die Nacht ist vorgedrungen}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{18}
+\generalmeter{}
+\generalsignature{-3}
+\setclef{1}{\bass}
+
+\elemskip=.9\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=7\Interligne
+\interinstrument=2\Interligne
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\lyrraise{1}{a-\baselineskip}
+\setlyrics{lyrics}{\lyrlayout{\lyrfont}Die Nacht ist vor-ge-drun-gen, der Tag ist nicht mehr fern,
+Auch wer zur Nacht ge-wei-net, der stim-me froh mit ein.
+Der Mor-gen-stern be-schei-net auch dei-ne Angst und Pein.}
+\setlyrics{lyrics2}{\lyrlayout{\lyrfont}so sei nun Lob ge-sung-en dem hel-len Mor-gen-stern.}
+\setlyrics{aux}{\lyrlayout{\auxfont}Auch wer zur Nacht ge der stim-me froh mit}
+\assignlyrics{1}{aux}
+\assignlyrics{2}{lyrics,lyrics2}
+
+\startpiece
+\NOtes\lyricsoff\sk\loff{\zhu{N}}\ibslurd{0}{N}\ql{N}\tbslurd{0}{M}\ql{M}%
+\nextinstrument\sk\zhu{g}\hl{g}\en%
+\bar% 1
+\NOtes\zhu{N}\ql{LK}\ibsluru{1}{N}\zqu{N}\hl{J}\tbsluru{1}{a}\qu{=a}\zqu{b}\ibslurd{0}{K}\ql{K}\zqu{e}\tbslurd{0}{L}\ql{L}%
+\nextinstrument\beginmel\zhu{j}\ibslurd{2}{g}\ql{g}\endmel\tbslurd{2}{f}\ql{f}\zhu{j}\hl{e}\sk\zqu{i}\ql{f}\zqu{g}\ql{g}\en%
+\bar% 2
+\NOTes\zhu{c}\hl{M}\zhu{=b}\hl{N}\zhu{c}\hl{a}%
+\nextinstrument\zhu{h}\hl{e}\zhu{g}\hl{d}\zhu{f}\hl{d}\en%
+\bar% 3
+\NOtes\zqu{N}\ql{J}\zqu{N}\ql{K}\zhu{N}\ibslurd{0}{L}\ql{L}\tbslurd{0}{K}\ql{K}\zhu{N}\hl{J}\sk%
+\nextinstrument\zqu{g}\ql{e}\zqu{e}\ql{c}\beginmel\roff{\zhl{c}}\ibsluru{3}{c}\qu{c}\endmel\tbsluru{3}{d}\qu{d}\zhu{e}\hl{c}\sk\en%
+\bar% 4
+\NOTes\zw{b}\wh{I}%
+\nextinstrument\zw{f}\wh{d}\en%
+\setrightrepeat
+\changecontext\zalaligne%
+\assignlyrics{2}{lyrics}
+\NOtes\qp\zql{I}\raise 2\Interligne\qp%
+\nextinstrument\qp\zqu{f}\ql{d}\en%
+\bar% 5
+\NOtes\zql{I}\raise 2\Interligne\qp\nextinstrument\zqu{f}\ql{d}\en%
+\NOtes\lyricson\zqu{b}\ql{I}\zhl{I}\qu{cd}\zhl{I}\qu{e}\qu{N}%
+\nextinstrument\zqu{g}\ql{e}\zhu{h}\hl{f}\sk\zhu{g}\hl{e}\en%
+\bar% 6
+\NOTes\lyricsoff\zhu{b}\hl{I}\nextinstrument\zhu{f}\roff{\hl{e}}\en%
+\NOtes\zqu{b}\ql{I}\zql{=H}\raise 2\Interligne\qp%
+\nextinstrument\zqu{f}\ql{d}\zqu{j}\ql{f}\en%
+\bar% 7
+\NOtes\zql{I}\raise 2\Interligne\qp\nextinstrument\zqu{k}\ql{f}\en%
+\NOtes\lyricson\zqu{c}\ql{J}\zqu{b}\ibslurd{0}{K}\ql{K}\zqu{b}\tbslurd{0}{L}\ql{L}\zqu{=a}\ibslurd{0}{M}\ql{M}\zqu{N}\tbslurd{0}{N}\ql{N}%
+\nextinstrument\zqu{l}\ql{f}\zhlp{f}\hu{k}\sk\beginmel\ibsluru{3}{j}\qu{j}\endmel\tbsluru{3}{k}\zql{d}\qu{i}\en%
+\bar% 8
+\NOTes\lyricsoff\zw{N}\wh{J}%
+\nextinstrument\zw{j}\wh{=e}\en%
+\zalaligne%
+\NOTes\zhu{N}\hl{G}%
+\nextinstrument\zhu{g}\hl{g}\en%
+\bar% 9
+\NOtes\zqu{L}\ql{H}\zqu{a}\ql{I}\zhu{N}\hl{J}\sk\zhl{M}\ibsluru{1}{a}\qu{a}\tbsluru{1}{a}\qu{=a}%
+\nextinstrument\beginmel\ibslurd{2}{g}\zhu{j}\ql{g}\endmel\tbslurd{2}{f}\hl{f}\beginmel\hu{i}\endmel\ql{=e}\zqu{h}\ql{f}\zqu{g}\ql{_e}\en%
+\bar% 10
+\NOtes\zqu{b}\ql{I}\zhu{N}\ql{J}\hl{K}\qu{N}%
+\nextinstrument\beginmel\ibsluru{3}{f}\zql{d}\qu{f}\endmel\tbsluru{3}{e}\zhl{c}\qu{e}\qu{f}\zqu{g}\ql{=b}\en%
+\bar% 11
+\NOtes\zhlp{J}\qu{N}\qu{M}\hu{L}\ql{I}%
+\nextinstrument\zhu{e}\hl{c}\sk\zhu{c}\hl{c}\en%
+\Notes\zhu{c}\ql{=H}\nextinstrument\beginmel\ibl{2}{c}{1}\zqu{f}\qb{2}{c}\endmel\tbl{2}\qb{2}{d}\en%
+\NOtes\ql{H}\nextinstrument\zqu{f}\roff{\ql{e}}\en%
+\bar% 12
+\NOTes\zw{G}\wh{=b}%
+\nextinstrument\zw{d}\wh{g}\en%
+\Endpiece
+
+{\lyrfont
+\vskip\baselineskip
+\halign{\vtop{\hsize=3em\hfill #}\tabskip=1em&\vtop{\hsize=16cm #}\cr
+2.&Dem alle Engel dienen,~/
+wir nun ein Kind und Knecht.~/
+Gott selber ist erschienen~/
+zur S\"uhne f\"ur sein Recht.~/
+Wer schuldig ist auf Erden,~/
+verh\"ull nicht mehr sein Haupt./
+Er soll errettet werden,~/
+wenn er dem Kinde glaubt.\cr
+\cr
+3.&Die Nacht ist schon im Schwinden.~/
+macht euch zum Stalle auf!~/
+Ihr sollt das Heil dort finden,~/
+das aller Zeiten Lauf~/
+von Anfang an verk\"undet,~/
+seit eure Schuld geschah.~/
+Nun hat sich euch verb\"undet,~/
+den Gott selbst ausersah.\cr
+\cr
+4.&Noch manche Nacht wird fallen~/
+auf Menschenleid und -schuld.~/
+Doch wandert nun mit allen~/
+der Stern der Gotteshuld.~/
+Begl\"anzt von seinem Lichte,~/
+h\"alt euch kein Dunkel mehr,~/
+von Gottes Angesichte~/
+kam euch die Rettung her.\cr
+\cr
+5.&Gott will im Dunkel wohnen~/
+und hat es doch erhellt.~/
+Als wollte er belohnen,~/
+so richtet er die Welt.~/
+Der sich dem Erdkreis baute,~/
+der l\"a\ss t den S\"under nicht.~/
+Wer hier dem Sohn vertrauet,~/
+kommt dort aus dem Gericht.\cr
+}
+\vfill
+
+\hrule
+\vskip\baselineskip
+Text: Jochen Klepper 1938, Melodie: Johannes Petzold 1939, Satz: Lothar Knepper
+
+\bye
