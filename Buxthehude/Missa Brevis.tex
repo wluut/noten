@@ -1,0 +1,117 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2008-11-10
+%
+
+\fulltitle{Missa Brevis}
+ \author{Dietrich Buxtehude 1637--1707}
+ \shortauthor{Dietrich Buxtehude}
+ \title{Missa Brevis}
+ \def\voices{SSATB}
+ \maketitle
+
+\instrumentnumber{6}
+\interstaff{11}
+\generalmeter{\allabreve}
+\generalsignature{0}
+\setstaffs1{2}
+\setclef{1}{\bass}
+\setclef{2}{\bass}
+%\setclefsymbol{2}{\treblelowoct}
+\setname{1}{Orgel}
+\setname{2}{Bass}
+\setname{3}{Tenor}
+\setname{4}{Alt}
+\setname{5}{Sopran II}
+\setname{6}{Sopran I}
+
+\elemskip.8\elemskip
+
+\grouptop{1}{6}
+\groupbottom{1}{2}
+\barnumbers
+\startbarno=1
+\def\freqbarno{5}
+\sepbarrules
+\stafftopmarg=5\Interligne
+\interinstrument=2\Interligne
+\startmuflex
+
+\def\everystaff{\znotes\nextinstrument\nextinstrument\zchar{-6}{\eightrm%
+\kern -2\Interligne 8}\en}%
+
+\setlyrics{lsoprani}{Ky-ri-e e-le-i-son,}
+\setlyrics{lsopranii}{Ky-ri-e e-le-i-son, e-le-i-son,}
+\setlyrics{lalt}{Ky-ri-e e-le-i-son, e-le-i-son,}
+\setlyrics{ltenor}{}
+\setlyrics{lbass}{}
+\assignlyrics{2}{lbass}
+\assignlyrics{3}{ltenor}
+\assignlyrics{4}{lalt}
+\assignlyrics{5}{lsopranii}
+\assignlyrics{6}{lsoprani}
+
+\startpiece
+\NOTesp\nextstaff\hlp{e}%
+\nextinstrument\nextinstrument\nextinstrument\ust{m}\hup{e}\en%
+\NOTes\nextstaff\ql{e}%
+\nextinstrument\nextinstrument\nextinstrument\ust{m}\qu{e}\en%
+\def\atnextbar{\znotes\centerpause\nextstaff\centerpause\nextinstrument%
+\centerpause\nextinstrument\centerpause\nextinstrument\nextinstrument%
+\centerpause\nextinstrument\centerpause\en}%
+\bar% 2
+\NOTes\nextstaff\zhup{h}\ql{cad}\zqu{h}\ql{f}%
+\nextinstrument\nextinstrument\nextinstrument\ust{m}\qu{c}\caesura\qu{a}%
+\beginmel\islurd{0}{d}\qu{df}%
+\nextinstrument\ust{m}\hup{h}\sk\sk\ust{m}\qu{h}\en%
+\def\atnextbar{\znotes\centerpause\nextinstrument\centerpause\nextinstrument%
+\centerpause\nextinstrument\nextinstrument\nextinstrument\centerpause\en}%
+\bar% 3
+\NOtes\nextstaff\zqu{g}\ibl{0}{e}{-1}\qb{0}{e}\tbl{0}\qb{0}{d}\zqu{e}\lpt{c}%
+\ql{c}\sk\qu{h}\ibl{0}{d}{1}\qb{0}{d}\zqu{j}\qb{0}{e}\tbl{0}\qb{0}{f}%
+\nextinstrument\nextinstrument\nextinstrument\ibu{1}{e}{-1}\qb{1}{e}\tbu{1}%
+\qb{1}{d}\qup{c}\sk\sk\ibu{1}{d}{1}\qb{1}{de}\tbu{1}\qb{1}{f}%
+\nextinstrument\ust{m}\qu{g}\sk\caesura\qu{e}\sk\beginmel\isluru{1}{m}\qu{h}%
+\sk\ql{j}\en%
+\def\atnextbar{\znotes\centerpause\nextinstrument\centerpause\nextinstrument%
+\centerpause\nextinstrument\nextinstrument\nextinstrument\centerpause\en}%
+\bar% 4
+\NOtes\nextstaff\lpt{g}\zql{g}\ibu{0}{i}{-1}\qb{0}{i}\tbu{0}\qb{0}{h}\qup{g}\cl{f}%
+\hl{e}\ibu{0}{h}{1}\qb{0}{hi}\tbu{0}\qb{0}{j}%
+\nextinstrument\nextinstrument\nextinstrument\qup{g}\sk\sk\cu{f}\hu{e}%
+\nextinstrument\ibu{1}{i}{-1}\qb{1}{i}\tbu{1}\qb{1}{h}\qup{g}\sk\sk%
+\ibl{1}{h}{1}\qb{1}{hi}\tbl{1}\qb{1}{j}\en%
+\def\atnextbar{\znotes\centerpause\nextinstrument\centerpause\nextinstrument%
+\centerpause\nextinstrument\nextinstrument\nextinstrument\centerpause\en}%
+\bar% 5
+\NOtes\ccharnote{C}{6}\nextstaff\zqu{k}\ibl{0}{f}{1}\qb{0}{f}\tbl{0}\qb{0}{g}%
+\nextinstrument\nextinstrument\nextinstrument\ibu{1}{f}{1}\qb{1}{f}\tbu{1}%
+\qb{1}{g}\nextinstrument\ql{k}\nextinstrument\hpause\en%
+\NOTes\sk\ccharnote{C}{3}\sk\ccharnote{C}{2}\nextstaff\zhl{h}\qu{j}\zhu{i}%
+\itieu{2}{l}\hu{l}\ql{^g}\nextinstrument\nextinstrument\nextinstrument%
+\endmel\hu{h}\sk\qu{^g}\nextinstrument\endmel\ql{j}\hl{i}\nextinstrument%
+\sk\ust{m}\beginmel\itieu{3}{l}\hl{l}\en%
+\def\atnextbar{\znotes\centerpause\nextinstrument\centerpause\nextinstrument%
+\centerpause\en}%
+\bar% 6
+\NOTes\nextstaff\ttie{2}\itied{4}{h}\zwh{h}\zwh{j}\wh{l}%
+\nextinstrument\nextinstrument\nextinstrument\tslur{0}{h}\hup{h}%
+\nextinstrument\tslur{1}{j}\hl{j}\sk\qp%
+\nextinstrument\ttie{3}\endmel\ql{l}\ust{m}\ql{l}\ust{m}\ql{j}\caesura\en%
+\NOtes\nextinstrument\nextinstrument\nextinstrument\qu{h}%
+\nextinstrument\beginmel\isluru{0}{j}\ibl{0}{j}{-1}\qb{0}{j}\endmel\tslur{0}{i}\tbl{0}\qb{0}{i}%
+\nextinstrument\qu{h}\en%
+\def\atnextbar{\znotes\centerpause\nextinstrument\centerpause\nextinstrument%
+\centerpause\en}%
+\bar% 7
+\Endpiece
+
+\bye
