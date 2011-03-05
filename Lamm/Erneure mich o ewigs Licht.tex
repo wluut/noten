@@ -1,0 +1,122 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 1.0 2011-03-04 Erste Version
+%
+\fulltitle{Erneure mich, o ewigs Licht}
+ \author{Werner Lamm}
+ \shortauthor{Werner Lamm}
+ \title{Erneure mich, o ewigs Licht}
+ \def\voices{SATB}
+ \maketitle
+
+\def\freqbarno{5}
+\instrumentnumber{2}
+\interstaff{11}
+\generalmeter{\meterfrac{3}{4}}
+\generalsignature{-1}
+\setclef{1}{\bass}
+
+\elemskip1.2\elemskip
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\barnumbers
+\startbarno=1
+\def\freqbarno{5}
+\sepbarrules
+\interinstrument=10\Interligne
+\startmuflex
+
+\setlyrics{vers1}{Er-neu-re mich, o e-wigs Licht, und la\ss{} von dei-nem An-ge-sicht mein Herz und Seel mit dei-nem Schein durch-leuch-tet und er-f\"ul-let sein.}
+\setlyrics{vers2}{Schaff in mir, Herr, den neu-en Geist, der dir mit Lust Ge-hor-sam leist' und nichts sonst, als was du willst, will; ach Herr, mit ihm mein Herz er-f\"ull.}
+\setlyrics{vers3}{Auf dich la\ss{} mei-ne Sin-ne, gehn, la\ss{} sie nach dem, was dro-ben, stehn, bis ich dich schau, o e-wigs List, von An-ge-sicht zu An-ge-sicht.}
+\assignlyrics{2}{vers1,vers2,vers3}
+
+\startpiece
+\NOtes\sk\zql{M}\qu{a}\zql{H}\qu{M}\zql{J}\qu{L}%
+\nextinstrument\verses{\lyric*{1.},\lyric*{2.},\lyric*{3.}}\sk\zql{c}\qu{f}\zql{c}\qu{f}\zql{c}\qu{g}\en%
+\bar% 2
+\NOTes\zhl{M}\hu{M}%
+\nextinstrument\zhl{c}\hu{h}\en%
+\NOtes\zql{L}\qu{N}%
+\nextinstrument\zql{c}\qu{j}\en%
+\bar% 3
+\NOtesp\isslurd{0}{K}\issluru{1}{a}\zqlp{K}\qup{a}%
+\nextinstrument\beginmel\isslurd{2}{d}\issluru{3}{f}\zqlp{d}\qup{f}\en%
+\Notes\tsslur{0}{J}\tsslur{1}{c}\zcl{J}\cu{c}%
+\nextinstrument\endmel\tsslur{2}{e}\tsslur{3}{g}\zcl{e}\cu{g}\en%
+\NOtes\zql{M}\qu{c}%
+\nextinstrument\zql{f}\qu{h}\en%
+\bar% 4
+\NOtes\zhl{J}\hu{c}%
+\nextinstrument\zhl{e}\hu{g}\en%
+\NOtes\qp\nextinstrument\qp\en%
+\alaligne%\bar% 5
+\NOtes\zql{J}\qu{c}\zql{M}\qu{c}\zql{K}\qu{d}%
+\nextinstrument\zql{e}\qu{g}\zql{f}\qu{h}\zql{f}\qu{i}\en%
+\bar% 6
+\NOtes\isslurd{0}{L}\zhu{c}\ql{L}\tsslur{0}{J}\ql{J}\zql{K}\qu{a}%
+\nextinstrument\beginmel\isslurd{2}{g}\zhu{j}\ql{g}\endmel\tsslur{2}{e}\ql{e}\zql{f}\qu{h}\en%
+\bar% 7
+\NOtes\isslurd{0}{I}\zhu{d}\ql{I}\tsslur{0}{G}\ql{G}\zql{H}\qu{^c}%
+\nextinstrument\rhl{f}\hu{g}\sk\zql{e}\qu{g}\en%
+\bar% 8
+\NOTes\zhl{K}\hu{a}%
+\nextinstrument\zhl{d}\hu{f}\en%
+\NOtes\qp\nextinstrument\qp\en%
+\alaligne%\bar% 9
+\NOtes\zql{a}\qu{a}\zql{H}\qu{a}\zql{K}\qu{a}%
+\nextinstrument\rql{d}\qu{e}\zql{^c}\qu{e}\zql{d}\qu{f}\en%
+\bar% 10
+\NOtes\isslurd{0}{I}\zql{=I}\hu{N}%
+\nextinstrument\beginmel\isslurd{2}{d}\issluru{3}{g}\zql{d}\qup{g}\en%
+\Notes\tsslur{0}{G}\ql{G}%
+\nextinstrument\tsslur{2}{b}\ql{=b}\tsslur{3}{f}\endmel\cu{f}\en%
+\NOtes\zql{J}\qu{N}%
+\nextinstrument\zql{c}\qu{e}\en%
+\bar% 11
+\NOtes\issluru{1}{a}\zql{F}\qu{a}%
+\nextinstrument\beginmel\issluru{2}{c}\zql{c}\loff{\hu{d}}\en%
+\Notes\tsslur{1}{N}\zhl{G}\qu{N}%
+\nextinstrument\ibl{2}{b}{-1}\qb{2}{=b}\endmel\tsslur{2}{a}\tbl{2}\qb{2}{a}\en%
+\NOtes\qu{M}%
+\nextinstrument\zql{b}\qu{d}\en%
+\bar% 12
+\NOTes\zhl{J}\hu{L}%
+\nextinstrument\zhl{N}\hu{c}\en%
+\NOtes\qp\nextinstrument\qp\en%
+\alaligne%\bar%13
+\NOtes\zql{H}\qu{M}\zql{J}\qu{L}\zql{M}\qu{c}%
+\nextinstrument\zql{c}\qu{f}\zql{c}\qu{g}\zql{f}\qu{h}\en%
+\bar% 14
+\Notes\ibl{0}{I}{2}\zhu{d}\qb{0}{I}\qb{0}{J}\qb{0}{K}\tbl{0}\qb{0}{L}%
+\nextinstrument\zhl{f}\hu{i}\en%
+\NOtes\zql{M}\qu{c}%
+\nextinstrument\zql{f}\qu{h}\en%
+\bar% 15
+\NOtes\issluru{1}{d}\zql{I}\qu{d}%
+\nextinstrument\beginmel\issluru{2}{f}\lhu{g}\ql{f}\en
+\Notes\zhl{J}\tsslur{1}{c}\qu{c}%
+\nextinstrument\ibl{2}{e}{-1}\qb{2}{e}\endmel\tsslur{2}{d}\tbl{2}\qb{2}{d}\en%
+\NOtes\qu{b}%
+\nextinstrument\zql{e}\qu{g}\en%
+\bar% 16
+\NOTesp\zhlp{M}\hup{a}%
+\nextinstrument\zhlp{c}\hup{f}\en%
+\Endpiece
+\vfill
+
+\hrule
+\vskip\baselineskip
+Text: Johann Friedrich Ruopp 1704, Melodie: N\"urnberg 1676/1854
+
+\bye
