@@ -1,0 +1,131 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+\fulltitle{Zu Bethlehem geboren}
+ \author{Christian Reiter $\ast$16.6.1971}
+ \shortauthor{Christian Reiter}
+ \title{Zu Bethlehem geboren}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{20}
+\generalmeter{\allabreve}
+\generalsignature{-1}
+\setclef{1}{\bass}
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\barnumbers
+\startbarno=0
+\def\freqbarno{5}
+\sepbarrules
+%\stafftopmarg=7\Interligne
+\interinstrument=2\Interligne
+\startmuflex
+
+\setlyrics{v1}{Zu Beth-le-hem ge-bo-ren ist uns ein Kin-de-lein. Das hab ich aus-er-ko-ren, sein ei-gen will ich sein. E-ja, e-ja, sein ei-gen will ich sein.}
+\setlyrics{v2}{In sei-ne Lieb' ver-sen-ken will ich mich ganz hi-nab; mein Herz will ich ihm schen-ken und al-les, was ich hab. E-ja, e-ja, und al-les was ich hab.}
+\setlyrics{v3}{O Kin-de-lein, von Her-zen, dich will ich lie-ben sehr, in Freu-den und in Schmer-zen, je l\"an-ger mehr und mehr. E-ja, e-ja, je l\"an-ger mehr und mehr.}
+\setlyrics{v4}{Dich wah-ren Gott ich fin-de in mei-nem Fleisch und Blut; da-ran ich fest mich bin-de an dich mein h\"och-stes Gut. E-ja, e-ja, an dich, mein h\"och-stes Gut.}
+\assignlyrics{2}{v1,v2,v3,v4}
+
+%\def\everystaff{\znotes\minlyrspace=-5cm\loffset{2.2}{\verses{\lyric*{1.},\lyric*{2.},\lyric*{3.},\lyric*{4.}}}\en\hardspace{4mm}}
+
+
+\startpiece
+\Notes\zql{M}\qu{a}%
+\nextinstrument\zql{c}\qu{c}\en%
+\bar% 1
+\Notes\zql{M}\qup{a}%
+\nextinstrument\zqlp{c}\qup{f}\en%
+\NOtes\ql{L}\en%
+\NOtes\cu{c}%
+\nextinstrument\zcl{c}\cu{g}\en%
+\Notes\zql{M}\qu{c}%
+\nextinstrument\zql{f}\qu{h}\en%
+\NOtes\zql{J}\ibu{1}{c}{-1}\qb{1}{c}%
+\nextinstrument\zql{e}\qu{g}\en%
+\NOtes\tbu{1}\qb{1}{b}\en%
+\bar% 2
+\Notes\zhl{K}\hu{a}%
+\nextinstrument\beginmel\roff{\islurd{1}{e}\zql{e}}\hu{f}\en%
+\Notes\nextinstrument\endmel\tslur{1}{d}\ql{d}\en%
+\Notes\zql{H}\qu{a}%
+\nextinstrument\zql{c}\qu{e}\en%
+\NOtes\zqu{a}\ibl{1}{K}{-1}\qb{1}{K}%
+\nextinstrument\zql{d}\qu{f}\en%
+\NOtes\tbl{1}\qb{1}{J}\en%
+\bar% 3
+\Notes\zql{I}\qu{b}%
+\nextinstrument\zql{d}\qu{g}\en%
+\NOtes\zql{I}\qu{b}%
+\nextinstrument\beginmel\ibl{1}{d}{1}\ibu{2}{f}{1}\qb{1}{d}\bsk\qb{2}{f}\en%
+\NOtes\nextinstrument\tbl{1}\tbu{2}\qb{1}{e}\bsk\endmel\qb{2}{g}\en%
+\NOtes\zqu{c}\ibl{1}{H}{1}\qb{1}{I}\tbl{1}\qb{1}{I}%
+\nextinstrument\zql{f}\qu{h}\en%
+\Notes\zql{J}\qu{b}%
+\nextinstrument\zql{e}\qu{g}\en%
+\bar% 4
+\notes\zhl{M}\hu{a}%
+\nextinstrument\zhl{f}\hu{f}\en%
+\Notes\qp\nextinstrument\qp\en%
+\NOtes\zql{M}\ibu{1}{a}{1}\qb{1}{a}%
+\nextinstrument\zql{f}\qu{j}\en%
+\NOtes\tbu{1}\qb{1}{b}\en%
+\bar% 5
+\Notes\zql{L}\qu{c}%
+\nextinstrument\zql{g}\qu{j}\en%
+\NOtes\zqu{c}\ibl{1}{M}{-1}\qb{1}{M}%
+\nextinstrument\zql{f}\qu{h}\en%
+\NOtes\tbl{1}\qb{1}{L}\en%
+\Notes\zql{K}\qu{b}%
+\nextinstrument\zql{f}\qu{i}\en%
+\Notes\zql{J}\qu{a}%
+\nextinstrument\zql{f}\qu{j}\en%
+\bar% 6
+\Notes\zhu{b}\islurd{1}{I}\ql{I}\tslur{1}{J}\ql{J}%
+\nextinstrument\zhl{f}\hu{k}\en%
+\Notes\zql{K}\qu{d}\zql{L}\qu{c}%
+\nextinstrument\zql{f}\qu{i}\zql{g}\qu{i}\en%
+\bar% 7
+\Notes\zql{M}\qu{c}\zql{K}\qu{b}\zql{H}\qu{a}%
+\nextinstrument\zql{f}\qu{h}\zql{f}\qu{i}\zql{f}\qu{j}\en%
+\NOtes\zql{G}\qu{b}%
+\nextinstrument\beginmel\zql{f}\ibu{1}{i}{-1}\qb{1}{i}\endmel\tbu{1}\qb{1}{h}\en%
+\bar% 8
+\notesp\zhlp{J}\hup{c}%
+\nextinstrument\zhlp{e}\hup{g}\en%
+\Notes\qp\nextinstrument\qp\en%
+\bar% 9
+\Notesp\zhu{c}\islurd{1}{H}\qlp{H}%
+\nextinstrument\zhl{f}\hu{j}\en%
+\NOtes\tslur{1}{I}\cl{I}\en%
+\notes\zhl{J}\hu{c}%
+\nextinstrument\zhl{e}\hu{g}\en%
+\bar% 10
+\NOtes\zhu{c}\ibl{1}{F}{1}\qb{1}{FGH}\tbl{1}\qb{1}{I}%
+\nextinstrument\zhl{f}\hu{h}\en%
+\Notes\zql{J}\qu{c}\zql{H}\qu{c}%
+\nextinstrument\zql{e}\qu{g}\zql{e}\qu{h}\en%
+\bar% 11
+\Notes\zql{H}\qu{c}%
+\nextinstrument\zql{f}\qu{j}\en%
+\NOtes\zql{I}\qu{b}%
+\nextinstrument\beginmel\zql{d}\ibu{1}{f}{1}\qb{1}{f}\endmel\tbu{1}\qb{1}{g}\en%
+\NOtes\zqu{c}\ibl{1}{H}{1}\qb{1}{H}\tbl{1}\qb{1}{I}%
+\nextinstrument\zql{f}\qu{h}\en%
+\Notes\zql{J}\qu{b}%
+\nextinstrument\zql{e}\qu{g}\en%
+\bar% 12
+\notesp\zhlp{M}\hup{a}%
+\nextinstrument\zhlp{c}\hup{f}\en%
+\Endpiece
+
+\bye
