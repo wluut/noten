@@ -1,0 +1,265 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+\smallmusicsize
+%\normalmusicsize
+
+%
+% Version 1.2 2008-04-20 Tenor und layout korriegiert.
+%
+
+\fulltitle{Notre P\`ere}
+ \author{Maurice Durufl\'e 1902--1986}
+ \shortauthor{Maurice Durufl\'e}
+ \title{Notre P\`ere}
+ \def\voices{SATB}
+ \maketitle
+
+\def\freqbarno{5}
+\instrumentnumber{4}
+\interstaff{11}
+\generalmeter{\meterfrac{3}{4}}
+\generalsignature{-1}
+\setclef{1}{\bass}
+%\setclefsymbol{2}{\treblelowoct}
+%\setname{1}{Bass}
+%\setname{2}{Tenor}
+%\setname{3}{Alt}
+%\setname{4}{Sopran}
+
+\elemskip1.2\elemskip
+
+\grouptop{1}{4}
+\groupbottom{1}{1}
+\barnumbers
+\startbarno=0
+\def\freqbarno{5}
+\sepbarrules
+\stafftopmarg=7\Interligne
+\interinstrument=2\Interligne
+\startmuflex
+
+\def\everystaff{\znotes\nextinstrument\zchar{-6}{\eightrm \kern -2\Interligne 8}\en}%
+
+\setlyrics{lbass}{No-tre P\`e-re qui es aux cieux, que ton nom soit san-cti-fi\'e,
+que ton r\`e-gne vien-ne, que ta vo-lon-t\'e soit fai-te sur la ter-re comme au ciel.
+Don-ne nous au-jour-d'hui no-tre pain de ce jour, par-don-ne nous nos of-fen-ses
+com-me nous par-don nons aus-si \`a ceux qui nous ont of-fen-s\'es, et ne nous
+sou mets pas \`a la ten-ta-tion, mais d\'e-li-vre nous du mal._}
+\copylyrics{lbass}{ltenor}
+\copylyrics{lbass}{lalt}
+\copylyrics{lbass}{lsopran}
+\assignlyrics{1}{lbass}
+\assignlyrics{2}{ltenor}
+\assignlyrics{3}{lalt}
+\assignlyrics{4}{lsopran}
+
+{\it Andante (\lyricsoff\metron{\qu}{66}\lyricson)}
+
+\startpiece
+\NOtes\uptext{\p~{\it dolce}}\ca{MM}%
+\nextinstrument\uptext{\p~{\it dolce}}\ca{hi}%
+\nextinstrument\uptext{\p~{\it dolce}}\ca{ff}%
+\nextinstrument\uptext{\p~{\it dolce}}\ca{fg}\en%
+\bar% 1
+\NOTes\qa{M}%
+\nextinstrument\qa{j}%
+\nextinstrument\qa{f}%
+\nextinstrument\qa{h}\en%
+\NOtes\ca{MMM}\ca{J}%
+\nextinstrument\ca{jjjj}%
+\nextinstrument\ca{fffe}%
+\nextinstrument\ca{hhhg}\en%
+\bar% 2
+\NOTEs\ha{M}%
+\nextinstrument\ha{j}%
+\nextinstrument\ha{f}%
+\nextinstrument\ha{h}\en%
+\NOtes\ca{JJ}%
+\nextinstrument\ca{jj}%
+\nextinstrument\ca{ee}%
+\nextinstrument\ca{gh}\en%
+\bar% 3
+\NOTes\qa{KK}%
+\nextinstrument\qa{hf}%
+\nextinstrument\qa{dd}%
+\nextinstrument\qa{fd}\en%
+\NOtes\ca{KK}%
+\nextinstrument\ca{hh}%
+\nextinstrument\ca{dd}%
+\nextinstrument\ca{ff}\en%
+\bar% 4
+\NOTEs\ha{J}%
+\nextinstrument\ha{j}%
+\nextinstrument\ha{e}%
+\nextinstrument\ha{g}\en%
+\NOtes\ca{MM}%
+\nextinstrument\ca{hh}%
+\nextinstrument\ca{dd}%
+\nextinstrument\ca{hj}\en%
+\bar% 5
+\NOtes\ca{NN}%
+\nextinstrument\ca{gg}%
+\nextinstrument\ca{ff}%
+\nextinstrument\ca{j=i}\en%
+\NOTes\qa{JJ}%
+\nextinstrument\qa{gg}%
+\nextinstrument\qa{ee}%
+\nextinstrument\qa{jj}\en%
+\bar% 6
+\NOtes\ca{MMIIJJ}%
+\nextinstrument\ca{hhgghh}%
+\nextinstrument\ca{ffffee}%
+\nextinstrument\ca{jjkkjj}\en%
+% 7
+\generalmeter{\meterfrac{2}{4}}\changecontext%
+\NOTes\qa{KK}%
+\nextinstrument\qa{hh}%
+\nextinstrument\qa{f=b}%
+\nextinstrument\qa{hf}\en%
+% 8
+\generalmeter{\meterfrac{3}{4}}\changecontext%
+\NOtes\ca{JJKKLL}%
+\nextinstrument\ca{hhjj=ii}%
+\nextinstrument\ca{eeffee}%
+\nextinstrument\ca{eefhhg}\en%
+\bar% 9
+\NOTEs\ha{H}%
+\nextinstrument\ha{j}%
+\nextinstrument\ha{e}%
+\nextinstrument\ha{h}\en%
+\NOtes\ca{aa}%
+\nextinstrument\zq{m}\ca{j}\zq{m}\ca{j}%
+\nextinstrument\ca{hh}%
+\nextinstrument\ca{jj}\en%
+% 10
+\generalmeter{\meterfrac{2}{4}}\changecontext%
+\NOTes\qa{d}%
+\nextinstrument\qa{m}%
+\nextinstrument\qa{h}%
+\nextinstrument\qa{i}\en%
+\NOtes\ca{dd}%
+\nextinstrument\ca{ll}%
+\nextinstrument\ca{gg}%
+\nextinstrument\ca{ii}\en%
+\bar% 11
+\NOTes\qa{c}%
+\nextinstrument\qa{l}%
+\nextinstrument\qa{f}%
+\nextinstrument\qa{h}\en%
+\NOtes\ca{cc}%
+\nextinstrument\ca{kk}%
+\nextinstrument\ca{ff}%
+\nextinstrument\ca{fh}\en%
+\bar% 12
+\NOTes\qa{b}%
+\nextinstrument\qa{k}%
+\nextinstrument\qa{f}%
+\nextinstrument\qa{h}\en%
+\NOtes\ca{bb}%
+\nextinstrument\ca{kk}%
+\nextinstrument\ca{ee}%
+\nextinstrument\ca{gf}\en%
+\bar% 13
+\NOTes\qa{aa}%
+\nextinstrument\qa{jj}%
+\nextinstrument\qa{ed}%
+\nextinstrument\qa{gf}\en%
+\bar% 14
+\NOtes\ca{NN}\qa{J}%
+\nextinstrument\ca{kj}\qa{i}%
+\nextinstrument\ca{ff}\ibu{0}{f}{-1}\islurd{0}{f}\qb{0}{f}\lyricsoff\tbu{0}\tslur{0}{e}\qb{0}{e}\lyricson%
+\nextinstrument\ca{ih}\qa{g}\en%
+% 15
+\generalmeter{\meterfrac{3}{4}}\changecontext%
+\NOtes\ca{KK}%
+\nextinstrument\ca{hg}%
+\nextinstrument\ca{dd}%
+\nextinstrument\ca{fe}\en%
+\NOTes\qa{IJ}%
+\nextinstrument\qa{fe}%
+\nextinstrument\qa{NN}%
+\nextinstrument\qa{dc}\en%
+% 16
+\generalmeter{\meterfrac{2}{4}}\changecontext%
+\NOTes\qa{F}%
+\nextinstrument\qa{c}%
+\nextinstrument\qa{a}%
+\nextinstrument\qa{c}\en%
+\NOtes\ca{FF}%
+\nextinstrument\ca{dd}%
+\nextinstrument\ca{bb}%
+\nextinstrument\ca{cc}\en%
+\bar% 17
+\NOtes\ca{FFII}%
+\nextinstrument\ca{ccff}%
+\nextinstrument\ca{aaNN}%
+\nextinstrument\ca{ccde}\en%
+\bar% 18
+\NOtes\qa{H}\sk\uptext{\it cresc.}\qa{K}%
+\nextinstrument\ibu{0}{f}{-1}\islurd{0}{f}\qb{0}{f}\lyricsoff\tbu{0}\tslur{0}{e}\qb{0}{e}\lyricson\uptext{\it cresc.}\qa{d}%
+\nextinstrument\qa{c}\sk\uptext{\it cresc.}\qa{a}%
+\nextinstrument\qa{f}\sk\uptext{\it cresc.}\ibu{0}{f}{1}\islurd{0}{f}\qb{0}{f}\lyricsoff\tbu{0}\tslur{0}{g}\qb{0}{g}\lyricson\en%
+\bar% 19
+\NOtes\ca{JJII}%
+\nextinstrument\ca{fgff}%
+\nextinstrument\ca{dddd}%
+\nextinstrument\ca{hhhg}\en%
+\bar% 20
+\NOtes\ca{HH}%
+\nextinstrument\ca{ff}%
+\nextinstrument\ca{cd}%
+\nextinstrument\ca{hi}\en%
+\NOTes\qa{F}%
+\nextinstrument\qa{g}%
+\nextinstrument\qa{_e}%
+\nextinstrument\qa{j}\en%
+\bar% 20
+\NOTes\uptext{\mf}\qa{I}%
+\nextinstrument\uptext{\mf}\qa{h}%
+\nextinstrument\uptext{\mf}\qa{d}%
+\nextinstrument\uptext{\mf}\qa{j}\en%
+\NOtes\ca{II}%
+\nextinstrument\ca{gg}%
+\nextinstrument\ca{=ee}%
+\nextinstrument\ca{kk}\en%
+\bar% 21
+\NOtes\ca{HH}\qa{K}%
+\nextinstrument\ca{jj}\ibl{0}{j}{-1}\isluru{0}{j}\qb{0}{j}\lyricsoff\tbl{0}\tslur{0}{i}\qb{0}{i}\lyricson%
+\nextinstrument\ca{gg}\qa{f}%
+\nextinstrument\ca{jj}\ibu{1}{h}{-1}\islurd{1}{h}\qb{1}{h}\lyricsoff\tbu{1}\tslur{1}{g}\qb{1}{g}\lyricson\en%
+% 22
+\generalmeter{\meterfrac{3}{4}}\changecontext%
+\NOtes\ca{LLKK}\uptext{\it dim.}\qa{K}%
+\nextinstrument\ca{jjjj}\uptext{\it dim.}\qa{i}%
+\nextinstrument\ca{ffff}\uptext{\it dim.}\qa{e}%
+\nextinstrument\ca{hhff}\uptext{\it dim.}\qa{g}\en%
+% 23
+\setdoublebar%
+\generalmeter{\meterfrac{2}{4}}\changecontext%
+\NOtes\uptext{\it molto rall.}\ca{JJII}%
+\nextinstrument\uptext{\it molto rall.}\ca{hhff}%
+\nextinstrument\uptext{\it molto rall.}\ca{ddNN}%
+\nextinstrument\uptext{\it molto rall.}\ca{ffdd}\en%
+\bar% 24
+\NOTes\uptext{\decrescendo{\noteskip}}\qa{KI}%
+\nextinstrument\uptext{\decrescendo{\noteskip}}\qa{ff}%
+\nextinstrument\uptext{\decrescendo{\noteskip}}\qa{bN}%
+\nextinstrument\uptext{\decrescendo{\noteskip}}\qa{cd}\en%
+\bar% 25
+\NOTEs\uptext{\p}\itied{0}{F}\ha{F}%
+\nextinstrument\uptext{\p}\itied{1}{c}\ha{c}%
+\nextinstrument\uptext{\p}\itied{2}{a}\ha{a}%
+\nextinstrument\uptext{\p}\itied{3}{f}\ha{f}\en%
+\bar% 26
+\NOTes\ttie{0}\qa{F}\qp%
+\nextinstrument\ttie{1}\qa{c}\qp%
+\nextinstrument\ttie{2}\qa{a}\qp%
+\nextinstrument\ttie{3}\qa{f}\qp\en%
+\Endpiece
+
+\bye
