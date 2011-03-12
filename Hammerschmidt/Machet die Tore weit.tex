@@ -9,18 +9,20 @@
 \normalmusicsize
 
 %
-% Version 0.2 2010-10-28
+% Version 0.2.1 2011-03-12
 %
 
 \fulltitle{Machet die Tore weit}
  \author{Andreas Hammerschmidt 1612--1675}
  \shortauthor{Andreas Hammerschmidt}
  \title{Machet die Tore weit}
- \def\voices{SSATB}
+ \def\voices{SSATBB}
  \maketitle
 
 \def\freqbarno{5}
+\parindent=2cm
 \instrumentnumber{4}
+\setinterinstrument{1}{11\internote}
 \generalmeter{\meterfrac{3}{4}}
 \setclef{1}{\bass}
 %\setclefsymbol{2}{\treblelowoct}
@@ -28,6 +30,7 @@
 \setname{2}{Tenor}
 \setname{3}{Alt}
 \setname{4}{Sopran}
+\sepbarrules
 
 \grouptop{1}{4}
 \groupbottom{1}{1}
@@ -35,7 +38,11 @@
 
 \def\everystaff{\znotes\nextinstrument\zchar{-6}{\eightrm \kern -2\Interligne 8}\en}%
 
-\setlyrics{ltenor}{Ma-chet die To-re weit und die T\"u-ren in der Welt hoch,}
+\setlyrics{ltenor}{Ma-chet die To-re weit und die T\"u-ren in der Welt hoch, da\ss{} der K\"o-nig der Eh-ren, da\ss{} der K\"o-nig ein-zie-he.
+Ma-chet die To-re weit und die T\"u-ren in der Welt hoch, da\ss{} der K\"o-nig der Eh-ren ein-zie-he.
+Wer ist der-sel-be, wer ist der-sel-bi-ge K\"o-nig der Eh-ren? Es ist der Herr, stark und m\"ach-tig, es ist der Herr, stark und m\"ach-tig im Streit.
+Ma-chet die To-re weit und die T\"u-ren in der Welt hoch! Ho-si-an-na, ho-si-an-na, ho-si-an-na, ho-si-an-na in der H\"o-he.
+Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he.}
 \assignlyrics{2}{ltenor}
 
 \startpiece
@@ -379,15 +386,15 @@
 \def\atnextbar{\znotes\centerbar{\liftpause{2}}\nextinstrument\centerpause\nextinstrument\centerpause\nextinstrument\centerpause\en}\bar%
 % bar 54
 \NOtes\rhl{N}\qu{Na}\zql{N}\qu{b}%
-\nextinstrument\ql{ijk}\en%
+\nextinstrument\beginmel\ql{i}\endmel\ql{jk}\en%
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\centerpause\nextinstrument\centerpause\en}\bar%
 % bar 55
 \NOtes\rhl{N}\qu{Na}\zql{N}\qu{b}%
-\nextinstrument\ql{ijk}\en%
+\nextinstrument\beginmel\ql{i}\endmel\ql{jk}\en%
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\centerpause\nextinstrument\centerpause\en}\bar%
 % bar 56
 \NOtes\rhl{N}\qu{Na}\zql{N}\qu{b}%
-\nextinstrument\ql{ijk}\en%
+\nextinstrument\beginmel\ql{i}\endmel\ql{jk}\en%
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\centerpause\nextinstrument\centerpause\en}\bar%
 % bar 57
 \NOtes\zhu{c}\ql{JK}\zql{L}\qu{c}%
@@ -448,10 +455,10 @@
 \bar%
 % bar 70
 \NOtesp\zhlp{J}\hup{c}%
-\nextinstrument\zqlp{l}\nextinstrument\hup{g}%
+\nextinstrument\beginmel\qlp{l}\nextinstrument\hup{g}%
 \nextinstrument\zqlp{j}\qup{l}\en%
 \Notes\nextinstrument\cl{k}\nextinstrument\nextinstrument\zcl{k}\cu{m}\en%
-\NOtes\nextinstrument\ql{j}\nextinstrument\nextinstrument\zcl{l}\cu{n}\en%
+\NOtes\nextinstrument\endmel\ql{j}\nextinstrument\nextinstrument\zcl{l}\cu{n}\en%
 \bar%
 % bar 71
 \NOtes\zql{J}\qu{N}\zhl{N}\hu{N}%
@@ -487,9 +494,9 @@
 \bar%
 % bar 77
 \NOtes\zql{J}\qu{N}\zhl{K}\qu{d}%
-\nextinstrument\ql{l}\qu{h}\nextinstrument\qu{g}\qup{g}%
+\nextinstrument\ql{l}\beginmel\qu{h}\nextinstrument\qu{g}\qup{g}%
 \nextinstrument\zql{j}\qu{l}\zhl{h}\hu{k}\en%
-\Notes\qu{a}\nextinstrument\ql{k}\nextinstrument\sk\cu{^f}\en%
+\Notes\qu{a}\nextinstrument\endmel\ql{k}\nextinstrument\sk\cu{^f}\en%
 \bar%
 % bar 78
 \NOTesp\zhlp{N}\hup{N}%
