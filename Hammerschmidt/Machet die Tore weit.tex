@@ -22,7 +22,8 @@
 \def\freqbarno{5}
 \parindent=2cm
 \instrumentnumber{4}
-\setinterinstrument{1}{11\internote}
+\setinterinstrument{1}{10\internote}
+\setinterinstrument{2}{6\internote}
 \generalmeter{\meterfrac{3}{4}}
 \setclef{1}{\bass}
 %\setclefsymbol{2}{\treblelowoct}
@@ -38,6 +39,13 @@
 
 \def\everystaff{\znotes\nextinstrument\zchar{-6}{\eightrm \kern -2\Interligne 8}\en}%
 
+\setlyrics{lalt}{Ma-chet die To-re weit und die T\"u-ren in der Welt hoch,
+Ma-chet die To-re weit und die T\"u-ren in der Welt hoch, da\ss{} der K\"o-nig der Eh-ren,
+da\ss{} der K\"o-nig, da\ss{} der K\"o-nig der Eh-ren ein-zie-he.
+Wer ist der-sel-bi-ge K\"o-nig der Eh-ren? Es ist der Herr, stark und m\"ach-tig, es ist der Herr, stark und m\"ach-tig im Streit.
+Ma-chet die To-re weit und die T\"u-ren in der Welt hoch! Ho-si-an-na, ho-si-an-na in der H\"o-he.
+Ho-si-an-na, ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he.}
+
 \setlyrics{ltenor}{Ma-chet die To-re weit und die T\"u-ren in der Welt hoch, da\ss{} der K\"o-nig der Eh-ren, da\ss{} der K\"o-nig ein-zie-he.
 Ma-chet die To-re weit und die T\"u-ren in der Welt hoch, da\ss{} der K\"o-nig der Eh-ren ein-zie-he.
 Wer ist der-sel-be, wer ist der-sel-bi-ge K\"o-nig der Eh-ren? Es ist der Herr, stark und m\"ach-tig, es ist der Herr, stark und m\"ach-tig im Streit.
@@ -50,6 +58,7 @@ Wer ist der-sel-bi-ge K\"o-nig der Eh-ren? Es ist der Herr, stark und m\"ach-tig
 Ma-chet die To-re weit und die T\"u-ren in der Welt hoch! Ho-si-an-na, ho-si-an-na, ho-si-an-na, ho-si-an-na in der H\"o-he.
 Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he.}
 \setlyrics{albass}{da\ss{} der K\"o-nig der Eh-ren,}
+\assignlyrics{3}{lalt}
 \assignlyrics{2}{ltenor}
 \assignlyrics{1}{lbass}
 
@@ -266,8 +275,8 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 35
 \NOtes\zql{J}\qu{c}\nextinstrument\ql{l}\nextinstrument\qu{g}\en%
-\NOtesp\zhl{K}\hu{a}\nextinstrument\hl{k}\nextinstrument\qup{g}\en%
-\Notes\nextinstrument\nextinstrument\cu{^f}\en%
+\NOtesp\zhl{K}\hu{a}\nextinstrument\hl{k}\nextinstrument\beginmel\qup{g}\en%
+\Notes\nextinstrument\nextinstrument\endmel\cu{^f}\en%
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 36
 \NOtes\zhl{N}\hu{N}%
@@ -411,29 +420,29 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\centerpause\nextinstrument\centerpause\en}\bar%
 % bar 57
 \NOtes\beginmel\zhu{c}\ql{J}\endmel\ql{K}\zql{L}\qu{c}%
-\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\qu{efg}\en%
+\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\beginmel\qu{e}\endmel\qu{fg}\en%
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 58
 \NOtes\beginmel\zhu{c}\ql{J}\endmel\ql{K}\zql{L}\qu{c}%
-\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\qu{efg}\en%
+\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\beginmel\qu{e}\endmel\qu{fg}\en%
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 59
 \NOtes\beginmel\zhu{c}\ql{J}\endmel\ql{K}\zql{L}\qu{c}%
-\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\qu{efg}\en%
+\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\beginmel\qu{e}\endmel\qu{fg}\en%
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 60
 \NOtes\beginmel\zhu{c}\ql{L}\endmel\ql{M}\zql{N}\qu{b}%
 \nextinstrument\hl{l}\sk\ql{k}\nextinstrument\hu{g}\sk\qu{g}\en%
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 61
-\NOtesp\beginmel\zhlp{J}\qup{c}\nextinstrument\qlp{j}\nextinstrument\qup{e}\en%
+\NOtesp\beginmel\zhlp{J}\qup{c}\nextinstrument\qlp{j}\nextinstrument\beginmel\qup{e}\en%
 \Notes\cu{c}\nextinstrument\cl{k}\nextinstrument\cu{f}\en%
-\NOtes\endmel\qu{c}\nextinstrument\ql{l}\nextinstrument\qu{g}\en%
+\NOtes\endmel\qu{c}\nextinstrument\ql{l}\nextinstrument\endmel\qu{g}\en%
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 62
 \NOtes\zql{N}\qu{b}\nextinstrument\ql{k}\nextinstrument\qu{g}\en%
-\NOtesp\zhl{K}\qu{a}\nextinstrument\hl{k}\nextinstrument\qup{g}\en%
-\Notes\nextinstrument\nextinstrument\cu{^f}\en%
+\NOtesp\zhl{K}\qu{a}\nextinstrument\hl{k}\nextinstrument\beginmel\qup{g}\en%
+\Notes\nextinstrument\nextinstrument\endmel\cu{^f}\en%
 \def\atnextbar{\znotes\nextinstrument\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 63
 \NOtes\zhl{N}\hu{N}\sk\qp%
@@ -448,17 +457,17 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 \def\atnextbar{\znotes\centerpause\nextinstrument\centerpause\en}\bar%
 % bar 66
 \NOtes\beginmel\zhu{c}\ql{J}\endmel\ql{K}\zql{L}\qu{c}%
-\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\qu{efg}%
+\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\beginmel\qu{e}\endmel\qu{fg}%
 \nextinstrument\zhl{j}\hu{l}\sk\zql{j}\qu{l}\en%
 \bar%
 % bar 67
 \NOtes\beginmel\zhu{c}\ql{J}\endmel\ql{K}\zql{L}\qu{c}%
-\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\qu{efg}%
+\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\beginmel\qu{e}\endmel\qu{fg}%
 \nextinstrument\zhl{j}\hu{l}\sk\zql{j}\qu{l}\en%
 \bar%
 % bar 68
 \NOtes\beginmel\zhu{c}\ql{J}\endmel\ql{K}\zql{L}\qu{c}%
-\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\qu{efg}%
+\nextinstrument\hl{l}\sk\ql{l}\nextinstrument\beginmel\qu{e}\endmel\qu{fg}%
 \nextinstrument\zhl{j}\hu{l}\sk\zql{j}\qu{l}\en%
 \bar%
 % bar 69
@@ -507,9 +516,9 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 \bar%
 % bar 77
 \NOtes\zql{J}\qu{N}\beginmel\zhl{K}\qu{d}%
-\nextinstrument\ql{l}\beginmel\qu{h}\nextinstrument\qu{g}\qup{g}%
+\nextinstrument\ql{l}\beginmel\qu{h}\nextinstrument\qu{g}\beginmel\qup{g}%
 \nextinstrument\zql{j}\qu{l}\zhl{h}\hu{k}\en%
-\Notes\endmel\qu{a}\nextinstrument\endmel\ql{k}\nextinstrument\sk\cu{^f}\en%
+\Notes\endmel\qu{a}\nextinstrument\endmel\ql{k}\nextinstrument\sk\endmel\cu{^f}\en%
 \bar%
 % bar 78
 \NOTesp\zhlp{N}\hup{N}%
