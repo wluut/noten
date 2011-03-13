@@ -7,9 +7,9 @@
 \fi
 %\smallmusicsize
 \normalmusicsize
-
+\elemskip.9\elemskip
 %
-% Version 0.2.1 2011-03-12
+% Version 1.0 2011-03-13
 %
 
 \fulltitle{Machet die Tore weit}
@@ -22,8 +22,9 @@
 \def\freqbarno{5}
 \parindent=2cm
 \instrumentnumber{4}
-\setinterinstrument{1}{10\internote}
-\setinterinstrument{2}{6\internote}
+\setinterinstrument{1}{7\internote}
+\setinterinstrument{2}{5\internote}
+\setinterinstrument{3}{5\internote}
 \generalmeter{\meterfrac{3}{4}}
 \setclef{1}{\bass}
 %\setclefsymbol{2}{\treblelowoct}
@@ -32,12 +33,20 @@
 \setname{3}{Alt}
 \setname{4}{Sopran}
 \sepbarrules
+\parskip=6\Interligne
 
 \grouptop{1}{4}
 \groupbottom{1}{1}
 \startmuflex
 
 \def\everystaff{\znotes\nextinstrument\zchar{-6}{\eightrm \kern -2\Interligne 8}\en}%
+
+\setlyrics{lsopran}{Ma-chet die To-re weit und die T\"u-ren in der Welt hoch,
+da\ss{} der K\"o-nig der Eh-ren ein-zie-he. Ma-chet die To-re weit und die T\"u-ren in der Welt hoch,
+da\ss{} der K\"o-nig der Eh-ren ein-zie-he.
+Wer ist der-sel-bi-ge K\"o-nig? Es ist der Herr, stark und m\"ach-tig, es ist der Herr, stark und m\"ach-tig, stark und m\"ach-tig im Streit.
+Ma-chet die To-re weit und die T\"u-ren in der Welt hoch! Ho-si-an-na, ho-si-an-na, ho-si-an-na dem Soh-ne Da-vids,
+ho-si-an-na, ho-si-an-na in der H\"o-he.}
 
 \setlyrics{lalt}{Ma-chet die To-re weit und die T\"u-ren in der Welt hoch,
 Ma-chet die To-re weit und die T\"u-ren in der Welt hoch, da\ss{} der K\"o-nig der Eh-ren,
@@ -57,10 +66,19 @@ Ma-chet die To-re weit und die T\"u-ren in der Welt hoch, da\ss{} der K\"o-nig d
 Wer ist der-sel-bi-ge K\"o-nig der Eh-ren? Es ist der Herr, stark und m\"ach-tig, m\"ach-tig im Streit.
 Ma-chet die To-re weit und die T\"u-ren in der Welt hoch! Ho-si-an-na, ho-si-an-na, ho-si-an-na, ho-si-an-na in der H\"o-he.
 Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he.}
+
+\setlyrics{alsopran}{da\ss{} der K\"o-nig der Eh-ren, da\ss{} der K\"o-nig der Eh-ren ein-zie-he. da\ss{} der K\"o-nig der Eh-ren. da\ss{} der K\"o-nig ein-zie_-he.}
+
 \setlyrics{albass}{da\ss{} der K\"o-nig der Eh-ren,}
+
+\assignlyrics{4}{lsopran}
 \assignlyrics{3}{lalt}
 \assignlyrics{2}{ltenor}
 \assignlyrics{1}{lbass}
+
+\lyrraise{1}{b-1\Interligne}
+\lyrraise{2}{b1\Interligne}
+\lyrraise{4}{b-1\Interligne}
 
 
 \startpiece
@@ -107,9 +125,9 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 % bar 5
 \NOtesp\zhlp{I}\hup{N}%
 \nextinstrument\hlp{k}\nextinstrument\hup{g}%
-\nextinstrument\zqlp{g}\qup{i}\en%
+\nextinstrument\beginmel\zqlp{g}\qup{i}\en%
 \Notes\nextinstrument\nextinstrument\nextinstrument\zcl{h}\cu{j}\en%
-\NOtes\nextinstrument\nextinstrument\nextinstrument\zql{i}\qu{k}\en%
+\NOtes\nextinstrument\nextinstrument\nextinstrument\endmel\zql{i}\qu{k}\en%
 \bar
 % bar 6
 \NOtes\zql{J}\qu{N}%
@@ -117,13 +135,15 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 \nextinstrument\zql{g}\qu{i}\en%
 \NOtes\beginmel\zhl{K}\qu{d}%
 \nextinstrument\hu{h}\nextinstrument\hu{d}%
-\nextinstrument\lql{g}\hu{h}\en%
-\NOtes\endmel\qu{K}\nextinstrument\nextinstrument\nextinstrument\ql{^f}\en%
+\nextinstrument\beginmel\lhu{h}\ql{g}\en%
+\NOtes\endmel\qu{K}\nextinstrument\nextinstrument\nextinstrument\endmel\ql{^f}\en%
 \bar%
 % bar 7
 \NOtes\zhl{G}\hu{N}%
 \nextinstrument\hl{i}\nextinstrument\hu{d}%
-\nextinstrument\rhl{g}\qu{gg}\en%
+\nextinstrument\rhl{g}\qu{g}\en%
+\lyrmodealter4%
+\NOtes\nextinstrument\nextinstrument\nextinstrument\lyricsoff\auxlyr{\assignlyrics{4}{alsopran}\lyrraise{4}{a1\Interligne}}\qu{g}\en%
 \NOtes\qp%
 \nextinstrument\qp\nextinstrument\qp%
 \nextinstrument\zqu{h}\raise -3\Interligne\qp\en%
@@ -132,7 +152,7 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 \NOtes\nextinstrument\qp\qu{gh}\nextinstrument\nextinstrument\qu{iij}\en%
 \def\atnextbar{\znotes\centerpause\nextinstrument\nextinstrument\centerpause\nextinstrument\centerbar{\liftpause{-3}}\en}\bar%
 % bar 9
-\NOtes\nextinstrument\ql{iij}\nextinstrument\nextinstrument\zhup{k}\raise-2\Interligne\qp\ql{de}\en%
+\NOtes\nextinstrument\ql{iij}\nextinstrument\nextinstrument\zhup{k}\raise-2\Interligne\qp\lyricson\ql{de}\en%
 \def\atnextbar{\znotes\centerpause\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 10
 \NOtes\nextinstrument\hlp{k}\nextinstrument\nextinstrument\zql{f}\qu{h}\zql{f}\qu{h}\zql{g}\qu{i}\en%
@@ -153,7 +173,7 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 % bar 14
 \NOtesp\zqlp{J}\qup{N}%
 \nextinstrument\qlp{l}\nextinstrument\qup{g}%
-\nextinstrument\zqlp{j}\qup{l}\en%
+\nextinstrument\auxlyr{\lyricsoff}\zqlp{j}\qup{l}\en%
 \Notes\zcl{J}\cu{N}%
 \nextinstrument\cl{j}\nextinstrument\cu{g}%
 \nextinstrument\zcl{j}\cu{l}\en%
@@ -191,7 +211,7 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 % bar 18
 \NOtes\zql{L}\qu{N}\zhl{K}\hu{d}%
 \nextinstrument\ql{j}\hl{k}\nextinstrument\qu{g}\hu{f}%
-\nextinstrument\zql{j}\qu{l}\zql{j}\hu{m}\ql{i}\en%
+\nextinstrument\zql{j}\qu{l}\beginmel\zql{j}\hu{m}\endmel\ql{i}\en%
 \bar%
 % bar 19
 \NOtes\zhl{J}\hu{N}%
@@ -206,21 +226,21 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 % bar 21
 \NOtes\ql{L}\bsk\raise3\Interligne\qp\nextinstrument\nextinstrument\hup{g}\en%
 \lyrmodealter1%
-\NOtes\auxlyr{\assignlyrics{1}{albass}}\zql{L}\qu{N}\zql{M}\qu{a}\en%
+\NOtes\auxlyr{\assignlyrics{1}{albass}\lyrraise{1}{a1\Interligne}}\zql{L}\qu{N}\zql{M}\qu{a}\en%
 \def\atnextbar{\znotes\nextinstrument\centerpause\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 22
 \NOtes\zhlp{N}\qu{bbc}\nextinstrument\nextinstrument\qu{dde}\en%
 \def\atnextbar{\znotes\nextinstrument\centerpause\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 23
 \NOtes\zhlp{K}\hup{d}\nextinstrument\nextinstrument\hup{f}%
-\nextinstrument\raise 1\Interligne\qp\qu{hi}\en%
-\def\atnextbar{\znotes\nextinstrument\centerpause\nextinstrument\nextinstrument\centerbar{\liftpause{-3}}\en}\bar%
+\nextinstrument\raise 1\Interligne\qp\auxlyr{\lyricson}\qu{hi}\en%
+\def\atnextbar{\znotes\nextinstrument\centerpause\nextinstrument\nextinstrument\centerbar{\liftpause{-2}}\en}\bar%
 % bar 24
 \NOtes\zhup{a}\raise-1\Interligne\qp\nextinstrument\nextinstrument\hup{e}%
 \nextinstrument\qu{j}\en%
 \lyrmodenormal1%
 \NOtes\ql{HI}\nextinstrument\nextinstrument\nextinstrument\qu{jk}\en%
-\def\atnextbar{\znotes\nextinstrument\centerpause\nextinstrument\nextinstrument\centerbar{\liftpause{-3}}\en}\bar%
+\def\atnextbar{\znotes\nextinstrument\centerpause\nextinstrument\nextinstrument\centerbar{\liftpause{-2}}\en}\bar%
 % bar 25
 \NOtes\auxlyr{\lyricsoff}\zql{J}\raise3\Interligne\qp\bsk\ql{J}\qu{N}\zql{K}\qu{N}%
 \nextinstrument\qp\ql{jj}\nextinstrument\qp\qu{ee}%
@@ -254,7 +274,8 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 \nextinstrument\zhlp{i}\hup{l}\en%
 \doublebar%
 % bar 30
-\NOtes\nextinstrument\ql{lll}\nextinstrument\nextinstrument\zql{^g}\qu{l}\zql{g}\qu{i}\zql{g}\qu{i}\en%
+\NOtes\nextinstrument\ql{lll}\nextinstrument\nextinstrument\auxlyr{\lyricsoff}\zql{^g}\qu{l}\zql{g}\qu{i}\zql{g}\qu{i}\en%
+\lyrmodenormal4%
 \def\atnextbar{\znotes\centerpause\nextinstrument\nextinstrument\centerpause\en}\bar%
 % bar 31
 \NOtes\nextinstrument\hl{l}\nextinstrument\nextinstrument\zql{^g}\qu{i}\zql{h}\qu{^j}\en%
@@ -386,16 +407,16 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 % bar 50
 \NOtesp\beginmel\zhlp{H}\qup{c}%
 \nextinstrument\hup{h}\nextinstrument\hup{e}%
-\nextinstrument\zqlp{h}\qup{j}\en%
+\nextinstrument\beginmel\zqlp{h}\qup{j}\en%
 \Notes\cu{b}%
 \nextinstrument\nextinstrument\nextinstrument\zcl{i}\cu{k}\en%
 \NOtes\endmel\qu{a}%
-\nextinstrument\nextinstrument\nextinstrument\zql{j}\qu{l}\en%
+\nextinstrument\nextinstrument\nextinstrument\zql{j}\endmel\qu{l}\en%
 \bar%
 % bar 51
 \NOtes\zql{H}\qu{L}\zhl{L}\hu{L}%
 \nextinstrument\qu{h}\hl{i}\nextinstrument\qu{e}\hu{e}%
-\nextinstrument\zql{h}\qu{j}\lhu{i}\islurd0h\ql{h}\tslur0g\ql{^g}\en%
+\nextinstrument\zql{h}\qu{j}\lhu{i}\beginmel\isslurd0h\ql{h}\endmel\tsslur0g\ql{^g}\en%
 \bar%
 % bar 52
 \NOTes\zhl{H}\hu{a}%
@@ -447,13 +468,13 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 % bar 63
 \NOtes\zhl{N}\hu{N}\sk\qp%
 \nextinstrument\hl{k}\sk\qp\nextinstrument\hu{g}\sk\qp%
-\nextinstrument\zql{g}\qu{i}\zql{h}\qu{j}\zql{i}\qu{k}\en%
+\nextinstrument\beginmel\zql{g}\qu{i}\endmel\zql{h}\qu{j}\zql{i}\qu{k}\en%
 \bar%
 % bar 64
-\NOtes\nextinstrument\nextinstrument\hu{g}\sk\qu{g}\nextinstrument\zql{g}\qu{i}\zql{h}\qu{j}\zql{i}\qu{k}\en%
+\NOtes\nextinstrument\nextinstrument\hu{g}\sk\qu{g}\nextinstrument\beginmel\zql{g}\qu{i}\endmel\zql{h}\qu{j}\zql{i}\qu{k}\en%
 \def\atnextbar{\znotes\centerpause\nextinstrument\centerpause\en}\bar%
 % bar 65
-\NOtes\nextinstrument\nextinstrument\hu{g}\sk\qu{g}\nextinstrument\zql{g}\qu{i}\zql{h}\qu{j}\zql{i}\qu{k}\en%
+\NOtes\nextinstrument\nextinstrument\hu{g}\sk\qu{g}\nextinstrument\beginmel\zql{g}\qu{i}\endmel\zql{h}\qu{j}\zql{i}\qu{k}\en%
 \def\atnextbar{\znotes\centerpause\nextinstrument\centerpause\en}\bar%
 % bar 66
 \NOtes\beginmel\zhu{c}\ql{J}\endmel\ql{K}\zql{L}\qu{c}%
@@ -473,19 +494,19 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 % bar 69
 \NOtes\beginmel\zhu{c}\ql{L}\endmel\ql{M}\zql{N}\qu{N}%
 \nextinstrument\hl{l}\sk\ql{i}\nextinstrument\hu{g}\sk\qu{g}%
-\nextinstrument\zhl{j}\hu{l}\sk\zql{i}\qu{k}\en%
+\nextinstrument\beginmel\zhl{j}\hu{l}\sk\endmel\zql{i}\qu{k}\en%
 \bar%
 % bar 70
 \NOtesp\zhlp{J}\hup{c}%
 \nextinstrument\beginmel\qlp{l}\nextinstrument\hup{g}%
-\nextinstrument\zqlp{j}\qup{l}\en%
+\nextinstrument\beginmel\zqlp{j}\qup{l}\en%
 \Notes\nextinstrument\cl{k}\nextinstrument\nextinstrument\zcl{k}\cu{m}\en%
-\NOtes\nextinstrument\endmel\ql{j}\nextinstrument\nextinstrument\zcl{l}\cu{n}\en%
+\NOtes\nextinstrument\endmel\ql{j}\nextinstrument\nextinstrument\endmel\zcl{l}\cu{n}\en%
 \bar%
 % bar 71
 \NOtes\zql{J}\qu{N}\zhl{N}\hu{N}%
 \nextinstrument\ql{j}\hl{k}\nextinstrument\qu{g}\hu{g}%
-\nextinstrument\zql{j}\qu{l}\lhu{k}\ql{ji}\en%
+\nextinstrument\zql{j}\qu{l}\beginmel\lhu{k}\ql{j}\endmel\ql{i}\en%
 \bar%
 % bar 72
 \NOtes\zql{J}\qu{c}\zql{J}\qu{N}\zql{J}\qu{N}%
@@ -500,19 +521,19 @@ Ho-si-an-na, ho-si-an-na in der H\"o-he, ho-si-an-na, ho-si-an-na in der H\"o-he
 % bar 74
 \NOtes\zhl{J}\hu{N}\sk\zql{I}\qu{N}%
 \nextinstrument\hl{j}\sk\ql{k}\nextinstrument\hu{g}\sk\qu{g}%
-\nextinstrument\zql{e}\qu{g}\zql{^f}\qu{h}\zql{g}\qu{i}\en%
+\nextinstrument\beginmel\zql{e}\qu{g}\endmel\zql{^f}\qu{h}\zql{g}\qu{i}\en%
 \bar%
 % bar 75
 \NOtes\zhl{H}\hu{c}\sk\zql{H}\qu{N}%
 \nextinstrument\hl{l}\sk\ql{j}\nextinstrument\hu{c}\sk\qu{c}%
-\nextinstrument\zql{h}\qu{j}\zql{i}\qu{k}\zql{j}\qu{l}\en%
+\nextinstrument\beginmel\zql{h}\qu{j}\endmel\zql{i}\qu{k}\zql{j}\qu{l}\en%
 \bar%
 % bar 76
 \NOtesp\zhlp{I}\hup{d}%
 \nextinstrument\hlp{k}\nextinstrument\hup{g}%
-\nextinstrument\zqlp{i}\qup{k}\en%
+\nextinstrument\beginmel\zqlp{i}\qup{k}\en%
 \Notes\nextinstrument\nextinstrument\nextinstrument\zcl{h}\cu{j}\en%
-\NOtes\nextinstrument\nextinstrument\nextinstrument\zql{g}\qu{i}\en%
+\NOtes\nextinstrument\nextinstrument\nextinstrument\endmel\zql{g}\qu{i}\en%
 \bar%
 % bar 77
 \NOtes\zql{J}\qu{N}\beginmel\zhl{K}\qu{d}%
