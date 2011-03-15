@@ -7,7 +7,7 @@
 \fi
 %\smallmusicsize
 \normalmusicsize
-
+\elemskip1.1\elemskip
 %
 % Version 0.1 2011-03-14
 %
@@ -19,7 +19,7 @@
  \def\voices{SSATB}
  \maketitle
 
-\def\freqbarno{5}
+%\def\freqbarno{5}
 \instrumentnumber{4}
 \generalmeter{\meterC}
 \generalsignature{-1}
@@ -28,22 +28,34 @@
 \grouptop{1}{4}
 \groupbottom{1}{1}
 \sepbarrules
+\nobarnumbers
 \startmuflex
+
+\parskip=5\Interligne
 
 \def\everystaff{\znotes\nextinstrument\zchar{-6}{\eightrm \kern -2\Interligne 8}\en}%
 
 \setlyrics{lyrics}{Ho-si-an-na, Ho-si-an-na dem Soh-ne Da-vids! vids! Ge-lo-bet sei, der da kommt im Na-men des Her-ren. Ge-lo-bet sei, der da kommt
-\llabel{skip}im Na-men des Her-ren. Ge-lo-bet sei, der da kommt im Na-men des Her-ren. Ho-si-an-na, Ho-si-an-na in der H\"o-he!}
+\llabel{skip}im Na-men des Her-ren. Ge-lo-bet sei, der da kommt im \llabel{name}Na-men des Her-ren. Ho-si-an-na, Ho-si-an-na in der H\"o-he!}
 
 \copylyrics{lyrics}{lbass}
 \copylyrics{lyrics}{ltenor}
 \copylyrics{lyrics}{lalt}
 \copylyrics{lyrics}{lsopran}
+\copylyrics{lyrics}{alsopran}
 
 \assignlyrics{1}{lbass}
 \assignlyrics{2}{lalt}
 \assignlyrics{3}{ltenor}
 \assignlyrics{4}{lsopran}
+
+\setinterinstrument{1}{1\internote}
+\setinterinstrument{2}{2\internote}
+\setinterinstrument{3}{2\internote}
+
+\lyrraise{3}{b-1\Interligne}
+\lyrraise{4}{b-1\Interligne}
+\auxlyr{\lyrraise{4}{a2\Interligne}}
 
 \startpiece
 \NOtes\sk\en%
@@ -85,7 +97,7 @@
 \nextinstrument\qp%
 \nextinstrument\qp\en%
 \barno=4%
-\setendvolta\setvolta{\vrule height2ex width0pt depth0pt 2}\setrightrepeat\bar% 5(2)
+\setendvolta\setvolta{\vrule height2ex width0pt depth0pt 2}\setrightrepeat\alaligne%bar% 5(2)
 \NOTes\hu{I}%
 \nextinstrument\hl{i}%
 \nextinstrument\hu{f}%
@@ -114,6 +126,140 @@
 \nextinstrument\qu{bb}%
 \nextinstrument\zql{d}\qu{i}\zql{d}\qu{i}\en%
 \bar% 9
+\NOTes\hl{_L}%
+\nextinstrument\hl{_l}%
+\nextinstrument\hu{N}%
+\nextinstrument\zhl{g}\hu{i}\en%
+\NOtes\hu{I}%
+\nextinstrument\hl{i}%
+\nextinstrument\qu{b}%
+\nextinstrument\zql{f}\qu{i}\en%
+\Notes\nextinstrument\nextinstrument\qu{b}%
+\nextinstrument\beginmel\raise-1\Interligne\ds\bsk\qu{k}\endmel\cl{i}\en%
+\bar% 10
+\NOtes\nextinstrument\nextinstrument\qu{fgd}\beginmel\itenl{2}{f}\islurd{5}{f}\qu{f}%
+\nextinstrument\zql{h}\qu{j}\zql{g}\qu{i}\zql{^f}\qu{h}\beginmel\itenl{3}{h}\itenu{4}{k}\zql{h}\qu{k}\en%
+\def\atnextbar{\znotes\centerpause\nextinstrument\centerpause\en}%
+\bar% 11
+\Notes\hpause\golyr{skip}%
+\nextinstrument\hpause\golyr{skip}%
+\nextinstrument\tten{2}\cu{f}\endmel\tslur{5}{d}\cu{d}\qu{_e}%
+\nextinstrument\endmel\tten{3}\tten{4}\zql{h}\qu{k}\beginmel\ibu{3}{i}{1}\zql{g}\qb{3}{i}\endmel\tbu{3}\qb{3}{j}\en%
+\NOtes\qp\ql{b}%
+\nextinstrument\qp\ql{k}%
+\nextinstrument\qu{df}%
+\nextinstrument\cna{f}\zql{f}\qu{k}\zql{i}\qu{k}\en%
+\bar% 12
+\NOTes\hl{b}%
+\nextinstrument\hl{k}%
+\nextinstrument\hu{f}%
+\nextinstrument\zhl{i}\hu{k}\en%
+\NOtes\ql{M}\qu{J}%
+\nextinstrument\qu{h}\ql{j}%
+\nextinstrument\qu{f_e}%
+\nextinstrument\zql{h}\qu{j}\zql{g}\qu{j}\en%
+\bar% 13
+\NOTes\hl{N}%
+\nextinstrument\hl{i}%
+\nextinstrument\hu{d}%
+\nextinstrument\zhl{g}\hu{k}\en%
+\stdbarrules%
+\setdoublebar\generalmeter{\meterfrac{3}{4}}\alaligne%\changecontext% 14
+\sepbarrules%
+\NOTes\hl{K}%
+\nextinstrument\hu{h}%
+\nextinstrument\hu{d}%
+\nextinstrument\zhl{f}\hu{k}\en%
+\NOtes\ql{K}%
+\nextinstrument\qu{h}%
+\nextinstrument\qu{d}%
+\nextinstrument\zql{f}\qu{k}\en%
+\bar% 15
+\NOtes\qu{III}%
+\nextinstrument\ql{iii}%
+\nextinstrument\qu{fff}%
+\nextinstrument\zql{i}\qu{k}\zql{i}\qu{k}\zql{i}\qu{k}\en%
+\bar% 16
+\NOTes\hl{M}%
+\nextinstrument\hl{j}%
+\nextinstrument\hu{f}%
+\nextinstrument\zhl{h}\hu{j}\en%
+\NOtes\ql{N}%
+\nextinstrument\qu{g}%
+\nextinstrument\qu{d}%
+\nextinstrument\zql{g}\qu{i}\en%
+\bar% 17
+\NOTes\hl{K}%
+\nextinstrument\hu{h}%
+\nextinstrument\hu{d}%
+\nextinstrument\zhl{f}\hu{k}\en%
+\NOtes\qu{I}%
+\nextinstrument\ql{i}%
+\nextinstrument\qu{f}%
+\nextinstrument\zql{i}\qu{k}\en%
+\bar% 18
+\lyrmodealter4%
+\NOtes\ql{_L}\qu{I}%
+\nextinstrument\hl{i}%
+\nextinstrument\qu{gf}%
+\nextinstrument\auxlyr{\assignlyrics{4}{alsopran}\golyr{name}\beginmel}\itenu{3}{l}\zqu{_l}\hl{i}\auxlyr{\endmel}\tten{3}\zqu{k}\en%
+\Notes\beginmel\isluru{0}{N}\ql{N}%
+\nextinstrument\ql{j}%
+\nextinstrument\qu{f}%
+\nextinstrument\zql{h}\cu{j}\cu{h}\en%
+\bar% 19
+\Notes\endmel\tslur{0}{N}\ql{N}%
+\nextinstrument\ql{i}%
+\nextinstrument\hup{d}%
+\nextinstrument\auxlyr{\beginmel}\ibsluru{3}{i}\ibu{3}{i}{1}\zhl{g}\qb{3}{i}\tbu{3}\qb{3}{j}\en%
+\NOtes\hl{K}%
+\nextinstrument\hu{h}%
+\nextinstrument\nextinstrument\auxlyr{\endmel}\tbsluru{3}{k}\hu{k}\ql{^f}\en%
+\stdbarrules%
+\setdoublebar\generalmeter{\meterC}\alaligne%\changecontext% 20
+\sepbarrules%
+\NOTes\hl{N}\hpause%
+\nextinstrument\hu{g}\hpause%
+\nextinstrument\hu{d}\hpause%
+\nextinstrument\zhu{=i}\hl{g}\auxlyr{\lyricsoff}\hpause\en%
+\bar% 21
+\lyrmodenormal4%
+\NOtesp\qlp{N}%
+\nextinstrument\qlp{i}%
+\nextinstrument\qup{d}%
+\nextinstrument\cfl{i}\zqlp{g}\qup{i}\en%
+\Notes\cl{N}%
+\nextinstrument\cu{g}%
+\nextinstrument\cu{d}%
+\nextinstrument\zcl{g}\cu{i}\en%
+\NOtes\ql{K}\qu{I}%
+\nextinstrument\qu{h}\ql{i}%
+\nextinstrument\qu{df}%
+\nextinstrument\zql{f}\qu{h}\zql{i}\qu{k}\en%
+\bar% 22
+\NOtesp\qlp{M}%
+\nextinstrument\qlp{j}%
+\nextinstrument\qup{f}%
+\nextinstrument\zqlp{h}\qup{j}\en%
+\Notes\cu{J}%
+\nextinstrument\cl{j}%
+\nextinstrument\cu{e}%
+\nextinstrument\zcl{g}\cu{j}\en%
+\NOtes\ql{K}\qu{I}%
+\nextinstrument\qu{ff}%
+\nextinstrument\qu{df}%
+\nextinstrument\zql{f}\qu{h}\zql{d}\qu{i}\en%
+\bar% 23
+\NOtes\ql{_L}\qu{J}\hl{K}%
+\nextinstrument\qu{gg}\hl{k}%
+\nextinstrument\qu{bc}\hu{a}%
+\nextinstrument\zql{g}\qu{i}\zhl{g}\qu{_l}\beginmel\hu{k}\endmel\ql{^f}\en%
+\bar% 24
+\NOTEs\breve{G}%
+\nextinstrument\breve{k}%
+\nextinstrument\breve{a}%
+\nextinstrument\roffset{1.5}{\zbreve{g}}\breve{=i}\en%
+\stdbarrules%
 \Endpiece
 
 \bye
