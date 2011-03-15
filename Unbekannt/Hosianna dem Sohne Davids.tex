@@ -1,0 +1,119 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2011-03-14
+%
+
+\fulltitle{Hosianna dem Sohne Davids}
+ \author{Ungenannter Meister}
+ \shortauthor{Ungenannter Meister}
+ \title{Hosianna dem Sohne Davids}
+ \def\voices{SSATB}
+ \maketitle
+
+\def\freqbarno{5}
+\instrumentnumber{4}
+\generalmeter{\meterC}
+\generalsignature{-1}
+\setclef{1}{\bass}
+
+\grouptop{1}{4}
+\groupbottom{1}{1}
+\sepbarrules
+\startmuflex
+
+\def\everystaff{\znotes\nextinstrument\zchar{-6}{\eightrm \kern -2\Interligne 8}\en}%
+
+\setlyrics{lyrics}{Ho-si-an-na, Ho-si-an-na dem Soh-ne Da-vids! vids! Ge-lo-bet sei, der da kommt im Na-men des Her-ren. Ge-lo-bet sei, der da kommt
+\llabel{skip}im Na-men des Her-ren. Ge-lo-bet sei, der da kommt im Na-men des Her-ren. Ho-si-an-na, Ho-si-an-na in der H\"o-he!}
+
+\copylyrics{lyrics}{lbass}
+\copylyrics{lyrics}{ltenor}
+\copylyrics{lyrics}{lalt}
+\copylyrics{lyrics}{lsopran}
+
+\assignlyrics{1}{lbass}
+\assignlyrics{2}{lalt}
+\assignlyrics{3}{ltenor}
+\assignlyrics{4}{lsopran}
+
+\startpiece
+\NOtes\sk\en%
+\NOtesp\qlp{N}%
+\nextinstrument\qlp{k}%
+\nextinstrument\qup{g}%
+\nextinstrument\zqlp{i}\qup{k}\en%
+\Notes\cl{N}%
+\nextinstrument\cl{k}%
+\nextinstrument\cu{g}%
+\nextinstrument\zcl{i}\cu{k}\en%
+\NOtes\ql{NN}%
+\nextinstrument\ql{kk}%
+\nextinstrument\qu{gg}%
+\nextinstrument\zql{i}\qu{k}\zql{i}\qu{i}\en%
+\bar% 2
+\NOtes\ql{bM}\hl{M}%
+\nextinstrument\ql{k}\qu{h}\ql{i}\qu{g}%
+\nextinstrument\qu{ff}\hu{d}%
+\nextinstrument\zql{i}\qu{k}\zql{h}\qu{j}\zhl{g}\hu{i}\en%
+\bar% 3
+\NOtes\ql{K}\qu{I}\ql{_L}\qu{I}%
+\nextinstrument\qp\ql{iii}%
+\nextinstrument\qu{dfgf}%
+\nextinstrument\zql{f}\qu{h}\zql{i}\qu{k}\zql{i}\qu{_l}\zql{i}\qu{k}\en%
+\bar% 4
+\NOTEs\wh{M}%
+\nextinstrument\wh{j}%
+\nextinstrument\wh{f}%
+\nextinstrument\zwh{h}\wh{j}\en%
+\setvoltabox{\vrule height2ex width0pt depth0pt 1}%
+\bar% 5
+\NOTesp\hup{I}%
+\nextinstrument\hlp{i}%
+\nextinstrument\hup{f}%
+\nextinstrument\zhlp{i}\hup{k}\en%
+\NOtes\qp%
+\nextinstrument\qp%
+\nextinstrument\qp%
+\nextinstrument\qp\en%
+\barno=4%
+\setendvolta\setvolta{\vrule height2ex width0pt depth0pt 2}\setrightrepeat\bar% 5(2)
+\NOTes\hu{I}%
+\nextinstrument\hl{i}%
+\nextinstrument\hu{f}%
+\nextinstrument\zhl{i}\hu{k}\en%
+\NOtes\qp\qu{I}%
+\nextinstrument\qp\ql{i}%
+\nextinstrument\qp\qu{f}%
+\nextinstrument\qp\zql{i}\qu{k}\en%
+\bar% 6
+\NOtes\ql{MNK}\beginmel\itenu{0}{M}\ql{M}%
+\nextinstrument\ql{j}\qu{gh}\beginmel\itenu{1}{i}\ql{i}%
+\nextinstrument\qu{fdd}\beginmel\itenl{2}{d}\qu{d}%
+\nextinstrument\zql{h}\qu{j}\zql{g}\qu{i}\zql{^f}\qu{k}\beginmel\itenl{3}{g}\itenu{4}{i}\zql{g}\qu{i}\en%
+\bar% 7
+\NOtes\endmel\tten{0}\ql{M}\qu{J}\ql{K}\qu{I}%
+\nextinstrument\endmel\tten{1}\ql{i}\qu{g}\ql{kk}%
+\nextinstrument\endmel\tten{2}\qu{dcab}%
+\nextinstrument\endmel\tten{3}\tten{4}\zql{g}\qu{i}\zql{g}\qu{_l}\cna{f}\zql{f}\qu{k}\zql{f}\qu{k}\en%
+\bar% 8
+\NOTes\hl{_L}%
+\nextinstrument\hl{n}%
+\nextinstrument\hu{b}%
+\nextinstrument\zhl{_e}\hu{i}\en%
+\NOtes\qu{II}%
+\nextinstrument\ql{mm}%
+\nextinstrument\qu{bb}%
+\nextinstrument\zql{d}\qu{i}\zql{d}\qu{i}\en%
+\bar% 9
+\Endpiece
+
+\bye
