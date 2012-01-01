@@ -25,7 +25,7 @@
 \generalsignature{-1}
 \setclef{1}{\bass}
 
-%\elemskip1.2\elemskip
+%\elemskip0.8\elemskip
 
 \grouptop{1}{2}
 \groupbottom{1}{1}
@@ -36,7 +36,7 @@
 \interinstrument=7\Interligne
 \startmuflex
 
-\setlyrics{vers}{Es kommt ein Schiff, ge-la-den bis an sein' h\"och-sten Bord, tr\"agt Got-tes Sohn voll Gna-den, des Va-ters e-wigs Wort.}
+\setlyrics{vers}{Es kommt ein Schiff, ge-la-den bis an sein' h\"och-sten Bord, tr\"agt Got-tes Sohn voll Gna-den, des Va-ters e-wigs Wort. Wort.}
 \assignlyrics{2}{vers}
 
 \startpiece
@@ -82,12 +82,18 @@
 \NOtes\zql{K}\qu{a}\zql{G}\tinynotesize\zql{N}\normalnotesize\qu{b}%
 \nextinstrument\zql{d}\qu{f}\zql{d}\qu{g}\en%
 \bar% 7
+\def\voltadot{}%
 \NOtes\tinynotesize\zql{M}\normalnotesize\zql{F}\qu{c}\zql{J}\qu{c}\zql{K}\qu{a}\zql{H}\qu{a}%
 \nextinstrument\zql{f}\qu{h}\zql{e}\qu{g}\zql{d}\qu{f}\zql{^c}\qu{e}\en%
+\setvoltabox{\vrule height2ex width0pt depth0pt Strophe}%
 \bar% 8
 \NOTesp\zhlp{K}\hup{M}%
 \nextinstrument\zhlp{d}\hup{d}\en%
+\setendvolta\setvolta{\vrule height2ex width0pt depth0pt Schluss}\setrightrepeat\bar%
+\NOTesp\zhlp{K}\hup{^M}%
+\nextinstrument\zhlp{d}\hup{d}\en%
 \Endpiece
+\def\voltadot{.}%
 
 {\lyrfont
 \vskip\baselineskip
