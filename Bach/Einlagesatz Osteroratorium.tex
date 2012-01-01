@@ -1,0 +1,219 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+\fi
+%\smallmusicsize
+\normalmusicsize
+%\elemskip1.1\elemskip
+%
+% Version 0.1 2011-03-14
+%
+
+\fulltitle{Einlagesatz Osteroratorium}
+ \author{Johann Sebastian Bach}
+ \shortauthor{Johann Sebastian Bach}
+ \title{Einlagesatz Osteroratorium}
+\subtitle{Nach Schlu\ss{}chor}
+\othermention{Schlu\ss{}chor aus Kantate BWV 130}
+ \maketitle
+
+%\def\freqbarno{5}
+\instrumentnumber{5}
+\setstaffs{1}{2}
+\generalmeter{\meterfrac{3}{4}}
+\generalsignature{2}
+\setclef{1}{\bass}
+\setclef{2}{\bass}
+
+\grouptop{1}{5}
+\groupbottom{1}{2}
+\sepbarrules
+\nobarnumbers
+\relativeaccid
+\transpose=1
+\startmuflex
+
+\parskip=1\Interligne
+
+\def\everystaff{\znotes\nextinstrument\nextinstrument\zchar{-6}{\eightrm \kern -2\Interligne 8}\en}%
+
+\setlyrics{leins}{Da-rum wir bil-lig lo-ben dich und dan-ken dir, Gott, e-wig-lich, wie auch der lie-ben En-gel Schar dich prei-set heut' und im-mer-dar.}
+\setlyrics{lzwei}{Und bit-ten dich: wollst al-le-zeit die-sel-ben hei-ssen sein be-reit, zu sch\"ut-zen dei-ne klei-ne Herd', so h\"alt dein g\"ott-lich's Wort in Werth.}
+
+\copylyrics{leins}{lsopran}
+\copylyrics{lzwei}{lalt}
+\copylyrics{leins}{ltenor}
+\copylyrics{lzwei}{lbass}
+
+\assignlyrics{2}{lbass}
+\assignlyrics{3}{ltenor}
+\assignlyrics{4}{lalt}
+\assignlyrics{5}{lsopran}
+
+\interstaff{11}
+\setinterinstrument{1}{7\internote}
+\setinterinstrument{2}{1\internote}
+\setinterinstrument{3}{1\internote}
+\setinterinstrument{4}{1\internote}
+
+\lyrraise{2}{b2.5\Interligne}
+\lyrraise{3}{b1\Interligne}
+\lyrraise{4}{b1\Interligne}
+\lyrraise{5}{b1\Interligne}
+%\lyrraise{4}{b-1\Interligne}
+%\auxlyr{\lyrraise{4}{a2\Interligne}}
+
+\startpiece
+\notes\sk\ibu{0}{J}{-1}\qb{0}{J}\tbu{0}\qb{0}{I}%
+\nextstaff\sk\loffset{.5}{\zql{g}}\zqu{e}\qu{j}%
+\nextinstrument\lyric*{2.}\sk\qa{J}%
+\nextinstrument\lyric*{1.}\sk\qa{l}%
+\nextinstrument\lyric*{2.}\sk\qa{g}%
+\nextinstrument\lyric*{1.}\sk\qa{j}\en%
+\bar% 1
+\notes\ibu{0}{K}{0}\qb{0}{JKLMN}\tbu{0}\qb{0}{G}%
+\nextstaff\loffset{.5}{\zhl{g}}\zhu{e}\hu{j}\sk\sk\sk\loffset{.5}{\ibl{1}{g}{-1}\zqb{1}{g}}\zqu{d}\qu{i}\tbl{1}\qb{1}{f}%
+\nextinstrument\beginmel\ibl{2}{J}{2}\isluru{2}{J}\qb{2}{JKL}\endmel\tbl{2}\tslur{2}{M}\qb{2}{M}\qa{N}%
+\nextinstrument\ha{l}\sk\sk\sk\qa{k}%
+\nextinstrument\ha{g}\sk\sk\sk\beginmel\ibu{4}{g}{-1}\qb{4}{g}\endmel\tbu{4}\qb{4}{f}%
+\nextinstrument\ha{j}\sk\sk\sk\qa{i}\en%
+\bar% 2
+\notes\ibu{0}{I}{0}\qb{0}{HIJKL}\tbu{0}\qb{0}{E}%
+\nextstaff\pt{e}\loffset{.5}{\zql{e}}\zhu{c}\zhu{h}\raise 3\Interligne\qp\sk\raise 3\Interligne\qp\cl{f}\ibu{1}{j}{1}\zql{g}\roffset{.5}{\zqu{c}}\qb{1}{j}\tbu{1}\qb{1}{k}%
+\nextinstrument\beginmel\ibu{2}{H}{2}\islurd{2}{H}\qb{2}{HIJ}\endmel\tbu{2}\tslur{2}{K}\qb{2}{K}\qa{L}%
+\nextinstrument\ha{j}\sk\sk\sk\qa{j}%
+\nextinstrument\beginmel\islurd{4}{e}\pt{e}\qa{e}\sk\sk\endmel\tslur{4}{f}\ca{f}\qa{g}%
+\nextinstrument\ha{h}\sk\sk\sk\qa{g}\en%
+\bar% 3
+\notes\qa{H*E}%
+\nextstaff\ibu{1}{l}{2}\zql{j}\qb{1}{lm}\zql{g}\zql{j}\qb{1}{n}\tbu{1}\qb{1}{o}%
+\nextinstrument\beginmel\isluru{2}{a}\qa{a}\sk\endmel\tslur{2}{L}\qa{L}%
+\nextinstrument\beginmel\isluru{3}{j}\qa{j}\sk\endmel\tslur{3}{g}\qa{g}%
+\nextinstrument\beginmel\issluru{4}{e}\qa{e}\sk\endmel\tslur{4}{j}\qa{j}%
+\nextinstrument\ha{j}\en%
+\Notes\qa{G}%
+\nextstaff\zql{k}\zql{n}\qu{p}%
+\nextinstrument\qa{N}%
+\nextinstrument\qa{m}%
+\nextinstrument\qa{i}%
+\nextinstrument\qa{k}\en%
+\bar% 4
+\NOtes\fermatadown{C}\ha{C}%
+\nextstaff\fermataup{s}\zhl{l}\zhl{n}\hu{q}%
+\nextinstrument\fermataup{M}\ha{J}%
+\nextinstrument\fermataup{m}\ha{l}%
+\nextinstrument\fermataup{m}\ha{g}%
+\nextinstrument\fermataup{m}\ha{l}\en%
+\notes\ibl{0}{J}{-1}\zqu{c}\qb{0}{J}\tbl{0}\qb{0}{I}%
+\nextstaff\zql{g}\qu{l}%
+\nextinstrument\qa{J}%
+\nextinstrument\qa{j}%
+\nextinstrument\qa{g}%
+\nextinstrument\qa{l}\en%
+\bar% 5
+\notes\ibl{0}{J}{3}\zhu{c}\qb{0}{JKLM}\ibu{1}{b}{-1}\zqb{1}{b}\qb{0}{N}\tbl{0}\tbu{1}\zqb{1}{a}\qb{0}{a}%
+\nextstaff\zhl{g}\hu{l}\sk\sk\sk\zql{g}\qu{l}%
+\nextinstrument\beginmel\ibl{2}{J}{2}\isluru{2}{J}\qb{2}{JKL}\endmel\tbl{2}\tslur{2}{M}\qb{2}{M}\qa{N}%
+\nextinstrument\ha{j}\sk\sk\sk\beginmel\ibl{3}{i}{-1}\qb{3}{i}\endmel\tbl{3}\qb{3}{h}%
+\nextinstrument\ha{g}\sk\sk\sk\qa{g}%
+\nextinstrument\ha{l}\sk\sk\sk\qa{l}\en%
+\bar% 6
+\notes\ibl{0}{N}{0}\zhu{b}\qb{0}{^N^MNL}\zqu{c}\qb{0}{a}\tbl{0}\qb{0}{=N}%
+\nextstaff\zhu{k}\ql{=f*e*}\zql{e}\zql{l}\roffset{.5}{\ibu{1}{j}{-1}\qb{1}{j}}\tbu{1}\qb{1}{i}%
+\nextinstrument\beginmel\ibl{2}{N}{0}\isluru{2}{N}\qb{2}{^N^MN}\endmel\tbl{2}\tslur{2}{L}\qb{2}{L}%
+\beginmel\ibl{2}{a}{-1}\isluru{2}{a}\qb{2}{a}\endmel\tbl{2}\tslur{2}{N}\qb{2}{=N}%
+\nextinstrument\ha{i}\sk\sk\sk\qa{j}%
+\nextinstrument\beginmel\islurd{4}{f}\qa{f}\sk\endmel\tslur{4}{e}\qa{e*e}%
+\nextinstrument\ha{k}\sk\sk\sk\qa{j}\en%
+\bar% 7
+\notes\ibu{0}{K}{-3}\qb{0}{=MFE}\tbu{0}\qb{0}{D}\qa{C}%
+\nextstaff\ibu{1}{j}{3}\loffset{.5}{\zql{m}}\zql{h}\qb{1}{jk}\ibl{2}{g}{-1}\zqb{2}{gj}\qb{1}{l}\tbl{2}\zqb{2}{fik}\qb{1}{m}%
+\ibl{2}{l}{1}\roffset{.5}{\zql{j}}\zqb{2}{l}\qb{1}{n}\tbu{1}\tbl{2}\zqb{2}{m}\qb{1}{o}%
+\nextinstrument\beginmel\isluru{2}{M}\qa{=M}\sk\ibl{3}{L}{-1}\qb{3}{L}\endmel\tslur{2}{K}\tbl{3}\qb{3}{K}\qa{J}%
+\nextinstrument\beginmel\isluru{3}{j}\pt{j}\qa{j}\sk\sk\endmel\tslur{3}{i}\ca{i}\qa{n}%
+\nextinstrument\beginmel\islurd{4}{h}\qa{h}\sk\ibu{4}{g}{-1}\qb{4}{g}\endmel\tslur{4}{f}\tbu{4}\qb{4}{f}\qa{j}%
+\nextinstrument\ha{m}\sk\sk\sk\qa{l}\en%
+\bar% 8
+\NOtes\fermatadown{G}\ha{G}%
+\nextstaff\fermataup{r}\zhl{k}\zhl{n}\hu{p}%
+\nextinstrument\fermataup{N}\ha{N}%
+\nextinstrument\fermataup{n}\ha{n}%
+\nextinstrument\fermataup{m}\ha{i}%
+\nextinstrument\fermataup{m}\ha{k}\en%
+\notes\zql{a}\qu{c}%
+\nextstaff\ibl{1}{e}{1}\zqu{j}\qb{1}{e}\tbl{1}\qb{1}{^f}%
+\nextinstrument\qa{a}%
+\nextinstrument\qa{j}%
+\nextinstrument\beginmel\ibu{4}{e}{1}\qb{4}{e}\endmel\tbu{4}\qb{4}{^f}%
+\nextinstrument\qa{j}\en%
+\bar% 9
+\notes\ibl{0}{L}{-1}\zhu{b}\qb{0}{N=MLK}\zqu{c}\qb{0}{J}\tbl{0}\qb{0}{K}%
+\nextstaff\loffset{.5}{\zhu{g}\zhu{k}}\roffset{.5}{\ibl{1}{g}{-1}\qb{1}{g}}\qb{1}{hg}\tbl{1}\qb{1}{=f}\zqu{gl}\ql{e}%
+\nextinstrument\beginmel\ibl{2}{N}{-1}\isluru{2}{N}\qb{2}{NML}\endmel\tbl{2}\tslur{2}{K}\qb{2}{K}%
+\beginmel\ibu{2}{J}{1}\islurd{2}{J}\qb{2}{J}\endmel\tbu{2}\tslur{2}{K}\qb{2}{K}%
+\nextinstrument\ha{i}\sk\sk\sk\qa{j}%
+\nextinstrument\ha{g}\sk\sk\sk\qa{g}%
+\nextinstrument\ha{k}\sk\sk\sk\qa{j}\en%
+\bar% 10
+\notes\ibl{0}{L}{-3}\zhu{b}\qb{0}{LKJIH}\tbl{0}\qb{0}{=G}%
+\nextstaff\zhu{^gk}\hl{e}\sk\sk\sk\ibu{1}{j}{1}\zql{eh}\qb{1}{j}\tbu{1}\zqb{1}{i}\qb{1}{k}%
+\nextinstrument\beginmel\ibu{2}{L}{-2}\islurd{2}{L}\qb{2}{LKJ}\endmel\tslur{2}{I}\tbu{2}\qb{2}{I}\qa{H}%
+\nextinstrument\ha{i}\sk\sk\sk\qa{j}%
+\nextinstrument\ha{^g}\sk\sk\sk\qa{h}%
+\nextinstrument\ha{k}\sk\sk\sk\qa{j}\en%
+\bar% 11
+\notes\qa{F*D*G}%
+\nextstaff\ibu{1}{l}{0}\zql{h}\zqb{1}{j}\qb{1}{l}\zqb{1}{k}\qb{1}{m}\zhl{i}\zqb{1}{l}\qb{1}{=n}\zqb{1}{m}\qb{1}{o}\zqb{1}{l}\qb{1}{n}\tbu{1}\zqb{1}{k}\qb{1}{m}%
+\nextinstrument\beginmel\isluru{2}{M}\qa{M}\sk\endmel\tslur{2}{K}\qa{KN}%
+\nextinstrument\beginmel\isluru{3}{j}\qa{j}\sk\ibl{3}{i}{1}\qb{3}{i}\endmel\tslur{3}{j}\tbl{3}\qb{3}{j}\qa{k}%
+\nextinstrument\beginmel\islurd{4}{h}\qa{h}\sk\ibu{4}{g}{1}\qb{4}{=g}\endmel\tslur{4}{f}\tbu{4}\qb{4}{f}\qa{g}%
+\nextinstrument\qa{h}\sk\ha{i}\en%
+\bar% 12
+\NOtes\fermatadown{C}\ha{C}%
+\nextstaff\fermataup{o}\zhl{g}\zhu{j}\hu{l}%
+\nextinstrument\fermataup{M}\ha{J}%
+\nextinstrument\fermataup{m}\ha{l}%
+\nextinstrument\fermataup{m}\ha{g}%
+\nextinstrument\fermataup{m}\ha{j}\en%
+\Notes\qa{I}%
+\nextstaff\loffset{.5}{\zql{k}}\zqu{g}\qu{n}%
+\nextinstrument\qa{I}%
+\nextinstrument\qa{k}%
+\nextinstrument\qa{g}%
+\nextinstrument\qa{n}\en%
+\bar% 13
+\notes\ibu{0}{K}{0}\qb{0}{JIJKL}\tbu{0}\qb{0}{J}%
+\nextstaff\loffset{.5}{\zhl{j}}\zqup{g}\qup{l}\sk\sk\zqu{f}\cu{k}\zqu{g}\qu{j}%
+\nextinstrument\beginmel\ibu{2}{J}{1}\islurd{2}{J}\qb{2}{JIJ}\endmel\tbu{2}\tslur{2}{K}\qb{2}{K}%
+\beginmel\ibl{2}{L}{-1}\isluru{2}{L}\qb{2}{L}\endmel\tbl{2}\tslur{2}{J}\qb{2}{J}%
+\nextinstrument\beginmel\isluru{3}{j}\qa{j}\sk\endmel\tsslur{3}{g}\qa{g*j}%
+\nextinstrument\beginmel\islurd{4}{g}\pt{g}\qa{g}\sk\sk\endmel\tslur{4}{f}\ca{f}\qa{g}%
+\nextinstrument\beginmel\isluru{5}{l}\pt{l}\qa{l}\sk\sk\endmel\tslur{5}{k}\ca{k}\qa{j}\en%
+\bar% 14
+\notes\ibu{0}{F}{3}\qb{0}{FEFGH}\tbu{0}\qb{0}{I}%
+\nextstaff\loffset{1}{\pt{l}\zqu{k}}\zql{h}\ql{j}\sk\zql{g}\ql{i}\cu{l}\ibu{1}{j}{1}\loffset{.5}{\zqu{m}}\zql{j}\qb{1}{j}\tbu{1}\qb{1}{k}%
+\nextinstrument\beginmel\ibl{2}{M}{1}\isluru{2}{M}\qb{2}{MLM}\endmel\tbl{2}\tslur{2}{N}\qb{2}{N}%
+\beginmel\ibl{2}{a}{1}\isluru{2}{a}\qb{2}{a}\endmel\tbl{2}\tslur{2}{b}\qb{2}{b}%
+\nextinstrument\beginmel\isluru{3}{j}\qa{j}\sk\endmel\tsslur{3}{i}\qa{i*h}%
+\nextinstrument\beginmel\islurd{4}{h}\qa{h}\sk\endmel\tsslur{4}{g}\qa{g*j}%
+\nextinstrument\beginmel\isluru{5}{k}\pt{k}\qa{k}\sk\sk\endmel\tslur{5}{l}\ca{l}\qa{m}\en%
+\bar% 15
+\notes\qa{J}\sk\ha{G}\sk\sk\sk\itenu{0}{g}\qu{g}%
+\nextstaff\loffset{.5}{\ibu{1}{k}{3}\zql{l}\zqb{1}{l}}\zql{j}\ql{f}\qb{1}{m}\ibl{0}{i}{-1}\loffset{.5}{\zhl{k}}\zqb{0}{i}\qb{1}{n}\tbu{1}\tbl{0}\zqb{0}{h}\qb{1}{o}\qu{p}%
+\nextinstrument\qa{c}\sk\ha{N}%
+\nextinstrument\qa{g}\sk\beginmel\isluru{3}{n}\pt{n}\qa{n}\sk\sk\endmel\tslur{3}{m}\ca{m}%
+\nextinstrument\qa{j}\sk\beginmel\ibl{4}{i}{-1}\isluru{4}{i}\qb{4}{i}\tbl{4}\qb{4}{h}\endmel\tsslur{4}{g}\qa{g}%
+\nextinstrument\qa{l}\sk\ha{k}\en%
+\bar% 16
+\NOtes\tten{0}\fermatadown{`G}\zhu{!g}\hl{C}%
+\nextstaff\fermataup{s}\zhl{l}\hu{q}%
+\nextinstrument\fermataup{M}\ha{J}%
+\nextinstrument\fermataup{m}\ha{l}%
+\nextinstrument\fermataup{m}\ha{g}%
+\nextinstrument\fermataup{m}\ha{j}\en%
+%
+\Endpiece
+
+\bye
