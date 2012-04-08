@@ -1,0 +1,117 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2012-04-08
+%
+
+\fulltitle{Nun komm, der Heiden Heiland}
+ \author{Lukas Osiander}
+ \shortauthor{Lukas Osiander}
+ \title{Nun komm, der Heiden Heiland}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{18}
+\generalmeter{\meterC}
+\generalsignature{-1}
+\setclef{1}{\bass}
+
+%\elemskip=.9\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=7\Interligne
+\interinstrument=2\Interligne
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics}{\lyrlayout{\lyrfont}Nun komm, der Hei-den Hei-land, der Jung-frau-en Kind er-kannt, da\ss{} sich wun-der al-le Welt, Gott solch Ge-burt ihm be-stellt.}
+\assignlyrics{2}{lyrics}
+
+\startpiece
+\znotes\nextinstrument\loffset{2.2}{\lyric*{1.}}\en%
+\Notes\zql{N}\qu{N}\zql{J}\qu{c}\zql{K}\qu{a}\zql{I}\qu{d}%
+\nextinstrument\zql{d}\qu{g}\zql{e}\qu{g}\zql{d}\qu{f}\zql{f}\qu{i}\en%
+\bar% 2
+\notes\ibl{0}{M}{2}\ibslurd{0}{M}\ibu{1}{c}{-2}\ibsluru{1}{c}\zqb{0}{M}\qb{1}{c}\tbl{0}\tbslurd{0}{N}\tbu{1}\tbsluru{1}{b}\zqb{0}{N}\qb{1}{b}%
+\nextinstrument\beginmel\ibl{2}{f}{-5}\ibslurd{2}{f}\ibu{3}{h}{-2}\ibsluru{3}{h}\zqb{2}{f}\qb{3}{h}\endmel\tbl{2}\tbslurd{2}{d}\tbu{3}\tbsluru{3}{g}\zqb{2}{d}\qb{3}{g}\en%
+\Notes\zql{K}\qu{d}%
+\nextinstrument\zql{^f}\qu{h}\en%
+\NOtes\zhl{G}\hu{d}%
+\nextinstrument\zhl{d}\hu{g}\en%
+\bar% 3
+\Notes\zql{N}\qu{b}\zql{N}\qu{b}%
+\nextinstrument\zql{d}\qu{g}\zql{d}\qu{i}\en%
+\Notesp\cna{M}\zqlp{M}\qup{a}%
+\nextinstrument\cna{f}\zqlp{f}\qup{j}\en%
+\notes\zcl{N}\cu{b}%
+\nextinstrument\zcl{d}\cu{i}\en%
+\bar% 4
+\Notes\zql{M}\qu{a}\zql{I}\qu{d}%
+\nextinstrument\zql{f}\qu{j}\zql{f}\qu{k}\en%
+\NOtes\zhl{_L}\hu{N}%
+\nextinstrument\zhl{_e}\hu{i}\en%
+\alaligne% 5
+\Notes\zql{_L}\qu{N}\zql{J}\qu{N}\zql{I}\qu{b}\zql{b}\qu{d}%
+\nextinstrument\zql{_e}\qu{i}\zql{e}\qu{j}\zql{f}\qu{k}\zql{f}\qu{i}\en%
+\bar% 6
+\Notes\zql{M}\qu{a}%
+\nextinstrument\zql{f}\qu{j}\en%
+\notes\ibl{0}{N}{-2}\ibslurd{0}{N}\ibu{1}{d}{-9}\ibsluru{1}{d}\zqb{0}{N}\qb{1}{d}\tbl{0}\tbslurd{0}{M}\tbu{1}\tbsluru{1}{a}\zqb{0}{^M}\qb{1}{a}%
+\nextinstrument\beginmel\ibl{2}{b}{7}\ibslurd{2}{b}\ibu{3}{i}{-2}\ibsluru{3}{i}\zqb{2}{b}\qb{3}{i}\endmel\tbl{2}\tbslurd{2}{d}\tbu{3}\tbsluru{3}{h}\zqb{2}{d}\qb{3}{h}\en%
+\NOtes\zhl{N}\hu{b}%
+\nextinstrument\zhl{d}\hu{g}\en%
+\bar% 7
+\Notes\zql{J}\qu{c}\zql{N}\qu{b}\zql{K}\qu{a}\zql{I}\qu{d}%
+\nextinstrument\zql{_e}\qu{g}\zql{d}\qu{g}\zql{d}\qu{f}\zql{f}\qu{i}\en%
+\bar% 8
+\notes\zql{J}\qu{c}%
+\nextinstrument\beginmel\ibu{3}{h}{-2}\ibsluru{3}{h}\zql{_e}\qb{3}{h}\endmel\tbu{3}\tbsluru{3}{g}\qb{3}{g}\en%
+\Notes\zql{K}\qu{a}%
+\nextinstrument\zql{d}\qu{^f}\en%
+\NOtes\fermatadown{C}\zhl{G}\hu{=b}%
+\nextinstrument\fermataup{m}\zhl{d}\hu{g}\en%
+\Endpiece
+
+{\lyrfont
+\vskip\baselineskip
+\halign{\vtop{\hsize=3em\hfill #}\tabskip=1em&\vtop{\hsize=16cm #}\cr
+2.&Er ging aus der Kammer sein,~/\cr
+&dem k\"o\rlap{\lyrlink}niglichen Saal so rein,~/\cr
+&Gott von Art und Mensch, ein Held;~/\cr
+&sein' Weg er zu laufen eilt.\cr
+\cr
+3.&Sein Lauf kam vom Vater her~/\cr
+&und kehrt wieder zum Vater,~/\cr
+&fuhr hinunter zu der H\"oll~/\cr
+&und wieder zu Gottes Stuhl.\cr
+\cr
+4.&Dein Kripplein gl\"anzt hell und klar,~/\cr
+&die Nacht gibt ein neu Licht dar.~/\cr
+&Dunkel mu\ss\ nicht kommen drein,~/\cr
+&der Glaub bleibt immer im Schein.\cr
+\cr
+5.&Lob sei Gott dem Vater g'tan;~/\cr
+&Lob sei Gott seim ein'gen Sohn,~/\cr
+&Lob sei Gott dem Heilgen Geist~/\cr
+&immer und in Ewigkeit.\cr
+}
+\vfill
+
+\hrule
+\vskip\baselineskip
+Text: Martin Luther 1524, Melodie: Martin Luther 1524, Satz: Lukas Osiander 1586
+
+\bye
