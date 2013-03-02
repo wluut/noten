@@ -1,0 +1,166 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 1.0 2012-05-05 Erste Version
+%
+\fulltitle{Lob Gott getrost mit Singen}
+ \author{Werner Lamm}
+ \shortauthor{Werner Lamm}
+ \title{Lob Gott getrost mit Singen}
+ \def\voices{SATB}
+ \maketitle
+
+\def\freqbarno{5}
+\instrumentnumber{2}
+\interstaff{11}
+\generalmeter{\meterfrac{4}{4}}
+\generalsignature{-1}
+\setclef{1}{\bass}
+
+%\elemskip1.2\elemskip
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\barnumbers
+\startbarno=0
+\def\freqbarno{5}
+\sepbarrules
+\interinstrument=12\Interligne
+\startmuflex
+
+\setlyrics{vers1a}{Lob Gott ge-trost mit Sin-gen, froh-lock, du christ-lich Schar!}
+\setlyrics{vers1b}{Dir soll es nicht mi\ss-lin-gen, Gott hilft dir im-mer dar.}
+\setlyrics{vers1c}{Ob du gleich hier mu\ss t tra-gen viel Wi-der-w\"ar-tig-keit, sollst du doch nicht ver-za-gen; er hilft aus al-lem Leid.}
+\setlyrics{vers3a}{Kann und mag auch ver-las-sen ein Mut-ter je ihr Kind}
+\setlyrics{vers3b}{und al-so gar ver-sto\ss-en, da\ss{} es kein Gnad mehr find't?}
+\setlyrics{vers3c}{Und ob sich's m\"ocht be-ge-ben, da\ss{} sie so gar ab-fiel: Gott schw\"ort bei sei-nem Le-ben, er dich nicht las-sen will.}
+\assignlyrics{2}{vers1a,vers1b,vers3a,vers3b}
+
+\startpiece
+\NOtes\sk\zql{M}\qu{M}%
+\nextinstrument\verses{\lyric*{1.},,\lyric*{3.}}\sk\zql{f}\qu{f}\en%
+\bar% 1
+\NOtesp\zqlp{M}\qup{M}%
+\nextinstrument\zqlp{f}\qup{f}\en%
+\Notes\zcl{L}\cu{L}%
+\nextinstrument\zcl{e}\cu{e}\en%
+\NOtes\zql{M}\qu{M}\zql{N}\qu{N}%
+\nextinstrument\zql{f}\qu{f}\zql{g}\qu{g}\en%
+\bar% 2
+\NOTes\zhl{L}\hu{L}%
+\nextinstrument\zhl{e}\hu{e}\en%
+\NOtes\zql{J}\qu{J}\zql{J}\qu{c}%
+\nextinstrument\zql{c}\qu{c}\zql{e}\qu{g}\en%
+\bar% 3
+\NOtesp\zqlp{M}\qup{c}%
+\nextinstrument\zqlp{f}\qup{h}\en%
+\Notes\zcl{N}\cu{b}%
+\nextinstrument\zcl{e}\cu{g}\en%
+\NOtes\zql{a}\qu{a}\zql{N}\qu{=b}%
+\nextinstrument\zql{d}\qu{f}\zql{d}\qu{d}\en%
+\bar% 4
+\NOTes\zhl{J}\hu{L}%
+\nextinstrument\zhl{N}\hu{c}\en%
+\NOtes\qp\nextinstrument\qp\en%
+\advance\barno-1%
+\def\atnextline{\interinstrument=7\Interligne}%
+\setrightrepeat\alaligne%
+\assignlyrics{2}{vers1c,vers3c}%
+\NOtes\zql{c}\qu{c}%
+\nextinstrument\zql{j}\qu{j}\en%
+\bar% 5
+\NOtes\zql{b}\qu{b}\zql{a}\qu{a}\zql{N}\qu{N}\zql{M}\qu{M}%
+\nextinstrument\zql{i}\qu{i}\zql{h}\qu{h}\zql{g}\qu{g}\zql{f}\qu{f}\en%
+\bar% 6
+\NOtes\ibslurd{0}{b}\ibsluru{1}{b}\zql{b}\qu{b}\tbslurd{0}{a}\tbsluru{1}{a}\zql{a}\qu{a}\zql{N}\qu{N}\zql{M}\qu{f}%
+\nextinstrument\beginmel\ibslurd{0}{i}\ibsluru{1}{i}\zql{i}\qu{i}\endmel\tbslurd{0}{h}\tbsluru{1}{h}\zql{h}\qu{h}\zql{g}\qu{g}\zql{h}\qu{j}\en%
+\bar% 7
+\NOtes\zql{M}\qu{d}\zql{M}\qu{c}\zql{J}\qu{c}\zql{K}\qu{a}%
+\nextinstrument\zql{f}\qu{i}\zql{f}\qu{h}\zql{e}\qu{g}\zql{d}\qu{f}\en%
+\bar% 8
+\NOTes\zhl{G}\hu{b}\caesura\zhl{J}\hu{J}%
+\nextinstrument\zhl{d}\hu{g}\caesura\zhl{c}\hu{c}\en%
+\def\atnextline{\interinstrument=12\Interligne}%
+\alaligne%\bar% 9
+\NOtes\tinynotesize\zql{F}\normalnotesize\zql{M}\qu{M}\tinynotesize\zql{G}\normalnotesize\zql{N}\qu{N}\tinynotesize\zql{H}\normalnotesize\zql{a}\qu{a}\tinynotesize\zql{I}\normalnotesize\zql{b}\qu{b}%
+\nextinstrument\zql{f}\qu{f}\zql{g}\qu{g}\zql{h}\qu{h}\zql{i}\qu{i}\en%
+\bar% 10
+\NOTes\tinynotesize\zhl{J}\normalnotesize\zhl{c}\hu{c}\tinynotesize\zhl{G}\normalnotesize\zhl{N}\hu{N}\caesura%
+\nextinstrument\zhl{j}\hu{j}\zhl{g}\hu{g}\caesura\en%
+\bar% 11
+\NOTes\tinynotesize\zhl{I}\normalnotesize\zhl{b}\hu{b}%
+\nextinstrument\zhl{i}\hu{i}\en%
+\NOtes\tinynotesize\zql{H}\normalnotesize\zql{a}\qu{a}\tinynotesize\zql{G}\normalnotesize\zql{N}\qu{N}%
+\nextinstrument\zql{h}\qu{h}\zql{g}\qu{g}\en%
+\bar% 12
+\NOtesp\ibslurd{0}{M}\ibsluru{1}{f}\zqlp{M}\qup{f}%
+\nextinstrument\beginmel\ibslurd{2}{h}\ibsluru{3}{j}\zqlp{h}\qup{j}\en%
+\Notes\zcl{M}\cu{d}%
+\nextinstrument\zcl{f}\cu{i}\en%
+\NOtes\zql{M}\qu{c}%
+\nextinstrument\zql{f}\qu{h}\en%
+\Notes\ibl{0}{N}{-1}\ibu{1}{N}{-1}\zqb{0}{N}\qb{1}{N}\tbl{0}\tbu{1}\zqb{0}{M}\qb{1}{M}%
+\nextinstrument\ibl{2}{g}{-1}\ibu{3}{g}{-1}\zqb{2}{g}\qb{3}{g}\tbl{2}\tbu{3}\zqb{2}{f}\qb{3}{f}\en%
+\bar% 13
+\NOtes\tbslurd{0}{N}\tbsluru{1}{b}\zql{N}\qu{b}\zql{J}\qu{c}%
+\nextinstrument\endmel\tbslurd{2}{d}\tbsluru{3}{g}\zql{d}\qu{g}\zql{e}\qu{g}\en%
+\NOTes\tinynotesize\zhl{F}\normalnotesize\zhl{M}\hu{a}%
+\nextinstrument\zhl{c}\hu{f}\en%
+\Endpiece
+
+{\lyrfont
+\vskip\baselineskip
+\halign{\vtop{\hsize=3em\hfill #}\tabskip=1em&\vtop{\hsize=16cm #}\cr
+2.&Dich hat er sich erkoren,~/
+durch sein Wort auferbaut,~/
+bei seinem Eid geschworen,~/
+dieweil du ihn vertraut,~/
+da\ss{} er deiner will pflegen~/
+in aller Angst und Not,~/
+dein Feinde niederlegen,~/
+die schm\"ahen dich mit Spott.
+\cr
+4.&Darum la\ss{} dich nicht schrecken,~/
+o du christgl\"aub'ge Schar!~/
+Gott wird dir Hilf erwecken~/
+und dein selbst nehmen war.~/
+Er wird seim Volk verk\"unden~/
+sehr freudenreichen Trost,~/
+wie sie von ihren S\"unden~/
+sollen werden erl\"ost.
+\cr
+5.&Es tut ihn nicht gereuen,~/
+was er vorl\"angst gedeut',~/
+sein Kirche zu erneuen~/
+in dieser f\"ahrlichn Zeit.~/
+Es wird herzlich anschauen~/
+dein' Jammer und Elend,~/
+dich herrlich auferbauen~/
+durch Wort und Sakrament.
+\cr
+6.&Gott solln wir fr\"ohlich loben,~/
+der sich aus gro\ss{}er Gnad~/
+durch seine milden Gaben~/
+uns kundgegeben hat.~/
+Er wird uns auch erhalten~/
+in Lieb und Einigkeit~/
+und unser freundlich walten~/
+hier und in Ewigkeit.
+\cr
+}
+\vfill
+
+\hrule
+\vskip\baselineskip
+Text: B\"ohmische Br\"uder 1544, Melodie: 16. Jh. \frqq Entlaubet ist uns der Walde\flqq; geistlich N\"urnberg um 1535
+
+\bye
