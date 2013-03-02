@@ -1,0 +1,133 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2012-09-16
+%
+
+\fulltitle{Zu Bethlehem geboren}
+ \author{Christian Reiter}
+ \shortauthor{Christian Reiter}
+ \title{Zu Bethlehem geboren}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{18}
+\generalmeter{\meterC}
+\generalsignature{-1}
+\setclef{1}{\bass}
+
+%\elemskip=.9\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+%\stafftopmarg=7\Interligne
+\interinstrument=5\Interligne
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics1}{\lyrlayout{\lyrfont}Zu Beth-le-hem ge-bo-ren ist uns ein Kin-de-lein. Das hab ich aus-er-ko-ren, sein ei-gen will ich sein, e-ia, e-ia, sein ei-gen will ich sein.}
+\setlyrics{lyrics2}{\lyrlayout{\lyrfont}In sei-ne Lieb' ver-sen-ken will ich mich ganz hi-nab; mein Herz will ich ihm schen-ken und al-les, was ich hab, e-ia, e-ia, und al-les, was ich hab.}
+\setlyrics{lyrics3}{\lyrlayout{\lyrfont}O Kin-de-lein, von Her-zen, dich will ich lie-ben sehr, in Freu-den und in Schmer-zen, je l\"an-ger mehr und mehr, e-ia, e-ia, je l\"an-ger, mehr und mehr.}
+\setlyrics{lyrics4}{\lyrlayout{\lyrfont}Da-zu dein Gnad mir ge-be, bitt ich aus Her-zens-grund, da\ss{} dir al-lein ich le-be, jetzt und zu al-ler Stund, e-ia, e-ia, jetzt und in al-ler Stund.}
+\assignlyrics{1}{}
+\assignlyrics{2}{lyrics1,lyrics2,lyrics3,lyrics4}
+
+\startpiece
+\notes\sk\en%
+\znotes\nextinstrument\loffset{2.2}{\verses{\lyric*{1.},\lyric*{2.},\lyric*{3.},\lyric*{4.}}}\en%
+\Notes\zql{M}\qu{a}%
+\nextinstrument\zql{c}\qu{c}\en%
+\bar% 1
+\Notes\zql{M}\qup{a}%
+\nextinstrument\zqlp{c}\qup{f}\en%
+\notes\ql{L}\cu{c}%
+\nextinstrument\sk\zcl{c}\cu{g}\en%
+\Notes\zql{M}\qu{c}%
+\nextinstrument\zql{f}\qu{h}\en%
+\notes\ibu{1}{c}{-1}\zql{J}\qb{1}{c}\tbu{1}\qb{1}{b}%
+\nextinstrument\zql{e}\qu{g}\en%
+\bar% 2
+\Notes\zhl{K}\hu{a}\sk\zql{H}\qu{a}%
+\nextinstrument\beginmel\isslurd{2}{e}\rql{e}\hu{f}\endmel\tslur{2}{d}\ql{d}\zql{c}\qu{e}\en%
+\notes\ibl{0}{K}{-1}\zqu{a}\qb{0}{K}\tbl{0}\qb{0}{J}%
+\nextinstrument\zql{d}\qu{f}\en%
+\bar% 3
+\Notes\zql{I}\qu{b}%
+\nextinstrument\zql{d}\qu{g}\en%
+\notes\zql{I}\qu{b}\sk\ibl{0}{H}{1}\zqu{c}\qb{0}{H}\tbl{0}\qb{0}{I}%
+\nextinstrument\beginmel\ibl{2}{d}{1}\ibu{3}{f}{1}\zqb{2}{d}\qb{3}{f}\endmel\tbl{2}\tbu{3}\zqb{2}{e}\qb{3}{g}\zql{f}\qu{h}\en%
+\Notes\zql{J}\qu{b}%
+\nextinstrument\zql{e}\qu{g}\en%
+\alaligne% 4
+\NOtes\zhl{M}\hu{a}%
+\nextinstrument\zhl{f}\hu{f}\en%
+\Notes\qp\nextinstrument\qp\en%
+\notes\ibu{1}{a}{1}\zql{M}\qb{1}{a}\tbu{1}\qb{1}{b}%
+\nextinstrument\zql{f}\qu{j}\en%
+\bar% 5
+\Notes\zql{L}\qu{c}%
+\nextinstrument\zql{g}\qu{j}\en%
+\notes\ibl{0}{M}{-1}\zqu{c}\qb{0}{M}\tbl{0}\qb{0}{L}%
+\nextinstrument\zql{f}\qu{h}\en%
+\Notes\zql{K}\qu{b}\zql{J}\qu{a}%
+\nextinstrument\zql{f}\qu{i}\zql{f}\qu{j}\en%
+\bar% 6
+\Notes\isslurd{0}{I}\zhu{b}\ql{I}\tslur{0}{J}\ql{J}\zql{K}\qu{d}\zql{L}\qu{c}%
+\nextinstrument\zhl{f}\hu{k}\sk\zql{f}\qu{i}\zql{g}\qu{i}\en%
+\bar% 7
+\Notes\zql{M}\qu{c}\zql{K}\qu{b}\zql{H}\qu{a}%
+\nextinstrument\zql{f}\qu{h}\zql{f}\qu{i}\zql{f}\qu{j}\en%
+\notes\zql{G}\qu{b}%
+\nextinstrument\beginmel\ibu{3}{i}{-1}\zql{f}\qb{3}{i}\endmel\tbu{3}\qb{3}{h}\en%
+\alaligne% 8
+\NOtesp\zhlp{J}\hup{c}%
+\nextinstrument\zhlp{e}\hup{g}\en%
+\Notes\qp\nextinstrument\qp\en%
+\bar% 9
+\Notesp\isslurd{0}{H}\zhu{c}\qlp{H}%
+\nextinstrument\zhl{f}\hu{j}\en%
+\notes\tslur{0}{I}\cl{I}\en%
+\NOtes\zhl{J}\hu{c}%
+\nextinstrument\zhl{e}\hu{g}\en%
+\bar% 10
+\notes\ibl{0}{F}{2}\zhu{c}\qb{0}{FGH}\tbl{0}\qb{0}{I}%
+\nextinstrument\zhl{f}\hu{h}\en%
+\Notes\zql{J}\qu{c}\zql{H}\qu{c}%
+\nextinstrument\zql{e}\qu{g}\zql{e}\qu{h}\en%
+\bar% 11
+\Notes\zql{H}\qu{c}%
+\nextinstrument\zql{f}\qu{j}\en%
+\notes\zql{I}\qu{b}\sk\ibl{0}{H}{1}\zqu{c}\qb{0}{H}\tbl{0}\qb{0}{I}%
+\nextinstrument\beginmel\ibu{3}{f}{1}\zql{d}\qb{3}{f}\endmel\tbu{3}\qb{3}{g}\zql{f}\qu{h}\en%
+\Notes\zql{J}\qu{b}%
+\nextinstrument\zql{e}\qu{g}\en%
+\NOtesp\zhlp{M}\hup{a}%
+\nextinstrument\zhlp{c}\hup{f}\en%
+\Endpiece
+
+{\lyrfont
+\vskip\baselineskip
+\halign{\vtop{\hsize=3em\hfill #}\tabskip=1em&\vtop{\hsize=16cm #}\cr
+4b.&Dich wah-ren Gott ich fin-de in mei-nem Fleisch und Blut;\cr
+&da-ran ich fest mich bin-de an dich, mein h\"och-stes Gut.\cr
+&E-ja, e-ja, an dich, mein h\"och-stes Gut.\cr
+}
+\vfill
+
+\hrule
+\vskip\baselineskip
+Text: Friedrich Spee 1637, Strophe 4b Fassung Gotteslob Nr. 140\par Melodie: Paris 1599, geistlich K\"oln 1638
+
+\bye
