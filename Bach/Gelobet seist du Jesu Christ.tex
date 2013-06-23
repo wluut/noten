@@ -1,0 +1,149 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2012-09-16
+%
+
+\fulltitle{Gelobet seist du, Jesu Christ}
+ \author{Johann Sebastian Bach}
+ \shortauthor{Johann Sebastian Bach}
+ \title{Gelobet seist du, Jesu Christ}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{18}
+\generalmeter{\meterC}
+\generalsignature{0}
+\setclef{1}{\bass}
+
+%\elemskip=.9\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=7\Interligne
+\interinstrument=2\Interligne
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics}{\lyrlayout{\lyrfont}Ge-lo-bet seist du, Je-su Christ, da\ss{} du Mensch ge-bo-ren bist,
+von ei-ner Jung-frau, das ist wahr, des freu-et sich der En-gel Schar. Ky-ri-e e-leis!}
+\setlyrics{kyrieleis}{\lyrlayout{\auxfont}Ky-rie-leis!}
+\setlyrics{kyrie1}{\lyrlayout{\auxfont}Ky-ri-e e-leis!}
+\copylyrics{kyrie1}{kyrie2}
+\assignlyrics{1}{kyrie1}
+\assignlyrics{2}{lyrics}
+\auxlyr{%
+\lyrraise{1}{a-2\Interligne}
+\lyrraise{2}{a-6\Interligne}
+\assignlyrics{1}{kyrie2}
+\assignlyrics{2}{kyrieleis}
+}
+\startpiece
+\notes\lyricsoff\sk\en%
+\znotes\nextinstrument\loffset{2.2}{\lyric*{1.}}\en%
+\Notes\zql{N}\qu{b}%
+\nextinstrument\zql{d}\qu{g}\en%
+\bar% 1
+\Notes\zql{L}\qu{b}\zql{J}\qu{c}\zql{M}\qu{c}%
+\nextinstrument\zql{e}\qu{g}\zql{e}\qu{g}\zql{f}\qu{h}\en%
+\notes\ibu{1}{c}{1}\zql{L}\qb{1}{c}\tbu{1}\qb{1}{d}%
+\nextinstrument\zql{g}\qu{g}\en%
+\bar% 2
+\Notes\zql{a}\qu{e}\zql{^N}\qu{f}%
+\nextinstrument\zql{h}\qu{j}\zql{i}\qu{k}\en%
+\NOtes\fermatadown{C}\zhl{a}\hu{e}%
+\nextinstrument\fermataup{o}\zhl{h}\hu{j}\en%
+\bar% 3
+\Notes\zql{L}\qu{e}\zql{I}\qu{d}%
+\nextinstrument\zql{g}\qu{i}\zql{g}\qu{k}\en%
+\notes\ibu{1}{c}{-1}\zql{J}\qb{1}{c}\tbu{1}\qb{1}{b}%
+\nextinstrument\zql{g}\qu{l}\en%
+\Notes\zql{K}\qu{a}%
+\nextinstrument\zql{^f}\qu{k}\en%
+\bar% 4
+\notes\ibu{1}{b}{1}\zql{N}\qb{1}{b}\tbu{1}\qb{1}{c}%
+\nextinstrument\zql{g}\qu{i}\en%
+\Notes\zql{K}\qu{d}\fermatadown{C}\zql{G}\qu{b}\zql{L}\qu{b}%
+\nextinstrument\zql{^f}\qu{h}\fermataup{o}\zql{d}\qu{g}\zql{e}\qu{g}\en%
+\bar% 5
+\notes\zql{H}\qu{c}\sk\ibl{0}{G}{1}\zqu{d}\qb{0}{G}\tbl{0}\qb{0}{H}\ibl{0}{I}{1}\zqu{d}\qb{0}{I}\tbl{0}\qb{0}{J}\ibu{1}{d}{-1}\zql{K}\qb{1}{d}\tbu{1}\qb{1}{c}%
+\nextinstrument\beginmel\ibl{2}{e}{1}\zqu{j}\qb{2}{e}\endmel\tbl{2}\qb{2}{^f}\zql{g}\qu{i}\sk\zql{g}\qu{k}\sk\zql{f}\qu{h}\en%
+\alaligne% 6
+\notes\zql{G}\qu{b}\sk\ibu{1}{a}{-1}\zql{H}\qb{1}{a}\tbu{1}\qb{1}{N}%
+\nextinstrument\beginmel\ibl{2}{e}{-1}\zqu{g}\qb{2}{e}\endmel\tbl{2}\qb{2}{d}\zql{^c}\qu{e}\en%
+\Notes\fermatadown{C}\zql{K}\qu{^M}%
+\nextinstrument\fermataup{o}\zql{a}\qu{d}\en%
+\notes\ibl{0}{K}{1}\ibu{1}{M}{1}\zqb{0}{K}\qb{1}{M}\tbl{0}\tbu{1}\zqb{0}{L}\qb{1}{N}%
+\nextinstrument\zql{d}\qu{d}\en%
+\bar% 7
+\notes\ibl{0}{M}{1}\ibu{1}{a}{1}\zqb{0}{^M}\qb{1}{a}\tbl{0}\tbu{1}\zqb{0}{N}\qb{1}{b}\ibl{0}{a}{1}\zqu{^c}\qb{0}{a}\tbl{0}\qb{0}{b}%
+\nextinstrument\zql{d}\qu{h}\sk\beginmel\ibl{2}{h}{-1}\zqu{h}\qb{2}{h}\endmel\tbl{2}\qb{2}{g}\en
+\Notes\roff{\zql{c}}\na{c}\qu{d}\zql{b}\qu{d}%
+\nextinstrument\zql{^f}\qu{h}\zql{^g}\qu{i}\en%
+\bar% 8
+\Notes\ibslurd{0}{M}\zql{a}\qu{e}
+\nextinstrument\zql{h}\qu{j}\en%
+\notes\ibl{0}{H}{1}\zqu{c}\qb{0}{H}\tbl{0}\qb{0}{I}%
+\nextinstrument\zql{=f}\qu{h}\en%
+\notes\tbslurd{0}{H}\zql{J}\qu{c}%
+\nextinstrument\beginmel\ibl{2}{e}{1}\ibu{3}{g}{1}\ibsluru{3}{g}\zqb{2}{e}\qb{3}{g}\tbl{2}\tbu{3}\zqb{2}{^f}\qb{3}{h}\en%
+\notes\itenu{1}{d}\ibl{0}{I}{1}\zqu{d}\qb{0}{I}\tbl{0}\qb{0}{J}%
+\nextinstrument\itenl{2}{g}\zql{=g}\qu{i}\en%
+\bar% 9
+\notes\tten{1}\zql{K}\cu{d}\auxlyr\lyr\ibu{1}{a}{4}\qb{1}{a}%
+\nextinstrument\endmel\tten{2}\tbsluru{3}{h}\roff{\zql{g}}\hu{h}\en%
+\notes\lyricson\tbu{1}\zcl{J}\qb{1}{d}\auxlyr\lyr\zcl{K}\cu{c}%
+\nextinstrument\qlp{=f}\en%
+\notes\auxlyr\lyr\zql{L}\qu{b}%
+\nextinstrument\auxlyr\lyr\zqu{g}\sk\cl{d}\en%
+\notes\auxlyr\lyr\beginmel\ibl{0}{K}{-1}\zqu{c}\qb{0}{K}\endmel\tbl{0}\qb{0}{J}%
+\nextinstrument\auxlyr\lyr\zql{e}\qu{g}\en%
+\bar% 10
+\Notes\beginmel\islurd{0}{N}\ibsluru{1}{c}\zhl{N}\qu{c}%
+\nextinstrument\auxlyr\lyr\beginmel\fermataup{o}\ibslurd{2}{e}\zwh{g}\ql{e}\en%
+\notes\ibu{1}{b}{-1}\zqb{1}{b}\sk\tbu{1}\tbsluru{1}{b}\zqb{1}{a}%
+\nextinstrument\ibl{2}{d}{-1}\qb{2}{d}\tbl{2}\tbslurd{2}{c}\endmel\qb{2}{c}\en%
+\NOtes\auxlyr\lyr\endmel\tsslur{0}{G}\fermatadown{A}\zhu{b}\hl{G}%
+\nextinstrument\fermatadown{a}\hl{d}\en%
+\Endpiece
+
+{\lyrfont
+\vskip\baselineskip
+\halign{\vtop{\hsize=3em\hfill #}\tabskip=1em&\vtop{\hsize=8cm #}&\vtop{\hsize=3em\hfill #}&\vtop{\hsize=8cm #}\cr
+2.&Des ewgen Vaters einig Kind~/ &3.&Den aller Welt Kreis nie beschlo\ss,~/\cr
+&jetzt man in der Krippe find't;~/&&der liegt in Marien Scho\ss;~/\cr
+&in unser armes Fleisch und Blut~/&&er ist ein Kindlein worden klein,~/\cr
+&verkleidet sich das ewig Gut.~/&&der alle Ding erh\"alt allein.~/\cr
+&Kyrieleis.&&Kyrieleis.\cr
+\cr
+4.&Das ewig Licht geht da herein,~/ &5.&Der Soh des Vaters, Gott von Art,~/\cr
+&gibt der Welt ein' neuen Schein;~/&&ein Gast in der Welt hier ward~/\cr
+&es leucht' wohl mitten in der Nacht~/&&und f\"uhrt uns aus dem Jammertal,~/\cr
+&und uns des Lichtes Kinder macht.~/&&mach uns zu Erben in seim Saal.~/\cr
+&Kyrieleis.&&Kyrieleis.\cr
+\cr
+6.&Er ist auf Erden kommen arm,~/ &7.&Das hat er alles uns getan,~/\cr
+&da\ss{} er unser sich erbarm~/&&sein gro\ss{} Lieb zu zeigen an.~/\cr
+&und in dem Himmel mache reich~/&&Des freu sich alle Christenheit~/\cr
+&und seinen lieben Engeln gleich.~/&&und dank ihm des in Ewigkeit.~/\cr
+&Kyrieleis.&&Kyrieleis.\cr
+}
+\vfill
+
+\hrule
+\vskip\baselineskip
+Text: Strophe 1 Medingen um 1380, Strophen 2-7 Martin Luther 1524\par Melodie: Medingen um 1460, Wittenberg 1524
+
+\bye
