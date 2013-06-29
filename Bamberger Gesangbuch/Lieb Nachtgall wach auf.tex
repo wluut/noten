@@ -1,0 +1,102 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2012-09-16
+%
+
+\fulltitle{Lieb Nachtigall, wach auf}
+ \author{Bamberger Gesangbuch}
+ \shortauthor{Bamberger Gesangbuch}
+ \title{Lieb Nachtigall, wach auf}
+ \def\voices{2}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{10}
+\generalmeter{\meterfrac{2}{4}}
+\generalsignature{1}
+
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=7\Interligne
+\interinstrument=1\Interligne
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics1}{\lyrlayout{\lyrfont}Lieb Nach-ti-gall, wach auf, wach auf, du sch\"o-nes V\"o-gel-ein auf je-nem gr\"u-nem Zwei-ge-lein, wach hur-tig ohn Ver-schnauf!
+Dem Kin-de-lein sing, sing, sing dem zar-ten Je-su-lein, dem Je-su-lein!}
+\setlyrics{lyrics2}{\lyrlayout{\lyrfont}Lieb Nach-ti-gall, wach auf, wach auf, du sch\"o-nes V\"o-gel-ein auf je-nem gr\"u-nem Zwei-ge-lein, wach hur-tig ohn Ver-schnauf!
+Dem Kin-de-lein aus-er-ko-ren, heut ge-bo-ren, halb er-fro-ren, sing, sing, sing, sing dem zar-ten Je-su-lein!}
+\assignlyrics{1}{lyrics1}
+\assignlyrics{2}{lyrics2}
+\startpiece
+\Notes\sk\ds\nextinstrument\sk\ca{d}\en%
+\bar% 1
+\Notes\qp\sk\ds\ca{d}\nextinstrument\ca{gghh}\en%
+\bar% 2
+\Notes\ca{gghh}\nextinstrument\qa{i}\ds\ca{d}\en%
+\bar% 3
+\Notes\qa{i}\sk\ds\ca{d}\nextinstrument\ca{gghh}\en%
+\bar% 4
+\Notes\ca{gghh}\nextinstrument\ca{iihd}\en%
+\bar% 5
+\Notes\ca{iihd}\nextinstrument\ca{gghh}\en%
+\alaligne% 6
+\Notes\ca{ggh}\nextinstrument\ca{iih}\en%
+\notes\ca{h}\nextinstrument\beginmel\ibbl{1}{k}{-1}\qb{1}{k}\endmel\tbl{1}\qb{1}{j}\en%
+\bar% 7
+\Notes\ca{kkjj}\nextinstrument\ca{iihh}\en%
+\bar% 8
+\Notes\ca{iihh}\nextinstrument\qa{g}\sk\ds\ca{i}\en%
+\bar% 9
+\Notes\qa{g}\sk\ds\ca{g}\nextinstrument\qa{i}\sk\qa{h}\en%
+\generalmeter{\meterfrac{3}{4}}%
+\changecontext% 10
+\NOtes\qa{gf}\nextinstrument\ha{h}\en%
+\Notes\qa{g}\nextinstrument\ca{ii}\en%
+\generalmeter{\meterfrac{2}{4}}%
+\alaligne% 11
+\Notes\ha{f}\nextinstrument\ca{kkhh}\en%
+\bar% 12
+\Notes\ha{e}\nextinstrument\ca{jjgg}\en%
+\generalmeter{\meterfrac{4}{4}}%
+\changecontext% 13
+\Notes\qup{d}\sk\sk\ca{f}\beginmel\ibu{0}{g}{-1}\qb{0}{g}\endmel\tbu{0}\qb{0}{f}\beginmel\ibu{0}{h}{-1}\qb{0}{h}\endmel\tbu{0}\qb{0}{g}%
+\nextinstrument\ca{ii}\qa{h}\sk\qa{i}\sk\qa{j}\en%
+\bar% 14
+\Notes\qa{f}\sk\qa{f}\sk\qa{g}\sk\beginmel\ibu{0}{h}{1}\qb{0}{h}\endmel\tbu{0}\qb{0}{g}%
+\nextinstrument\qlp{k}\sk\sk\ca{j}\beginmel\ibu{1}{j}{-1}\qb{1}{j}\endmel\tbu{1}\qb{1}{i}\beginmel\ibu{1}{h}{-1}\qb{1}{h}\endmel\tbu{1}\qb{1}{g}\en%
+\bar% 15
+\NOtesp\qlp{j}\nextinstrument\qup{h}\en%
+\Notes\ca{i}\nextinstrument\ca{g}\en%
+\NOtesp\qlp{i}\nextinstrument\qup{g}\en%
+\Endpiece
+
+\vskip2\baselineskip
+{\lyrfont
+\vskip\baselineskip
+\halign{\vtop{\hsize=3em\hfill #}\tabskip=1em&\vtop{\hsize=16cm #}\cr
+2.&Flieg her zum Krippelein! Flieg her, gefiedert Schwesterlein, blas an dem feinen Psalterlein, sing, Nachtigall, gar fein!
+Dem Kindelein musiziere, koloriere, jubiliere. Sing, sing, sing sing dem s\"u\ss en Jesulein!\cr
+\cr
+3.&Stimm, Nachtigall, stimm an! Den Takt gib mir dem Federlein, auch freudig schwing die Fl\"ugelein, erstreck dein H\"alselein!
+Der Sch\"opfer dein Mensch will werden mit Geb\"arden hier auf Erden: Sing, sing, sing, sing dem werten Jesulein!\cr
+}
+\vfill
+\hrule
+\vskip\baselineskip
+Bamberger Gesangbuch 1670
+
+\bye
