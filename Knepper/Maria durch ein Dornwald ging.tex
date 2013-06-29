@@ -1,0 +1,397 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+\smallmusicsize
+%\normalmusicsize
+
+%
+% Version 0.1 2013-06-29 Tenor und layout korriegiert.
+%
+
+\fulltitle{Maria durch ein' Dornwald ging}
+ \author{Lothar Knepper}
+ \shortauthor{Lothar Knepper}
+ \title{Maria durch ein' Dornwald ging}
+ \def\voices{SATB}
+ \maketitle
+
+\def\freqbarno{5}
+\instrumentnumber{4}
+\interstaff{11}
+\generalmeter{\meterC}
+\generalsignature{-4}
+\setclef{1}{\bass}
+%\setclefsymbol{2}{\treblelowoct}
+%\setname{1}{Bass}
+%\setname{2}{Tenor}
+%\setname{3}{Alt}
+%\setname{4}{Sopran}
+
+%\elemskip1.2\elemskip
+
+\grouptop{1}{4}
+\groupbottom{1}{1}
+\barnumbers
+\startbarno=0
+\def\freqbarno{5}
+\sepbarrules
+\stafftopmarg=7\Interligne
+\interinstrument=2\Interligne
+\startmuflex
+
+\def\everystaff{\znotes\nextinstrument\zchar{-6}{\eightrm \kern -2\Interligne 8}\en}%
+
+\setlyrics{lbass}{Ma-ri-a durch ein' Dorn-wald ging, Ky-rie e-lei-son! Ky-ri-e e-lei-son! Je-sus und Ma-ri-a.
+Was trug Ma-ri-a un-ter ihr-em Her-zen? Ky-rie e-lei-son! Ky-ri-e e-lei-son! Je-sus und Ma-ri-a.
+Da ha-ben die Dor-nen Ro-sen ge-tra-gen. Ky-rie e-lei-son! Ky-ri-e e-lei-son! Je-sus und Ma-ri-a.}
+\setlyrics{ltenor}{Ma-ri-a durch ein' Dorn-wald ging, Ky-rie e-lei-son! Ky-ri-e e-lei-son! Je-sus und Ma-ri-a.
+Was trug Ma-ri-a un-ter ihr-em Her-zen? Ky-rie e-lei-son! Ein klei-nes Kind-lein oh-ne Schmer-zen, das trug Ma-ri-a un-ter ihr-em Her-zen. Je-sus und Ma-ri-a.
+Da ha-ben die Dor-nen Ro-sen ge-tra-gen. Ky-rie e-lei-son! Ky-ri-e e-lei-son! Je-sus und Ma-ri-a.}
+\setlyrics{lalt}{Ma-ri-a durch ein' Dorn-wald ging, Ky-rie e-lei-son! Ky-ri-e e-lei-son! Je-sus und Ma-ri-a.
+Was trug Ma-ri-a un-ter ihr-em Her-zen? Ky-rie e-lei-son! Ky-ri-e e-lei-son! Je-sus und Ma-ri-a.
+Da ha-ben die Dor-nen Ro-sen ge-tra-gen. Ky-rie e-lei-son! Ky-ri-e e-lei-son! Je-sus und Ma-ri-a und Ma-ri-a.}
+\setlyrics{lsopran}{Ma-ri-a durch ein' Dorn-wald ging, Ky-rie e-lei-son! Ma-ri-a durch ein Dorn-wald ging der hatt' in sieb'n Jahr kein Laub ge-tra-gen, Je-sus und Ma-ri-a.
+Was trug Ma-ri-a un-ter ihr-em Her-zen? Ky-rie e-lei-son! Ky-ri-e e-lei-son! Je-sus und Ma-ri-a.
+Da ha-ben die Dor-nen Ro-sen ge-tra-gen. Ky-rie e-lei-son! Als das Kind-lein durch den Wald ge-tra-gen, da ha-ben die Dor-nen Ro-sen ge-tra-gen. Je-sus und Ma-ri-a.}
+\assignlyrics{1}{lbass}
+\assignlyrics{2}{ltenor}
+\assignlyrics{3}{lalt}
+\assignlyrics{4}{lsopran}
+
+\startpiece
+\Notes\uptext{\mf}\qa{J}%
+\nextinstrument\uptext{\mf}\qa{c}%
+\nextinstrument\uptext{\mf}\qa{c}%
+\nextinstrument\uptext{\mf}\qa{c}\en%
+\bar% 1
+\Notesp\qlp{M}%
+\nextinstrument\qup{f}%
+\nextinstrument\qup{f}%
+\nextinstrument\qup{f}\en%
+\notes\ca{N}%
+\nextinstrument\ca{g}%
+\nextinstrument\ca{g}%
+\nextinstrument\ca{g}\en%
+\Notes\qa{ac}%
+\nextinstrument\qa{hj}%
+\nextinstrument\qa{hj}%
+\nextinstrument\qa{hj}\en%
+\bar% 2
+\Notes\qa{a}%
+\nextinstrument\qa{h}%
+\nextinstrument\qa{h}%
+\nextinstrument\qa{h}\en%
+\notes\beginmel\ibl{0}{N}{-1}\qb{0}{N}\endmel\tbl{0}\qb{0}{M}%
+\nextinstrument\beginmel\ibu{1}{g}{-1}\qb{1}{g}\endmel\tbu{1}\qb{1}{f}%
+\nextinstrument\beginmel\ibu{2}{g}{-1}\qb{2}{g}\endmel\tbu{2}\qb{2}{f}%
+\nextinstrument\beginmel\ibu{3}{g}{-1}\qb{3}{g}\endmel\tbu{3}\qb{3}{f}\en%
+\NOtes\ha{N}%
+\nextinstrument\ha{g}%
+\nextinstrument\ha{g}%
+\nextinstrument\ha{g}\en%
+\bar% 3
+\Notes\qa{M}%
+\nextinstrument\qa{h}%
+\nextinstrument\qa{c}%
+\nextinstrument\qa{h}\en%
+\notes\cl{_MM}%
+\nextinstrument\ca{hh}%
+\nextinstrument\cu{=dd}%
+\nextinstrument\ca{hh}\en%
+\Notes\beginmel\isluru{0}{L}\qlp{L}%
+\nextinstrument\beginmel\islurd{1}{h}\qa{h}%
+\nextinstrument\beginmel\islurd{2}{d}\qa{d}%
+\nextinstrument\ha{i}\en%
+\notes\sk\endmel\tslur{0}{K}\ca{K}%
+\nextinstrument\endmel\tslur{1}{g}\qa{g}%
+\nextinstrument\endmel\tslur{2}{e}\qa{e}\en%
+\bar% 4
+\NOtesp\hup{J}%
+\nextinstrument\hup{g}%
+\nextinstrument\hup{e}%
+\nextinstrument\hlp{j}\en%
+\notes\qp%
+\nextinstrument\qp%
+\nextinstrument\qp%
+\nextinstrument\beginmel\ibu{3}{h}{1}\qb{3}{h}\endmel\tbu{3}\qb{3}{i}\en%
+\bar% 5
+\Notesp\uptext{\pp}\ha{H}%
+\nextinstrument\uptext{\pp}\ha{j}%
+\nextinstrument\uptext{\pp}\ha{e}%
+\nextinstrument\qlp{j}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\ca{i}\en%
+\Notes\ha{a}%
+\nextinstrument\ha{j}%
+\nextinstrument\ha{f}%
+\nextinstrument\qa{j}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\beginmel\ibl{3}{k}{-1}\qb{3}{k}\endmel\tbl{3}\qb{3}{j}\en%
+\alaligne% 6
+\Notesp\ha{N}%
+\nextinstrument\ha{k}%
+\nextinstrument\ha{f}%
+\nextinstrument\qlp{j}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\ca{i}\en%
+\Notes\ha{J}%
+\nextinstrument\ha{j}%
+\nextinstrument\ha{=e}%
+\nextinstrument\qa{i}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\beginmel\ibl{3}{j}{-1}\qb{3}{j}\endmel\tbl{3}\qb{3}{i}\en%
+\bar% 7
+\Notesp\beginmel\isluru{0}{M}\ha{M}%
+\nextinstrument\beginmel\isluru{1}{j}\ha{_j}%
+\nextinstrument\beginmel\islurd{2}{e}\ha{_e}%
+\nextinstrument\qup{h}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\ca{g}\en%
+\Notes\endmel\tslur{0}{I}\ha{I}%
+\nextinstrument\endmel\tslur{1}{i}\ha{i}%
+\nextinstrument\endmel\tslur{2}{=d}\ha{d}%
+\nextinstrument\qa{h}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\ca{ih}\en%
+\bar% 8
+\Notesp\wh{L}\nextinstrument\wh{i}\nextinstrument\wh{e}%
+\nextinstrument\qup{g}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\ca{f}\en%
+\Notes\nextinstrument\nextinstrument\nextinstrument\qa{gg}\en%
+\bar% 9
+\notes\beginmel\ibl{0}{a}{-1}\qb{0}{aN}\endmel\tbl{0}\qb{0}{M}\ca{L}\qa{K}\sk\beginmel\ibu{0}{J}{1}\qb{0}{J}\endmel\tbu{0}\qb{0}{K}%
+\nextinstrument\beginmel\ibl{1}{j}{-1}\qb{1}{ji}\endmel\tbl{1}\qb{1}{h}\ca{i}\qa{k}\sk\beginmel\ibl{1}{l}{1}\qb{1}{l}\endmel\tbl{1}\qb{1}{m}%
+\nextinstrument\qup{f}\sk\sk\ca{e}\qa{f}\sk\qa{h}%
+\nextinstrument\qup{f}\sk\sk\ca{g}\qa{h}\sk\qa{j}\en%
+\bar% 10
+\notes\qa{L}%
+\nextinstrument\qa{i}%
+\nextinstrument\qa{e}%
+\nextinstrument\beginmel\ibu{3}{h}{-1}\qb{3}{h}\endmel\tbu{3}\qb{3}{g}\en%
+\NOtes\ha{M}%
+\nextinstrument\hu{=h}%
+\nextinstrument\ha{c}%
+\nextinstrument\ha{f}\en%
+\Notes\uptext{\mf}\qa{J}%
+\nextinstrument\uptext{\mf}\qa{c}%
+\nextinstrument\uptext{\mf}\qa{c}%
+\nextinstrument\uptext{\mf}\qa{c}\en%
+\alaligne% 11
+\Notesp\qlp{M}%
+\nextinstrument\qup{f}%
+\nextinstrument\qup{f}%
+\nextinstrument\qup{f}\en%
+\notes\ca{N}%
+\nextinstrument\ca{g}%
+\nextinstrument\ca{g}%
+\nextinstrument\ca{g}\en%
+\Notes\qa{ac}%
+\nextinstrument\qa{hj}%
+\nextinstrument\qa{hj}%
+\nextinstrument\qa{hj}\en%
+\bar% 12
+\notes\ca{aaNM}%
+\nextinstrument\ca{hhgf}%
+\nextinstrument\ca{hhgf}%
+\nextinstrument\ca{hhgf}\en%
+\Notes\qa{NN}%
+\nextinstrument\qa{gg}%
+\nextinstrument\qa{gg}%
+\nextinstrument\qa{gg}\en%
+\bar% 13
+\Notes\qa{M}%
+\nextinstrument\qa{h}%
+\nextinstrument\qa{c}%
+\nextinstrument\qa{h}\en%
+\notes\cl{_MM}%
+\nextinstrument\ca{hh}%
+\nextinstrument\cu{=dd}%
+\nextinstrument\ca{hh}\en%
+\Notes\beginmel\isluru{0}{L}\qlp{L}%
+\nextinstrument\beginmel\islurd{1}{h}\qa{h}%
+\nextinstrument\beginmel\islurd{2}{d}\qa{d}%
+\nextinstrument\ha{i}\en%
+\notes\sk\endmel\tslur{0}{K}\ca{K}%
+\nextinstrument\endmel\tslur{1}{g}\qa{g}%
+\nextinstrument\endmel\tslur{2}{e}\qa{e}\en%
+\bar% 14
+\NOtesp\hup{J}%
+\nextinstrument\hup{g}%
+\nextinstrument\hup{e}%
+\nextinstrument\hlp{j}\en%
+\notes\qp%
+\nextinstrument\beginmel\ibu{3}{h}{1}\qb{3}{h}\endmel\tbu{3}\qb{3}{i}%
+\nextinstrument\qp%
+\nextinstrument\qp\en%
+\bar% 15
+\Notesp\uptext{\pp}\ha{H}%
+\nextinstrument\qlp{j}%
+\nextinstrument\uptext{\pp}\ha{e}%
+\nextinstrument\uptext{\pp}\ha{j}\en%
+\notes\nextinstrument\ca{i}\en%
+\Notes\ha{a}%
+\nextinstrument\qa{j}%
+\nextinstrument\ha{f}%
+\nextinstrument\ha{j}\en%
+\notes\nextinstrument\beginmel\ibl{3}{k}{-1}\qb{3}{k}\endmel\tbl{3}\qb{3}{j}\en%
+\alaligne% 16
+\Notesp\ha{N}%
+\nextinstrument\qlp{j}%
+\nextinstrument\ha{f}%
+\nextinstrument\ha{k}\en%
+\notes\nextinstrument\ca{i}\en%
+\Notes\ha{J}%
+\nextinstrument\qa{i}%
+\nextinstrument\ha{=e}%
+\nextinstrument\ha{j}\en%
+\notes\nextinstrument\ca{ji}\en%
+\bar% 17
+\Notesp\beginmel\isluru{0}{M}\ha{M}%
+\nextinstrument\qup{h}%
+\nextinstrument\beginmel\islurd{2}{e}\ha{_e}%
+\nextinstrument\beginmel\isluru{1}{j}\ha{_j}\en%
+\notes\nextinstrument\ca{g}\en%
+\Notes\endmel\tslur{0}{I}\ha{I}%
+\nextinstrument\qa{h}%
+\nextinstrument\endmel\tslur{2}{=d}\ha{d}%
+\nextinstrument\endmel\tslur{1}{i}\ha{i}\en%
+\notes\nextinstrument\beginmel\ibl{3}{i}{-1}\qb{3}{i}\endmel\tbl{3}\qb{3}{h}\en%
+\bar% 18
+\notes\wh{L}%
+\nextinstrument\ca{ggg}%
+\nextinstrument\wh{e}%
+\nextinstrument\wh{i}\en%
+\notes\nextinstrument\ca{f}\en%
+\Notes\nextinstrument\qa{gg}\en%
+\bar% 19
+\notes\beginmel\ibl{0}{a}{-1}\qb{0}{aN}\endmel\tbl{0}\qb{0}{M}\ca{L}\qa{K}\sk\beginmel\ibu{0}{J}{1}\qb{0}{J}\endmel\tbu{0}\qb{0}{K}%
+\nextinstrument\beginmel\ibl{1}{j}{-1}\qb{1}{ji}\endmel\tbl{1}\qb{1}{h}\ca{i}\qa{k}\sk\beginmel\ibl{1}{l}{1}\qb{1}{l}\endmel\tbl{1}\qb{1}{m}%
+\nextinstrument\qup{f}\sk\sk\ca{e}\qa{f}\sk\qa{h}%
+\nextinstrument\qup{f}\sk\sk\ca{g}\qa{h}\sk\qa{j}\en%
+\bar% 20
+\notes\qa{L}%
+\nextinstrument\qa{i}%
+\nextinstrument\qa{e}%
+\nextinstrument\beginmel\ibu{3}{h}{-1}\qb{3}{h}\endmel\tbu{3}\qb{3}{g}\en%
+\NOtes\ha{M}%
+\nextinstrument\hu{=h}%
+\nextinstrument\ha{c}%
+\nextinstrument\ha{f}\en%
+\Notes\uptext{\mf}\qa{J}%
+\nextinstrument\uptext{\mf}\qa{c}%
+\nextinstrument\uptext{\mf}\qa{c}%
+\nextinstrument\uptext{\mf}\qa{c}\en%
+\alaligne% 21
+\Notes\qa{M}%
+\nextinstrument\qa{f}%
+\nextinstrument\qa{f}%
+\nextinstrument\qa{f}\en%
+\notes\ca{MN}%
+\nextinstrument\ca{fg}%
+\nextinstrument\ca{fg}%
+\nextinstrument\ca{fg}\en%
+\Notes\qa{ac}%
+\nextinstrument\qa{hj}%
+\nextinstrument\qa{hj}%
+\nextinstrument\qa{hj}\en%
+\bar% 22
+\Notes\qa{a}%
+\nextinstrument\qa{h}%
+\nextinstrument\qa{h}%
+\nextinstrument\qa{h}\en%
+\notes\ca{NM}%
+\nextinstrument\ca{gf}%
+\nextinstrument\ca{gf}%
+\nextinstrument\ca{gf}\en%
+\Notes\qa{NN}%
+\nextinstrument\qa{gg}%
+\nextinstrument\qa{gg}%
+\nextinstrument\qa{gg}\en%
+\bar% 23
+\Notes\qa{M}%
+\nextinstrument\qa{h}%
+\nextinstrument\qa{c}%
+\nextinstrument\qa{h}\en%
+\notes\cl{_MM}%
+\nextinstrument\ca{hh}%
+\nextinstrument\cu{=dd}%
+\nextinstrument\ca{hh}\en%
+\Notes\beginmel\isluru{0}{L}\qlp{L}%
+\nextinstrument\beginmel\islurd{1}{h}\qa{h}%
+\nextinstrument\beginmel\islurd{2}{d}\qa{d}%
+\nextinstrument\ha{i}\en%
+\notes\sk\endmel\tslur{0}{K}\ca{K}%
+\nextinstrument\endmel\tslur{1}{g}\qa{g}%
+\nextinstrument\endmel\tslur{2}{e}\qa{e}\en%
+\bar% 24
+\NOtesp\hup{J}%
+\nextinstrument\hup{g}%
+\nextinstrument\hup{e}%
+\nextinstrument\hlp{j}\en%
+\notes\qp%
+\nextinstrument\qp%
+\nextinstrument\qp%
+\nextinstrument\ca{hi}\en%
+\bar% 25
+\Notesp\uptext{\pp}\ha{H}%
+\nextinstrument\uptext{\pp}\ha{j}%
+\nextinstrument\uptext{\pp}\ha{e}%
+\nextinstrument\qlp{j}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\ca{i}\en%
+\Notes\ha{a}%
+\nextinstrument\ha{j}%
+\nextinstrument\ha{f}%
+\nextinstrument\qa{j}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\beginmel\ibl{3}{k}{-1}\qb{3}{k}\endmel\tbl{3}\qb{3}{j}\en%
+\alaligne% 26
+\Notesp\ha{N}%
+\nextinstrument\ha{k}%
+\nextinstrument\ha{f}%
+\nextinstrument\qlp{j}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\ca{i}\en%
+\Notes\ha{J}%
+\nextinstrument\ha{j}%
+\nextinstrument\ha{=e}%
+\nextinstrument\qa{i}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\ca{ji}\en%
+\bar% 27
+\Notes\beginmel\isluru{0}{M}\ha{M}%
+\nextinstrument\beginmel\isluru{1}{j}\ha{_j}%
+\nextinstrument\beginmel\islurd{2}{e}\ha{_e}%
+\nextinstrument\qu{h}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\ca{hg}\en%
+\Notes\endmel\tslur{0}{I}\ha{I}%
+\nextinstrument\endmel\tslur{1}{i}\ha{i}%
+\nextinstrument\endmel\tslur{2}{=d}\ha{d}%
+\nextinstrument\qa{h}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\beginmel\ibu{3}{i}{-1}\qb{3}{i}\endmel\tbu{3}\qb{3}{h}\en%
+\bar% 28
+\Notes\wh{L}\nextinstrument\wh{i}\nextinstrument\wh{e}%
+\nextinstrument\qu{g}\en%
+\notes\nextinstrument\nextinstrument\nextinstrument\ca{gf}\en%
+\Notes\nextinstrument\nextinstrument\nextinstrument\qa{gg}\en%
+\bar% 29
+\notes\beginmel\ibl{0}{a}{-1}\qb{0}{aN}\endmel\tbl{0}\qb{0}{M}\ca{L}\qa{K}\sk\beginmel\ibu{0}{J}{1}\qb{0}{J}\endmel\tbu{0}\qb{0}{K}%
+\nextinstrument\beginmel\ibl{1}{j}{-1}\qb{1}{ji}\endmel\tbl{1}\qb{1}{h}\ca{i}\qa{k}\sk\beginmel\ibl{1}{l}{1}\qb{1}{l}\endmel\tbl{1}\qb{1}{m}%
+\nextinstrument\qup{f}\sk\sk\ca{e}\qa{f}\sk\qa{h}%
+\nextinstrument\qup{f}\sk\sk\ca{g}\qa{h}\sk\qa{j}\en%
+\bar% 30
+\notes\qa{L}%
+\nextinstrument\beginmel\itenu{1}{i}\wh{i}%
+\nextinstrument\qa{e}%
+\nextinstrument\beginmel\ibu{3}{h}{-1}\qb{3}{h}\endmel\tbu{3}\qb{3}{g}\en%
+\Notes\beginmel\itenu{0}{M}\hlp{N}%
+\nextinstrument\nextinstrument\qa{eed}%
+\nextinstrument\beginmel\itenl{3}{f}\hup{f}\en%
+\bar% 31
+\NOtes\endmel\tten{0}\wh{M}%
+\nextinstrument\endmel\tten{1}\ha{i}\hu{=h}%
+\nextinstrument\ha{cc}%
+\nextinstrument\endmel\tten{3}\wh{f}\en%
+\Endpiece
+
+\vfill
+
+\hrule
+\vskip\baselineskip
+Satz: Lothar Knepper
+
+\bye
