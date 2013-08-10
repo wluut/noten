@@ -34,7 +34,7 @@
 \startbarno=0
 \def\freqbarno{5}
 \sepbarrules
-\interinstrument=12\Interligne
+\setinterinstrument{1}{12\Interligne}
 \startmuflex
 
 \setlyrics{vers1a}{Lob Gott ge-trost mit Sin-gen, froh-lock, du christ-lich Schar!}
@@ -72,7 +72,7 @@
 \nextinstrument\zhl{N}\hu{c}\en%
 \NOtes\qp\nextinstrument\qp\en%
 \advance\barno-1%
-\def\atnextline{\interinstrument=7\Interligne}%
+\def\atnextline{\setinterinstrument{1}{7\Interligne}}%
 \setrightrepeat\alaligne%
 \assignlyrics{2}{vers1c,vers3c}%
 \NOtes\zql{c}\qu{c}%
@@ -89,7 +89,7 @@
 \bar% 8
 \NOTes\zhl{G}\hu{b}\caesura\zhl{J}\hu{J}%
 \nextinstrument\zhl{d}\hu{g}\caesura\zhl{c}\hu{c}\en%
-\def\atnextline{\interinstrument=12\Interligne}%
+\def\atnextline{\setinterinstrument{1}{12\Interligne}}%
 \alaligne%\bar% 9
 \NOtes\tinynotesize\zql{F}\normalnotesize\zql{M}\qu{M}\tinynotesize\zql{G}\normalnotesize\zql{N}\qu{N}\tinynotesize\zql{H}\normalnotesize\zql{a}\qu{a}\tinynotesize\zql{I}\normalnotesize\zql{b}\qu{b}%
 \nextinstrument\zql{f}\qu{f}\zql{g}\qu{g}\zql{h}\qu{h}\zql{i}\qu{i}\en%
