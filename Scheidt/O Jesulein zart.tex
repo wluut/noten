@@ -1,0 +1,118 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+\input musixcho
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2013-11-12
+%
+
+\fulltitle{O Jesulein zart}
+ \author{Samuel Scheidt (1587--1654)}
+ \shortauthor{Samuel Scheidt}
+ \title{O Jesulein zart}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{18}
+\generalmeter{\meterfrac{6}{4}}
+\generalsignature{-2}
+\setclef{1}{\bass}
+
+%\elemskip=1.2\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=7\Interligne
+\setinterinstrument{1}{3\Interligne}
+\startmuflex
+
+\setlyrics{lyrics1a}{\lyrlayout{\lyrfont}O, Je-su-lein zart, dein Krip-plein ist hart, o Je-su-lein zart, wie liegst du so hart. Ach schlaf, ach}
+\setlyrics{lyrics2a}{\lyrlayout{\lyrfont}Seid stil-le ihr Wind, la\ss t schla-fen das Kind! All Brau-sen sei fern 's~will ru-hen so gern. Schlaf Kind und}
+\setlyrics{lyrics3a}{\lyrlayout{\lyrfont}Nichts mehr sich be-wegt kein M\"aus-lein sich regt. Zu schla-fen be-ginnt das her-zi-ge Kind. Schlaf denn und}
+\setlyrics{lyrics0b}{\lyrlayout{\lyrfont\it}tu die \"Aug-lein zu, schlaf und gib uns die ew-ge Ruh.}
+\setlyrics{lyrics1c}{\lyrlayout{\lyrfont}O Je-su-lein zart, wie liegst du so hart.}
+\setlyrics{lyrics2c}{\lyrlayout{\lyrfont}Seid stil-le ihr Wind, la\ss t schla-fen das Kind.}
+\setlyrics{lyrics3c}{\lyrlayout{\lyrfont}Schlaf, Je-su-lein zart von g\"ott-li-cher Art.}
+\assignlyrics{2}{lyrics1a,lyrics2a,lyrics3a}
+
+\startpiece
+\Notes\sk\nextinstrument\sk\en%
+\znotes\nextinstrument\loffset{2.2}{\verses{\lyric*{1.},\lyric*{2.},\lyric*{3.}}}\en%
+\Notes\zql{I}\qu{M}%
+\nextinstrument\zql{d}\qu{i}\en%
+\bar% 1
+\Notesp\pt{K}\zql{K}\qup{M}%
+\nextinstrument\pt{f}\zql{f}\qup{i}\en%
+\notes\zcl{L}\cu{N}%
+\nextinstrument\zcl{b}\cu{i}\en%
+\Notes\zql{K}\qu{M}\zhl{J}\hu{N}\sk\zql{J}\qu{c}%
+\nextinstrument\zql{f}\qu{i}\zhl{=e}\hu{j}\zql{f}\qu{h}\en%
+\bar% 2
+\Notesp\pt{J}\zql{J}\qup{=L}%
+\nextinstrument\pt{g}\zql{g}\qup{i}\en%
+\notes\zcl{J}\cu{M}%
+\nextinstrument\zcl{f}\cu{h}\en%
+\Notes\zql{J}\qu{N}\zhl{M}\hu{a}\sk\zql{I}\qu{M}%
+\nextinstrument\zql{=e}\qu{g}\zhl{c}\hu{f}\sk\zql{b}\qu{k}\en%
+\bar% 3
+\Notes\zql{M}\qu{a}\zql{M}\qu{a}\zql{M}\qu{a}\zhl{I}\hu{M}\sk\zql{L}\qu{N}%
+\nextinstrument\zql{c}\qu{j}\zql{c}\qu{j}\zql{c}\qu{j}\zhl{d}\hu{i}\sk\zql{c}\qu{j}\en%
+\alaligne% 4
+\Notes\zql{K}\qu{b}\zql{L}\qu{N}\zql{J}\qu{c}\zhl{I}\hu{M}\sk\zql{I}\qu{b}%
+\nextinstrument\zql{d}\qu{f}\zql{b}\qu{g}\zql{e}\qu{h}\zhl{d}\hu{i}\sk\zql{f}\qu{k}\en%
+\bar% 5
+\Notes\ibslurd{0}{L}\zql{L}\hu{b}\tbslurd{0}{M}\ql{M}\zql{N}\qu{b}%
+\nextinstrument\zhl{g}\hu{l}\sk\zql{e}\qu{l}\rlap{\kernm1.4\elemskip\bigrbrace}\en%
+\assignlyrics{2}{lyrics0b}%
+\Notes\zhl{_a}\roff{\ibsluru{1}{a}\qu{a}}\tbsluru{1}{b}\qu{b}\zql{a}\qu{c}%
+\nextinstrument\zhl{e}\hu{j}\sk\zql{e}\qu{j}\en%
+\bar% 6
+\Notes\ibsluru{1}{a}\zhl{M}\qu{a}\tbsluru{1}{N}\qu{N}\zql{M}\qu{a}\zhl{N}\roff{\ibsluru{1}{N}\qu{N}}\tbsluru{1}{a}\qu{a}\zql{N}\qu{b}%
+\nextinstrument\zhl{f}\hu{k}\sk\zql{f}\qu{k}\zhl{d}\hu{i}\sk\zql{d}\qu{i}\en%
+\bar% 7
+\Notes\ibsluru{1}{N}\zhl{L}\qu{N}%
+\nextinstrument\zhl{g}\hu{j}\en%
+\notes\ibu{1}{a}{1}\qb{1}{a}\tbsluru{1}{b}\tbu{1}\qb{1}{b}\en%
+\Notes\zql{L}\qu{c}\ibsluru{1}{c}\zhl{M}\qu{c}\tbsluru{1}{a}\qu{a}\zql{M}\qu{c}%
+\nextinstrument\zql{g}\qu{j}\zhl{f}\hu{h}\sk\zql{f}\qu{h}\en%
+\alaligne% 8
+\Notes\ibsluru{1}{M}\zhl{K}\qu{M}%
+\nextinstrument\zhl{f}\hu{i}\en%
+\notes\ibu{1}{N}{1}\qb{1}{N}\tbsluru{1}{a}\tbu{1}\qb{1}{a}\en%
+\Notes\zql{K}\qu{b}\zhl{L}\hu{b}\sk%
+\nextinstrument\zql{f}\qu{i}\zhl{e}\hu{g}\sk\en%
+\assignlyrics{2}{lyrics1c,lyrics2c,lyrics3c}%
+\Notes\zql{J}\qu{N}%
+\nextinstrument\rlap{\kernm1.4\elemskip\biglbrace}\zql{e}\qu{j}\en%
+\bar% 9
+\Notes\zql{K}\qu{b}\zql{L}\qu{N}\zql{M}\qu{c}%
+\nextinstrument\zql{d}\qu{f}\zql{b}\qu{g}\zql{f}\qu{h}\en%
+\Notesp\ibsluru{1}{d}\zhl{I}\qup{d}%
+\nextinstrument\zhl{f}\hu{i}\en%
+\notes\tbsluru{1}{c}\cu{c}\en%
+\Notes\zql{I}\qu{b}%
+\nextinstrument\zql{f}\qu{k}\en%
+\bar% 10
+\Notes\zql{M}\qu{a}\zql{M}\qu{b}\zql{M}\qu{c}\zhl{I}\hu{d}%
+\nextinstrument\zql{f}\qu{j}\zql{f}\qu{i}\zql{f}\qu{h}\zhl{f}\hu{i}\en%
+%
+\Endpiece
+
+\vfill
+
+\hrule
+\vskip\baselineskip
+Volkslied vor 1623; aus \frqq G\"orlitzer Tabulatur\flqq 1650\par
+
+\bye
