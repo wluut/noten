@@ -1,0 +1,143 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2013-11-17
+%
+
+\fulltitle{Tochter Zion}
+ \author{Georg Friedrich H\"andel}
+ \shortauthor{Georg Friedrich H\"andel}
+ \title{Tochter Zion}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{18}
+\generalmeter{\allabreve}
+\generalsignature{-3}
+\setclef{1}{\bass}
+
+\elemskip=.9\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=7\Interligne
+\setinterinstrument{1}{5\Interligne}
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics1}{\lyrlayout{\lyrfont}Toch-ter Zi-on, freu-e dich, jauch-ze laut, Je-ru-sa-lem! Sieh, dein K\"o-nig kommt zu dir, ja er kommt, der Frie-de-f\"urst.
+Toch-ter Zi-on, freu-e dich, jauch-ze laut, Je-ru-sa-lem!}
+\setlyrics{lyrics2}{\lyrlayout{\lyrfont}Ho-si-an-na, Da-vids Sohn, sei ge-seg-net dei-nem Volk! Gr\"un-de nun dein e-wig Reich, Ho-si-an-na in-der H\"oh!
+Ho-si-an-na, Da-vids Sohn, sei ge-seg-net dei-nem Volk!}
+\setlyrics{lyrics3}{\lyrlayout{\lyrfont}Ho-si-an-na, Da-vids Sohn, sei ge-gr\"u-\ss et, K\"o-nig mild! E-wig steht dein Frie-dens-thron, du, des ew-gen Va-ters Kind.
+Ho-si-an-na, Da-vids Sohn, sei ge-gr\"u-\ss et, K\"o-nig mild!}
+\assignlyrics{2}{lyrics1,lyrics2,lyrics3}
+
+\startpiece
+\Notes\sk\nextinstrument\sk\en%
+\znotes\nextinstrument\loffset{2.2}{\verses{\lyric*{1.},\lyric*{2.},\lyric*{3.}}}\en%
+\NOtes\zhl{L}\hu{N}%
+\nextinstrument\zhl{e}\hu{i}\en%
+\Notesp\ibslurd{0}{N}\ibsluru{1}{b}\pt{N}\zql{N}\qup{b}%
+\nextinstrument\beginmel\ibslurd{2}{e}\ibsluru{3}{g}\pt{e}\zql{e}\qup{g}\en%
+\notes\tbslurd{0}{M}\tbsluru{1}{a}\zcl{M}\cu{a}%
+\nextinstrument\endmel\tbslurd{2}{d}\tbsluru{3}{h}\zcl{d}\cu{h}\en%
+\bar% 2
+\NOtes\zhl{L}\hu{N}\zhl{N}\hu{b}%
+\nextinstrument\zhl{e}\hu{i}\zhl{b}\hu{e}\en%
+\bar% 3
+\notes\ibslurd{0}{M}\ibsluru{1}{a}\pt{M}\zql{M}\qu{a}\sk\qu{M}\cl{L}\tbslurd{0}{L}\tbsluru{1}{b}\zql{K}\qu{b}\sk\zql{L}\qu{b}\sk%
+\nextinstrument\beginmel\ibslurd{2}{d}\ibsluru{3}{f}\ibl{2}{d}{1}\ibu{3}{f}{1}\zqb{2}{d}\qb{3}{f}\zqb{2}{e}\qb{3}{g}\zqb{2}{f}\qb{3}{h}%
+\tbl{2}\tbu{3}\zqb{2}{g}\qb{3}{i}\endmel\tbslurd{2}{f}\tbsluru{3}{h}\zql{f}\qu{h}\sk\zql{e}\qu{g}\en%
+\bar% 4
+\NOTes\zwh{I}\wh{b}%
+\nextinstrument\zwh{d}\wh{f}\en%
+\bar% 5
+\notes\ibslurd{0}{L}\ibl{0}{L}{1}\pt{b}\zhu{b}\qb{0}{LMN}\tbl{0}\qb{0}{a}\tbslurd{0}{N}\ql{N}\sk\zql{N}\qu{b}\sk%
+\nextinstrument\beginmel\ibsluru{3}{g}\ibu{3}{g}{1}\pt{e}\zhl{e}\qb{3}{ghi}\tbu{3}\qb{3}{j}\endmel\tbsluru{3}{i}\qu{i}\sk\zql{e}\qu{i}\en%
+\bar% 6
+\NOtes\zhl{N}\hu{b}\zhl{L}\hu{N}%
+\nextinstrument\zhl{e}\hu{l}\zhl{e}\hu{i}\en%
+\bar% 7
+\notes\ibslurd{0}{M}\ibsluru{1}{a}\zql{M}\qu{a}\sk\tbsluru{1}{b}\ibl{0}{N}{1}\zhu{b}\qb{0}{N}\tbl{0}\qb{0}{a}\tbslurd{0}{b}\ql{b}\sk\zql{I}\qu{a}%
+\nextinstrument\beginmel\ibslurd{2}{d}\ibsluru{3}{h}\zql{d}\qu{h}\sk\tbslurd{2}{e}\zhl{e}\qu{g}\sk\tbsluru{3}{f}\endmel\qup{f}\sk\beginmel\ql{d}\endmel\cu{e}\en%
+\bar% 8
+\NOTes\zwh{L}\wh{N}%
+\nextinstrument\roff{\zwh{e}}\wh{e}\en%
+\bar% 9
+\notes\pt{L}\zhl{L}\hup{b}\sk\sk\sk\sk\sk\zql{L}\qu{b}\sk%
+\nextinstrument\beginmel\ibslurd{2}{e}\ibsluru{3}{g}\ibl{2}{e}{0}\ibu{3}{g}{0}\zqb{2}{e}\qb{3}{g}\zqb{2}{d}\qb{3}{f}\zqb{2}{e}\qb{3}{g}\tbl{2}\tbu{3}\zqb{2}{f}\qb{3}{h}%
+\endmel\tbslurd{2}{e}\tbsluru{3}{g}\zql{e}\qu{g}\sk\zql{e}\qu{g}\en%
+\bar% 10
+\NOtes\zhl{I}\hu{a}\zhl{J}\hu{N}%
+\nextinstrument\zhl{d}\hu{f}\zhl{c}\hu{e}\en%
+\bar% 11
+\Notes\ibslurd{0}{K}\ibsluru{1}{b}\zql{K}\qu{=b}\zql{L}\qu{c}\tbslurd{0}{M}\tbsluru{1}{a}\zql{M}\qu{a}\zql{J}\qu{N}%
+\nextinstrument\beginmel\ibslurd{2}{f}\ibsluru{3}{h}\zql{f}\qu{h}\zql{e}\qu{g}\endmel\tbslurd{2}{d}\tbsluru{3}{f}\zql{d}\qu{f}\zql{c}\qu{e}\en%
+\bar% 12
+\NOTes\roff{\zwh{N}}\wh{N}%
+\nextinstrument\zwh{=b}\wh{d}\en%
+\bar% 13
+\notes\pt{J}\zhl{J}\hup{N}\sk\sk\sk\sk\sk\zql{I}\qu{N}\sk%
+\nextinstrument\beginmel\ibslurd{2}{c}\ibsluru{3}{e}\ibl{2}{c}{0}\ibu{3}{e}{0}\zqb{2}{c}\qb{3}{e}\zqb{2}{=b}\qb{3}{d}\zqb{2}{c}\qb{3}{e}\tbl{2}\tbu{3}\zqb{2}{d}\qb{3}{f}%
+\endmel\tbslurd{2}{c}\tbsluru{3}{e}\zql{c}\qu{e}\sk\zql{c}\qu{e}\en%
+\bar% 14
+\Notes\zhl{=H}\hu{M}\sk\zhl{M}\hu{c}\sk%
+\nextinstrument\zhu{j}\qlp{e}\sk\beginmel\hu{=h}\endmel\ql{e}\en%
+\bar% 15
+\notes\ibslurd{0}{N}\ibsluru{1}{b}\zql{N}\qu{b}\sk\zql{L}\qu{N}\sk\tbslurd{0}{M}\tbsluru{1}{c}\zql{M}\qu{c}\sk\zql{M}\qu{c}\sk%
+\nextinstrument\beginmel\ibslurd{2}{d}\ibsluru{3}{i}\zql{d}\qu{i}\sk\ibl{2}{e}{-1}\ibu{3}{j}{-1}\zqb{2}{e}\qb{3}{j}\tbl{2}\tbu{3}\zqb{2}{d}\qb{3}{i}%
+\endmel\tbslurd{2}{c}\tbsluru{3}{h}\zql{c}\qup{=h}\sk\beginmel\ql{f}\endmel\cu{i}\en%
+\bar% 16
+\NOTes\zwh{I}\wh{d}%
+\nextinstrument\zwh{f}\wh{i}\en%
+\bar% 17
+\NOtes\zhl{L}\hu{N}%
+\nextinstrument\zhl{e}\hu{i}\en%
+\Notesp\ibslurd{0}{N}\ibsluru{1}{b}\pt{N}\zql{N}\qup{b}%
+\nextinstrument\beginmel\ibslurd{2}{e}\ibsluru{3}{g}\pt{e}\zql{e}\qup{g}\en%
+\notes\tbslurd{0}{M}\tbsluru{1}{a}\zcl{M}\cu{a}%
+\nextinstrument\endmel\tbslurd{2}{d}\tbsluru{3}{h}\zcl{d}\cu{h}\en%
+\bar% 18
+\NOtes\zhl{L}\hu{N}\zhl{N}\hu{b}%
+\nextinstrument\zhl{e}\hu{i}\zhl{b}\hu{e}\en%
+\bar% 19
+\notes\ibslurd{0}{M}\ibsluru{1}{a}\pt{M}\zql{M}\qu{a}\sk\qu{M}\cl{L}\tbslurd{0}{L}\tbsluru{1}{b}\zql{K}\qu{b}\sk\zql{L}\qu{b}\sk%
+\nextinstrument\beginmel\ibslurd{2}{d}\ibsluru{3}{f}\ibl{2}{d}{1}\ibu{3}{f}{1}\zqb{2}{d}\qb{3}{f}\zqb{2}{e}\qb{3}{g}\zqb{2}{f}\qb{3}{h}%
+\tbl{2}\tbu{3}\zqb{2}{g}\qb{3}{i}\endmel\tbslurd{2}{f}\tbsluru{3}{h}\zql{f}\qu{h}\sk\zql{e}\qu{g}\en%
+\bar% 20
+\NOTes\zwh{I}\wh{b}%
+\nextinstrument\zwh{d}\wh{f}\en%
+\bar% 21
+\notes\ibslurd{0}{L}\ibl{0}{L}{1}\pt{b}\zhu{b}\qb{0}{LMN}\tbl{0}\qb{0}{a}\tbslurd{0}{N}\ql{N}\sk\zql{N}\qu{b}\sk%
+\nextinstrument\beginmel\ibsluru{3}{g}\ibu{3}{g}{1}\pt{e}\zhl{e}\qb{3}{ghi}\tbu{3}\qb{3}{j}\endmel\tbsluru{3}{i}\qu{i}\sk\zql{e}\qu{i}\en%
+\bar% 22
+\NOtes\zhl{N}\hu{b}\zhl{L}\hu{N}%
+\nextinstrument\zhl{e}\hu{l}\zhl{e}\hu{i}\en%
+\bar% 21
+\notes\ibslurd{0}{M}\ibsluru{1}{a}\zql{M}\qu{a}\sk\tbsluru{1}{b}\ibl{0}{N}{1}\zhu{b}\qb{0}{N}\tbl{0}\qb{0}{a}\tbslurd{0}{b}\ql{b}\sk\zql{I}\qu{a}%
+\nextinstrument\beginmel\ibslurd{2}{d}\ibsluru{3}{h}\zql{d}\qu{h}\sk\tbslurd{2}{e}\zhl{e}\qu{g}\sk\tbsluru{3}{f}\endmel\qup{f}\sk\beginmel\ql{d}\endmel\cu{e}\en%
+\bar% 22
+\NOTes\zwh{L}\wh{N}%
+\nextinstrument\roff{\zwh{e}}\wh{e}\en%
+\Endpiece
+
+\vfill
+
+\hrule
+\vskip\baselineskip
+Text: Friedrich Heinrich Ranke (um 1820) 1826, Melodie und Satz: Georg Friedrich H\"andel 1747
+
+\bye

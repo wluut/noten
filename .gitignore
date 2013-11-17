@@ -8,3 +8,4 @@
 *.lylog
 *.bkp
 *.aux
+*.synctex.gz(busy)
