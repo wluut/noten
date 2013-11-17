@@ -1,0 +1,126 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+\fulltitle{H\"ort der Engel gelle Lieder}
+ \author{Bernhard Binkowski}
+ \shortauthor{Bernhard Binkowski}
+ \title{H\"ort der Engel gelle Lieder}
+ \def\voices{SSATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{16}
+\generalmeter{\meterfrac{4}{4}}
+\generalsignature{1}
+
+%\elemskip=.5\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+%\stafftopmarg=9\Interligne
+%\staffbotmarg=7\Interligne
+\setinterinstrument{1}{7\Interligne}
+\setinterinstrument{2}{-3\Interligne}
+\startmuflex
+
+\def\everystaff{\znotes\lcharnote{i}{A\hskip2em}\lcharnote{e}{B\hskip2em}\nextinstrument\lcharnote{i}{S\hskip2em}\lcharnote{e}{T\hskip2em}\en}
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics1a}{\lyrlayout{\lyrfont}H\"ort der En-gel hel-le Lie-der klin-gen das wei-te Feld ent-lang,}
+\setlyrics{lyrics1b}{\lyrlayout{\lyrfont}und die Ber-ge hal-len wi-der von des_ Him-mels Lob-ge-sang.}
+\setlyrics{lyrics2a}{\lyrlayout{\lyrfont}Hir-ten sagt, was ist ge-sche-hen, was tun_ uns die En-gel kund?}
+\setlyrics{lyrics2b}{\lyrlayout{\lyrfont}Al-les Leid k\"onnt jetzt ver-ge-hen auf dem_ wei-ten Er-den-rund;}
+\setlyrics{lyrics3a}{\lyrlayout{\lyrfont}denn ein Kind-lein ist ge-bo-ren, kom-men_ ist der Hei-land dein.}
+\setlyrics{lyrics3b}{\lyrlayout{\lyrfont}Er er-ret-tet, was ver-lo-ren, Frie-de_ soll auf Er-den sein.}
+\setlyrics{gloria}{\lyrlayout{\lyrfont}Glo-ri-a}
+\setlyrics{excelsis1}{\lyrlayout{\lyrfont}in ex-cel-sis De-o. De-o.}
+\setlyrics{excelsis2}{\lyrlayout{\lyrfont}in ex-cel-sis De-o. De-o.}
+\assignlyrics{2}{lyrics1a,lyrics1b,lyrics2a,lyrics2b,lyrics3a,lyrics3b}
+\startpiece\notes\sk\en%
+\znotes\nextinstrument\loffset{2.2}{\verses{\lyric*{1.},,\lyric*{2.},,\lyric*{3.},}}\en%
+\NOtes\qa{gfg}\nextinstrument\qa{iii}\en%
+\Notes\qa{d}\nextinstrument\beginmel\ibl{1}{i}{3}\qb{1}{i}\endmel\tbl{1}\qb{1}{k}\en%
+\bar% 2
+\Notes\qa{e}\sk\qa{f}\sk\qa{g}\sk\qa{g}\sk\nextinstrument\pt{k}\qa{k}\sk\sk\ca{j}\qa{i}\sk\qa{g}\sk\en%
+\bar% 3
+\NOtes\qa{g}\nextinstrument\qa{i}\en%
+\Notesp\dotted\islurd{0}{f}\cup{f}\nextinstrument\dotted\islurd{1}{i}\cup{i}\en%
+\notes\tslur{0}{f}\ccu{f}\nextinstrument\tslur{1}{h}\ccu{h}\en%
+\Notes\qa{g}\sk\qa{d}\sk%
+\nextinstrument\qa{i}\sk\beginmel\ibl{1}{i}{3}\qb{1}{i}\endmel\tbl{1}\qb{1}{k}\en%
+\bar% 4
+\NOtes\qa{e}\nextinstrument\pt{k}\qa{k}\en%
+\Notes\qa{f}\nextinstrument\sk\ca{j}\en%
+\NOtes\ha{g}\nextinstrument\ha{i}\en%
+\NOtes\nextinstrument\lyricsoff\itenu{3}{n}\lcharnote{p}{1. Sopran Solo}\qu{n}\breakslur{3}{n}\tten{3}\en%
+\setrightrepeat%
+\def\atnextline{%
+\instrumentnumber{3}%
+\setclef{1}{\bass}%
+\grouptop{1}{3}%
+\stafftopmarg=12\Interligne%
+\setinterinstrument{1}{1\Interligne}%
+\def\everystaff{\znotes\lcharnote{K}{T\hskip2em}\lcharnote{G}{B\hskip2em}\nextinstrument\lcharnote{i}{S\hskip2em}\lcharnote{e}{A\hskip2em}\en}
+}%
+\alaligne\leftrepeat% 5
+\assignlyrics{2}{gloria}
+\NOTes\wh{N}%
+\nextinstrument\lyricson\beginmel\zhl{i}\hu{k}%
+\nextinstrument\itenu{3}{n}\zcharnote{M}{\it auf Lautsilbe}\tten{3}\wh{n}\en%
+\Notes\nextinstrument\ibl{1}{j}{-1}\ibu{2}{l}{-1}\zqb{1}{j}\qb{2}{l}\zqb{1}{i}\qb{2}{k}\zqb{1}{h}\qb{2}{j}\tbl{1}\tbu{2}\zqb{1}{g}\qb{2}{i}\en%
+\bar% 6
+\NOTes\wh{K}%
+\nextinstrument\zhl{h}\hu{j}%
+\nextinstrument\wh{k}\en%
+\Notes\nextinstrument\ibl{1}{i}{-1}\ibu{2}{k}{-1}\zqb{1}{i}\qb{2}{k}\zqb{1}{h}\qb{2}{j}\zqb{1}{g}\qb{2}{i}\tbl{1}\tbu{2}\zqb{1}{f}\qb{2}{h}\en%
+\bar% 7
+\NOTes\wh{L}%
+\nextinstrument\zhl{g}\hu{i}%
+\nextinstrument\wh{l}\en%
+\Notes\nextinstrument\ibl{1}{h}{-1}\ibu{2}{j}{-1}\zqb{1}{h}\qb{2}{j}\zqb{1}{g}\qb{2}{i}\zqb{1}{f}\qb{2}{h}\tbl{1}\tbu{2}\zqb{1}{e}\qb{2}{g}\en%
+\bar% 8
+\NOtesp\pt{K}\qa{K}%
+\nextinstrument\endmel\pt{f}\zql{f}\qup{h}%
+\nextinstrument\itenu{2}{k}\ha{k}\en%
+\Notes\ca{K}\ha{K}%
+\nextinstrument\zcl{d}\cu{f}\zhl{d}\hu{d}%
+\nextinstrument\tten{2}\ibl{2}{k}{-1}\qb{2}{kji}\tbl{2}\qb{2}{h}\en%
+\bar% 9
+\assignlyrics{2}{excelsis1}
+\assignlyrics{3}{excelsis2}
+\NOtes\qa{LKIH}%
+\nextinstrument\zql{g}\qu{g}\zql{f}\qu{h}\zql{f}\qu{i}\zql{f}\qu{j}%
+\nextinstrument\qa{ghkk}\en%
+\setvoltabox{\vrule height2ex width0pt depth0pt 1}%
+\bar% 10
+\NOtes\islurd{0}{I}\qa{I}\tslur{0}{J}\qa{J}\ha{K}%
+\nextinstrument\beginmel\ibslurd{1}{g}\zhu{i}\ql{g}\endmel\tbslurd{1}{f}\ql{f}\beginmel\ibslurd{1}{f}\zhu{h}\ql{f}\endmel\tbslurd{1}{g}\ql{g}%
+\nextinstrument\ha{n}\sk\ha{k}\en%
+\setendvolta\Setvolta{\vrule height2ex width0pt depth0pt 2}\setrightrepeat\bar% 10 (2)
+\NOtes\islurd{0}{I}\qa{I}\qa{J}\tslur{0}{K}\ha{K}%
+\nextinstrument\beginmel\ibslurd{1}{g}\ibsluru{2}{i}\zhu{i}\ql{g}\ql{f}\tbsluru{2}{h}\zhu{h}\ql{f}\endmel\tbslurd{1}{g}\ql{g}%
+\nextinstrument\beginmel\isluru{3}{n}\ha{n}\sk\endmel\tslur{3}{k}\ha{k}\en%
+\bar% 11
+\NOTEs\zwh{G}\wh{N}%
+\nextinstrument\zcharnote{n}{A}\zcharnote{a}{S}\zwh{i}\wh{g}%
+\nextinstrument\wh{k}\en%
+\setendvolta%
+%
+\Endpiece
+
+\vfill
+\hrule
+\vskip\baselineskip
+frz. Weihnachtslied; dt. Text O.Abel/G. Wirsching; Satz: Bernhard Binkowski
+
+\bye
