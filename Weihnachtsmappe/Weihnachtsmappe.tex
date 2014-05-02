@@ -6,7 +6,14 @@
 \fi
 \input songbook
 \tracingmacros=1%
-\hbox{\pdfximage width 1\hsize{graphic.pdf}\pdfrefximage\pdflastximage}\vfill\eject
+\newbox\datebox%
+\hbox{\pdfximage width 1\hsize{graphic.pdf}\pdfrefximage\pdflastximage}
+\setbox\datebox=\hbox{\font\datefont=phvr at 12pt\datefont\raise21.7cm\hbox to \hsize{\hfill%
+Version vom \number\day.\number\month.\number\year%
+\hfill}}%
+\ht\datebox=0pt%
+\box\datebox%
+\vfill\eject
 \tableofcontents
 \normalmusicsize
 \input "../Hammerschmidt/Machet die Tore weit"
