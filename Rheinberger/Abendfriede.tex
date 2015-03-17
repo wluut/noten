@@ -1,0 +1,288 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+\fulltitle{Abendfriede}
+ \author{Josef Gabriel Rheinberger}
+ \shortauthor{Josef Rheinberger}
+ \title{Abendfriede}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{4}
+\interstaff{11}
+\generalmeter{\meterfrac{4}{4}}
+\generalsignature{-1}
+\setclef{1}{\bass}
+
+\stafftopmarg=7\Interligne
+
+%\elemskip1.2\elemskip
+
+\grouptop{1}{4}
+\groupbottom{1}{1}
+\barnumbers
+\def\freqbarno{5}
+\sepbarrules
+\startmuflex
+
+\def\everystaff{\znotes\nextinstrument\zchar{-6}{\eightrm \kern -2\Interligne 8}\en}%
+
+\setlyrics{lbass}{Die Schwal-be schwingt zum A-ben-lie-de, sich auf das St\"ang-lein un-term Dach, im Feld und Stadt ist Frie-de, im Feld und in der Stadt ist Frie-de,
+ Fried ist im Haus, Fried ist im Haus, Fried ist im Haus und Fried im Ge-mach. Ein Schim-mer f\"allt vom A-bend-ro-te leis in die stil-le Stra\ss{} he-rein, und vorm 
+Ent-schla-den sagt der Bo-te, es werd ein sch\"o-ner Mor-gen sein, es werd ein sch\"o-ner Mor-gen sein!}
+\setlyrics{ltenor}{Die Schwal-be schwingt zum A-ben-lie-de, sich auf das St\"ang-lein un-term Dach, im Feld und in der Stadt ist Frie-de, ist Frie-de, ist Frie-de,
+ Fried, Fried, Fried ist im Haus und Fried im Ge-mach. Ein Schim-mer f\"allt vom A-bend-ro-te leis in die stil-le Stra\ss{} he-rein, und vorm 
+Ent-schla-den sagt der Bo-te, es werd ein sch\"o-ner Mor-gen sein, es werd ein sch\"o-ner Mor-gen sein!}
+\setlyrics{lalt}{Die Schwal-be schwingt zum A-ben-lie-de, sich auf das St\"ang-lein un-term Dach, im Feld und Stadt ist Frie-de, in Feld und Stadt ist Frie-de,
+ Fried ist im Haus, Fried ist im Haus, Fried ist im Haus und Fried im Ge-mach. Ein Schim-mer f\"allt vom A-bend-ro-te leis in die stil-le Stra\ss{} he-rein, und vorm 
+Ent-schla-den sagt der Bo-te, es werd ein sch\"o-ner Mor-gen sein, es werd ein sch\"o-ner Mor-gen sein!}
+\setlyrics{lsopran}{Die Schwal-be schwingt zum A-ben-lie-de, sich auf das St\"ang-lein un-term Dach, im Feld und Stadt, im Feld und in der Stadt ist Frie-de, ist Frie-de,
+ Fried ist im Haus, Fried ist im Haus, Fried ist im Haus und Fried im Ge-mach. Ein Schim-mer f\"allt vom A-bend-ro-te leis in die stil-le Stra\ss{} he-rein, und vorm 
+Ent-schla-den sagt der Bo-te, es werd ein sch\"o-ner Mor-gen sein, es werd ein sch\"o-ner Mor-gen sein!}
+\assignlyrics{1}{lbass}
+\assignlyrics{2}{ltenor}
+\assignlyrics{3}{lalt}
+\assignlyrics{4}{lsopran}
+
+\startpiece
+\NOtes\qp\uptext{\p}\qa{MMM}%
+\nextinstrument\qp\uptext{\p}\qa{hjm}%
+\nextinstrument\qp\uptext{\p}\qa{cfh}%
+\nextinstrument\lyricsoff\Uptext{Langsam und innig~~\metron{\tinynotesize\qu}{\smalltype 58}}\qp\lyricson\uptext{\p}\qa{fhj}\en
+\bar% 2
+\NOtes\qa{M}%
+\nextinstrument\qa{l}%
+\nextinstrument\qa{g}%
+\nextinstrument\qa{j}\en
+\Notes\icresc\qa{M}\sk\qa{M}\sk\qa{M}\sk\uptext{\tcresc}%
+\nextinstrument\icresc\qa{l}\sk\qa{k}\sk\qa{k}\sk\uptext{\tcresc}%
+\nextinstrument\icresc\qa{g}\sk\qa{f}\sk\qa{i}\sk\uptext{\tcresc}%
+\nextinstrument\icresc\ibu{3}{g}{1}\islurd{3}{g}\beginmel\qb{3}{g}\tbu{3}\tslur{3}{h}\endmel\qb{3}{h}%
+\ibl{3}{i}{1}\isluru{3}{i}\beginmel\qb{3}{i}\tbl{3}\tslur{3}{j}\endmel\qb{3}{j}%
+\ibl{3}{k}{1}\isluru{3}{k}\beginmel\qb{3}{k}\tbl{3}\tslur{3}{l}\endmel\qb{3}{l}\Uptext{\tcresc}\en%
+\bar% 3
+\NOtes\icresc\ha{M}\sk\uptext{\tdecresc}\qa{M}%
+\nextinstrument\icresc\ha{j}\sk\uptext{\tdecresc}\qa{m}%
+\nextinstrument\icresc\isluru{2}{i}\beginmel\qa{i}\tslur{2}{h}\endmel\qa{h}\uptext{\tdecresc}\qa{h}%
+\nextinstrument\icresc\ha{m}\sk\Uptext{\tdecresc}\qa{j}\en%
+\Notes\ds\ca{M}%
+\nextinstrument\ds\ca{j}%
+\nextinstrument\ds\ca{f}%
+\nextinstrument\ds\ca{h}\en%
+\bar% 4
+\NOtes\icresc\qa{MLKH}\uptext{\tcresc}%
+\nextinstrument\icresc\qa{jjkk}\uptext{\tcresc}%
+\nextinstrument\icresc\qa{ffff}\uptext{\tcresc}%
+\nextinstrument\icresc\qa{hhhh}\uptext{\tcresc}\en%
+\alaligne% 5
+\Notes\icresc\qup{I}\sk\sk\ca{=I}\qa{J}\uptext{\tdecresc}\sk\ds\uptext{\p}\ca{J}%
+\nextinstrument\icresc\qlp{k}\sk\sk\ca{k}\qa{g}\uptext{\tdecresc}\sk\ds\uptext{\p}\ca{j}%
+\nextinstrument\icresc\ibu{2}{f}{0}\islurd{2}{f}\beginmel\qb{2}{f}\tbu{2}\tslur{2}{f}\endmel\qb{2}{^f}%
+\ibu{2}{g}{-1}\islurd{2}{g}\beginmel\qb{2}{g}\tbu{2}\tslur{2}{f}\endmel\qb{2}{=f}\qa{e}\uptext{\tdecresc}\sk\ds\uptext{\p}\ca{e}%
+\nextinstrument\icresc\ibl{3}{h}{3}\isluru{3}{h}\beginmel\qb{3}{h}\tbl{3}\tslur{3}{j}\endmel\qb{3}{j}%
+\ibl{3}{i}{-1}\isluru{3}{i}\beginmel\qb{3}{i}\tbl{3}\tslur{3}{h}\endmel\qb{3}{h}\qa{h}\uptext{\tdecresc}\sk\ds\uptext{\p}\ca{g}\en%
+\bar% 6
+\Notes\qa{K}\sk\ibu{0}{J}{-1}\islurd{0}{J}\beginmel\qb{0}{J}\tbu{0}\tslur{0}{I}\endmel\qb{0}{=I}\qup{J}\sk\sk\ca{L}%
+\nextinstrument\ibu{1}{i}{-3}\usfz{o}\qb{1}{j}\usfz{n}\qb{1}{=i}\usfz{m}\qb{1}{h}\tbu{1}\usfz{l}\qb{1}{g}%
+\isluru{1}{l}\beginmel\usfz{m}\qa{l}\sk\tslur{1}{m}\endmel\ca{ml}%
+\nextinstrument\qa{f}\sk\qa{f}\sk\icresc\qa{e}\sk\qa{g}\sk\uptext{\tcresc}%
+\nextinstrument\qa{g}\sk\qa{g}\sk\icresc\qup{g}\sk\sk\ca{j}\uptext{\tcresc}\en%
+\bar% 7
+\Notes\icresc\islurd{0}{G}\beginmel\qa{G}\sk\ibu{0}{H}{1}\qb{0}{H}\tslur{0}{I}\tbu{0}\endmel\qb{0}{=I}\qup{J}\sk\uptext{\tdecresc}\sk\usfz{a}\ca{J}%
+\nextinstrument\icresc\ha{k}\sk\sk\sk\qlp{j}\sk\uptext{\tdecresc}\sk\ca{g}%
+\nextinstrument\ha{f}\sk\sk\sk\islurd{2}{e}\beginmel\qa{e}\sk\tslur{2}{h}\endmel\ibu{2}{h}{-1}\qb{2}{h}\tbu{2}\qb{2}{g}%
+\nextinstrument\ibu{3}{i}{-3}\usfz{o}\qb{3}{j}\usfz{n}\qb{3}{=i}\usfz{m}\qb{3}{h}\tbu{3}\usfz{l}\qb{3}{g}%
+\isluru{3}{l}\beginmel\usfz{m}\qa{l}\sk\tslur{3}{m}\endmel\ca{ml}\en%
+\bar% 8
+\Notes\ibu{0}{I}{-3}\usfz{a}\qb{0}{J}\usfz{N}\qb{0}{=I}\usfz{M}\qb{0}{H}\tbu{0}\usfz{L}\qb{0}{G}%
+\isluru{0}{L}\beginmel\usfz{M}\qa{L}\sk\tslur{0}{M}\endmel\ca{ML}%
+\nextinstrument\ha{g}\sk\sk\sk\qup{g}\sk\sk\ca{g}%
+\nextinstrument\icresc\qa{f}\sk\qa{f}\sk\qa{e}\sk\qa{c}\sk\uptext{\tdecresc}%
+\nextinstrument\icresc\ha{k}\sk\sk\sk\qa{j}\sk\ibu{3}{g}{-1}\beginmel\qb{3}{h}\tbu{3}\endmel\qb{3}{g}\uptext{\tdecresc}\en%
+\alaligne% 9
+\Notes\icresc\ha{K}\sk\sk\sk\qa{J}\uptext{\tdecresc}\sk\qp%
+\nextinstrument\icresc\ha{g}\sk\sk\sk\qa{g}\uptext{\tdecresc}\sk\uptext{\p}\itenl{1}{g}\beginmel\lsf{g}\qa{g}\sk%
+\nextinstrument\ibu{2}{c}{-3}\islurd{2}{c}\beginmel\qb{2}{c}\tbu{2}\qb{2}{a}\tslur{2}{b}\endmel\qa{b}\sk\qa{c}\sk\qp%
+\nextinstrument\islurd{3}{f}\beginmel\qup{f}\sk\sk\tslur{3}{g}\endmel\ca{g}\qa{e}\sk\qp\en%
+\bar% 10
+\NOtes\uptext{\p}\qa{H}%
+\nextinstrument\tten{1}\endmel\hup{g}%
+\nextinstrument\uptext{\p}\qa{e}%
+\nextinstrument\uptext{\p}\qa{j}\en%
+\Notesp\ibu{0}{I}{0}\qb{0}{=I}%
+\nextinstrument\nextinstrument\ibu{2}{d}{0}\qb{2}{d}%
+\nextinstrument\ibu{3}{g}{0}\qb{3}{g}\en%
+\notes\tbbu{0}\tbu{0}\qb{0}{I}%
+\nextinstrument\nextinstrument\tbbu{2}\tbu{2}\qb{2}{d}%
+\nextinstrument\tbbu{3}\tbu{3}\qb{3}{g}\en%
+\NOtes\qup{J}%
+\nextinstrument\nextinstrument\qup{c}%
+\nextinstrument\qup{e}\en%
+\Notes\nextinstrument\uptext{\pp}\itenl{1}{g}\beginmel\lsf{g}\qa{g}\en%
+\Notes\ds\nextinstrument\nextinstrument\ds\nextinstrument\ds\en%
+\bar% 11
+\NOtes\uptext{\pp}\qa{H}%
+\nextinstrument\tten{1}\endmel\hup{g}%
+\nextinstrument\uptext{\pp}\qa{j}%
+\nextinstrument\uptext{\pp}\qa{l}\en%
+\notes\ibu{0}{I}{0}\pt{I}\qb{0}{I}\sk\sk\sk\tbbu{0}\tbu{0}\qb{0}{I}%
+\nextinstrument\nextinstrument\ibu{2}{g}{-1}\qb{2}{g}\sk\tbu{2}\qb{2}{f}%
+\nextinstrument\ibl{3}{k}{0}\isluru{3}{k}\uptrio{o}{3}{0}\beginmel\qb{3}{k}\tslur{3}{l}\endmel\qb{3}{l}\sk\tbl{3}\qb{3}{k}\en%
+\NOtes\qup{J}%
+\nextinstrument\nextinstrument\qup{e}%
+\nextinstrument\qup{g}\en%
+\Notes\sk\ds%
+\nextinstrument\itenl{1}{g}\beginmel\lsf{g}\qa{g}%
+\nextinstrument\sk\ds%
+\nextinstrument\sk\ds\en%
+\bar% 12
+\NOtes\lsf{I}\qa{J}%
+\nextinstrument\tten{1}\endmel\qa{g}%
+\nextinstrument\lsf{e}\qa{e}%
+\nextinstrument\lsf{g}\qa{h}\en%
+\Notesp\ibu{0}{I}{-1}\pt{I}\qb{0}{=I}%
+\nextinstrument\ibu{1}{g}{1}\pt{g}\qb{1}{g}%
+\nextinstrument\ibu{2}{d}{-1}\pt{d}\qb{2}{d}%
+\nextinstrument\ibu{3}{g}{-1}\pt{g}\qb{3}{g}\en%
+\notes\tbbu{0}\tbu{0}\qb{0}{H}%
+\nextinstrument\tbbu{1}\tbu{1}\qb{1}{h}%
+\nextinstrument\tbbu{2}\tbu{2}\qb{2}{c}%
+\nextinstrument\tbbu{3}\tbu{3}\qb{3}{f}\en%
+\NOtes\qa{^G}\icresc\qa{H}\uptext{\tcresc}%
+\nextinstrument\qa{=i}\icresc\qa{h}\uptext{\tcresc}%
+\nextinstrument\qa{=b}\icresc\qa{^c}\uptext{\tcresc}%
+\nextinstrument\qa{e}\icresc\qa{e}\uptext{\tcresc}\en%
+\alaligne% 13
+\Notes\uptext{\fp}\qa{K}%
+\nextinstrument\uptext{\fp}\qa{h}%
+\nextinstrument\uptext{\fp}\qa{d}%
+\nextinstrument\uptext{\fp}\ibu{3}{g}{-1}\islurd{3}{g}\beginmel\qb{3}{g}\tbu{3}\tslur{3}{f}\endmel\qb{3}{f}\en%
+\notes\ibu{0}{G}{0}\icresc\cna{G}\qb{0}{G}\sk\sk\tbbu{0}\tbu{0}\qb{0}{G}\sk%
+\nextinstrument\ibu{1}{g}{-1}\icresc\qb{1}{g}\sk\sk\tbbu{1}\tbu{1}\qb{1}{f}%
+\nextinstrument\ibu{2}{b}{0}\icresc\qb{2}{=b}\sk\sk\tbbu{2}\tbu{2}\qb{2}{b}%
+\nextinstrument\triolet{n}\ibu{3}{f}{-1}\islurd{3}{f}\beginmel\icresc\qb{3}{f}\tslur{3}{e}\endmel\qb{3}{e}\tbu{3}\qb{3}{d}\en%
+\Notes\qup{J}\uptext{\tdecresc}\sk\ds%
+\nextinstrument\qup{e}\uptext{\tdecresc}\sk\ds%
+\nextinstrument\cna{c}\qup{c}\uptext{\tdecresc}\sk\ds%
+\nextinstrument\qup{c}\Uptext{\tdecresc}\sk\ds\en%
+\bar% 14
+\NOtes\qp\uptext{\p}\qa{JJJ}%
+\nextinstrument\qp\uptext{\p}\qa{egj}%
+\nextinstrument\qp\uptext{\p}\qa{ceg}%
+\nextinstrument\qp\uptext{\p}\qa{gge}\en%
+\bar% 15
+\Notes\qa{J}\sk\qa{J}\sk\qa{J}\sk\qa{J}%
+\nextinstrument\qa{=i}\sk\qa{i}\sk\qa{h}\sk\qa{g}%
+\nextinstrument\qa{g}\sk\icresc\ibu{2}{d}{1}\islurd{2}{d}\beginmel\qb{2}{d}\tbu{2}\tslur{2}{e}\endmel\qb{2}{e}%
+\ibu{2}{f}{1}\islurd{2}{f}\beginmel\qb{2}{f}\tslur{2}{g}\endmel\qb{2}{g}\islurd{2}{h}\beginmel\qb{2}{h}\tbu{2}\tslur{2}{i}\endmel\qb{2}{=i}\uptext{\tcresc}%
+\nextinstrument\qa{d}\sk\qa{g}\sk\qa{g}\sk\qa{f}\en%
+\bar% 16
+\NOtes\ha{J}%
+\nextinstrument\ha{g}%
+\nextinstrument\icresc\ha{j}\sk\uptext{\tdecresc}%
+\nextinstrument\islurd{3}{f}\beginmel\qa{f}\tslur{3}{e}\endmel\qa{e}\en%
+\Notes\qa{J}\sk\uptext{\pp}\itied{0}{I}\beginmel\qa{_I}%
+\nextinstrument\qlp{j}\sk\sk\ds%
+\nextinstrument\qup{g}\sk\sk\ds%
+\nextinstrument\qup{e}\sk\sk\ds\en%
+\bar% 17
+\NOtes\ttie{0}\endmel\qa{I}%
+\nextinstrument\uptext{\pp}\qa{j}%
+\nextinstrument\uptext{\pp}\qa{e}%
+\nextinstrument\uptext{\pp}\qa{g}\en%
+\Notes\ca{JI}%
+\nextinstrument\ca{jj}%
+\nextinstrument\ca{ee}%
+\nextinstrument\ca{gg}\en%
+\NOtes\qa{HK}%
+\nextinstrument\qa{^jh}%
+\nextinstrument\qa{ed}%
+\nextinstrument\qa{hf}\en%
+\alaligne% 18
+\NOtesp\ppt{L}\qa{L}%
+\nextinstrument\ppt{g}\qa{^g}%
+\nextinstrument\ppt{b}\qa{=b}%
+\nextinstrument\ppt{e}\qa{e}\en%
+\notes\sk\cca{K}%
+\nextinstrument\sk\cca{h}%
+\nextinstrument\sk\cca{b}%
+\nextinstrument\sk\cca{f}\en%
+\NOtesp\qlp{L}%
+\nextinstrument\qup{g}%
+\nextinstrument\qup{b}%
+\nextinstrument\qup{e}\en%
+\Notes\ds\nextinstrument\ds\nextinstrument\ds\nextinstrument\ds\en%
+\bar% 19
+\NOtes\qp\uptext{\f}\qa{LLL}%
+\nextinstrument\qp\uptext{\f}\qa{^g=il}%
+\nextinstrument\qp\uptext{\f}\qa{ee^g}%
+\nextinstrument\qp\uptext{\f}\qa{e^g=i}\en%
+\bar% 20
+\Notes\qa{L}\sk\icresc\qa{L}\sk\qa{L}\sk\qa{L}%
+\nextinstrument\qa{^k}\sk\icresc\qa{k}\sk\qa{^j}\sk\qa{j}%
+\nextinstrument\qa{^f}\sk\icresc\qa{f}\sk\qa{e}\sk\qa{h}%
+\nextinstrument\qa{=i}\sk\icresc\ibu{3}{f}{1}\islurd{3}{f}\beginmel\qb{3}{f}\tbu{3}\tslur{3}{g}\endmel\qb{3}{^g}%
+\ibl{3}{h}{1}\isluru{3}{h}\beginmel\qb{3}{h}\tbl{3}\tslur{3}{i}\endmel\qb{3}{=i}\ibl{3}{j}{1}\isluru{3}{j}\beginmel\qb{3}{^j}\tbl{3}\tslur{3}{k}\endmel\qb{3}{^k}\en%
+\bar% 21
+\NOtes\ha{L}\sk\uptext{\tcresc}%
+\nextinstrument\ha{=i}\sk\uptext{\tcresc}%
+\nextinstrument\islurd{2}{h}\beginmel\qa{h}\tslur{2}{g}\endmel\qa{^g}\uptext{\tcresc}%
+\nextinstrument\ha{l}\sk\uptext{\tcresc}\en%
+\NOtesp\qlp{L}%
+\nextinstrument\qlp{l}%
+\nextinstrument\qup{g}%
+\nextinstrument\qlp{=i}\en%
+\notes\uptext{\ff}\qs\cca{L}%
+\nextinstrument\uptext{\ff}\qs\cca{i}%
+\nextinstrument\uptext{\ff}\qs\cca{g}%
+\nextinstrument\uptext{\ff}\qs\cca{l}\en%
+\alaligne% 22
+\NOtes\qa{LLaa}%
+\nextinstrument\qa{=ii}\cna{j}\qa{jj}%
+\nextinstrument\qa{^gghh}%
+\nextinstrument\qa{llll}\en%
+\bar% 23
+\NOtes\cna{c}\hlp{c}\sk\sk\qa{M}%
+\nextinstrument\isluru{1}{n}\beginmel\cna{n}\qa{n}\tslur{1}{l}\endmel\ha{l}\sk\qa{m}%
+\nextinstrument\cfl{i}\hlp{i}\sk\sk\qa{h}%
+\nextinstrument\isluru{3}{l}\beginmel\qa{l}\tslur{3}{n}\endmel\cna{n}\ha{n}\sk\qa{m}\en%
+\bar% 24
+\NOtes\qa{M}\icresc\usfz{K}\qa{M}%
+\nextinstrument\itieu{1}{m}\beginmel\ha{m}%
+\nextinstrument\itied{2}{h}\beginmel\ha{h}%
+\nextinstrument\itieu{3}{m}\beginmel\ha{m}\en%
+\Notes\usfz{K}\qa{L}%
+\nextinstrument\ttie{1}\endmel\ca{m}\ds%
+\nextinstrument\ttie{2}\endmel\ca{h}\ds%
+\nextinstrument\ttie{3}\endmel\ca{m}\ds\en%
+\NOtes\usfz{K}\qa{K}\uptext{\tdecresc}%
+\nextinstrument\uptext{\p}\qa{m}%
+\nextinstrument\uptext{\p}\qa{f}%
+\nextinstrument\uptext{\p}\qa{f}\en%
+\bar% 25
+\NOtes\uptext{\p}\islurd{0}{H}\beginmel\qa{H}\tslur{0}{I}\endmel\qa{I}\issluru{0}{J}\beginmel\qa{J}\tsslur{0}{K}\endmel\qa{K}%
+\nextinstrument\qa{lkhi}%
+\nextinstrument\qa{edab}%
+\nextinstrument\qa{ffff}\en%
+\bar% 26
+\NOtes\uptext{\pp}\hup{J}\sk\sk\qa{F}%
+\nextinstrument\uptext{\pp}\hlp{j}\sk\sk\qa{j}%
+\nextinstrument\uptext{\pp}\isslurd{2}{a}\beginmel\qa{a}\tsslur{2}{b}\endmel\ha{b}\sk\qa{a}
+\nextinstrument\uptext{\pp}\islurd{3}{f}\beginmel\qa{f}\tslur{3}{g}\endmel\ha{g}\sk\qa{f}\en%
+\bar% 27
+\NOTEs\fermataup{a}\usf{F}\wh{F}%
+\nextinstrument\fermataup{m}\lsf{j}\wh{j}%
+\nextinstrument\fermataup{m}\usf{a}\wh{a}%
+\nextinstrument\fermataup{m}\lsf{f}\wh{f}\en%
+\Endpiece
+
+
+
+\bye
