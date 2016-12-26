@@ -1,0 +1,125 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2014-05-04
+%
+
+\fulltitle{Macht hoch die T\"ur}
+ \author{Ruth Linnekamp}
+ \shortauthor{Ruth Linnekamp}
+ \title{Macht hoch die T\"ur}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{15}
+\generalmeter{\meterfrac{6}{4}}
+\generalsignature{-3}
+\setclef{1}{\bass}
+
+%\elemskip=.9\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=4\Interligne
+\setinterinstrument{1}{9\Interligne}
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics1}{\lyrlayout{\lyrfont}Macht hoch die T\"ur, die Tor macht weit; es kommt der Herr der Herr-lich-keit. ein K\"o-nig al-ler K\"o-nig-reich, ein Hei-land al-ler Welt zu-gleich,
+der Heil und Le-ben mit sich bringt; der-hal-ben jauchzt, mit Freu-den singt: Ge-lo-bet sei mein Gott, mein Sch\"op-fer reich von Rat.}
+\setlyrics{lyrics2}{\lyrlayout{\lyrfont}Er ist ge-recht, ein Hel-fer wert; Sanft-m\"u-tig-keit ist sein Ge-f\"ahrt, sein K\"o-nigs-kron ist Hei-lig-keit, sein Zep-ter ist Barm-her-zig-keit;
+all uns-re Not zum End er bringt, der-hal-ben jauchzt, mit Freu-den singt: Ge-lo-bet sei mein Gott, mein Heil-and gro\ss{} von Tat.}
+\setlyrics{lyrics3}{\lyrlayout{\lyrfont}O wohl dem Land, o wohl der Stadt, so die-sen K\"o-nig bei sich hat. Wohl al-len Her-zen ins-ge-mein, da die-ser K\"o-nig zie-het ein.
+Er ist die rech-te Freu-den-sonn, bringt mit sich lau-ter Freud und Wonn. Ge-lo-bet sei mein Gott, mein Tr\"o-ster fr\"uh und spat.}
+\setlyrics{lyrics4}{\lyrlayout{\lyrfont}Mach hoch die T\"ur, die Tor macht weit,~/ eu'r Herz zum Tem-pel zu-be-reit'. Die Zweig-lein der Gott-se-lig-keit steckt auf mit An-dacht, Lust und Freud;
+so kommt der K\"o-nig auch zu euch, ja, Heil und Le-ben mit zu-gleich. Ge-lo-bet sei mein Gott, voll Rat, voll Tat, voll Gnad.}
+\setlyrics{lyrics5}{\lyrlayout{\lyrfont}Komm, o mein Hei-land Je-su Christ, meins Herz-ens T\"ur dir of-fen ist. Ach zieh mit dei-ner Gna-de ein; dein Freund-lich-keit auch uns er-schein.
+Dein Heil-ger Geist uns f\"uhr und leit den Weg zur ew'-gen Se-lig-keit. Dem Na-men dein, o Herr, sei e-wig Preis und Ehr.}
+\assignlyrics{1}{}
+\assignlyrics{2}{lyrics1,lyrics2,lyrics3,lyrics4,lyrics5}
+
+\startpiece
+\znotes\nextinstrument\loffset{2.2}{\verses{\lyric*{1.},\lyric*{2.},\lyric*{3.},\lyric*{4.},\lyric*{5.}}}\en%
+\Notes\zql{L}\qu{b}%
+\nextinstrument\zql{e}\qu{g}\en%
+\bar% 1
+\Notes\zhu{b}\hl{N}%
+\nextinstrument\beginmel\isslurd{2}{d}\zhu{i}\ql{d}\endmel\tsslur{2}{e}\ql{e}\en%
+\notes\zqu{M}\ql{M}%
+\nextinstrument\beginmel\ibl{2}{c}{1}\zqu{h}\qb{2}{c}\endmel\tbl{2}\qb{2}{d}\en%
+\NOtes\zhu{b}\hl{L}%
+\nextinstrument\zhu{g}\hl{e}\en%
+\Notes\zqu{b}\ql{K}%
+\nextinstrument\zqu{f}\ql{b}\en%
+\bar% 2
+\Notes\isslurd{0}{J}\issluru{1}{N}\zqu{N}\ql{J}\tsslur{0}{I}\tsslur{1}{b}\zqu{b}\ql{I}\zqu{b}\ql{L}%
+\isslurd{0}{H}\issluru{1}{a}\zqu{a}\ql{H}\tsslur{0}{I}\tsslur{1}{M}\zqu{M}\ql{I}\zqu{b}\ql{G}%
+\nextinstrument\beginmel\isslurd{2}{c}\issluru{3}{e}\zqu{e}\ql{c}\endmel\tsslur{2}{d}\tsslur{3}{f}\zqu{f}\ql{d}\zqu{g}\ql{e}%
+\beginmel\isslurd{2}{c}\zhu{f}\ql{c}\endmel\tsslur{2}{d}\ql{d}\zqu{i}\ql{e}\en%
+\bar% 3
+\Notes\zhu{c}\hl{H}\sk\zqu{c}\ql{H}\zhu{b}\hl{L}\sk\zqu{b}\ql{G}%
+\nextinstrument\zhu{h}\hl{e}\sk\zqu{h}\ql{f}\zhu{g}\roff{\hl{f}}\sk\zqu{g}\ql{e}\en%
+\bar% 4
+\Notes\issluru{1}{b}\zhl{I}\qu{b}\tsslur{1}{N}\qu{N}\zqu{b}\ql{I}%
+\zhu{N}\hl{L}\sk\zqu{b}\ql{L}%
+\nextinstrument\beginmel\isslurd{2}{d}\issluru{3}{f}\zqu{f}\ql{d}\endmel\tsslur{2}{c}\tsslur{3}{e}\zqu{e}\ql{c}\zqu{f}\ql{d}%
+\zhu{e}\hl{b}\sk\zqu{g}\ql{e}\en%
+\bar% 5
+\Notes\isslurd{0}{K}\zhu{b}\ql{K}\tsslur{0}{J}\ql{J}\zqu{b}\ql{I}\zhu{c}\hl{L}\sk\zqu{b}\ql{K}%
+\nextinstrument\beginmel\isslurd{2}{f}\loff{\zhu{f}}\ql{f}\endmel\tsslur{2}{e}\ql{e}\zqu{f}\ql{d}\beginmel\issluru{3}{g}\zhl{c}\qu{g}\endmel\tsslur{3}{h}\qu{=h}\zqu{i}\ql{f}\en%
+\bar% 6
+\Notes\zhu{N}\hl{L}\sk\zqu{M}\ql{M}\zhu{M}\hl{I}\sk\zqu{b}\ql{I}%
+\nextinstrument\beginmel\issluru{3}{i}\zhl{g}\qu{i}\endmel\tsslur{3}{j}\qu{j}\zqu{=h}\ql{f}\zhu{i}\hl{d}\sk\zqu{f}\ql{d}\en%
+\bar% 7
+\Notes\zhu{b}\hl{L}\sk\zqu{b}\ql{K}\issluru{1}{N}\zhl{J}\qu{N}\tsslur{1}{c}\qu{c}\zqu{d}\ql{I}%
+\nextinstrument\zhu{g}\hl{e}\sk\zqu{f}\ql{b}\beginmel\issluru{3}{g}\zhl{e}\qu{g}\endmel\tsslur{3}{h}\qu{=h}\zqu{i}\ql{f}\en%
+\bar% 8
+\Notes\zhu{c}\hl{L}\sk\zqu{c}\ql{M}\zhu{d}\hl{I}\sk\zqu{e}\ql{L}%
+\nextinstrument\beginmel\issluru{3}{i}\zhl{g}\qu{i}\endmel\tsslur{3}{j}\qu{j}\zqu{=h}\ql{f}\zhu{i}\hl{f}\sk\zqu{i}\ql{g}\en%
+\bar% 9
+\Notes\beginmel\isslurd{0}{K}\zhu{e}\ql{K}\endmel\tsslur{0}{H}\ql{H}\zqu{e}\ql{L}\zhu{e}\hl{a}\sk\zqu{b}\ql{N}%
+\nextinstrument\zhu{j}\hl{h}\sk\zqu{i}\ql{g}\zhu{j}\hl{h}\sk\zqu{i}\ql{e}\en%
+\bar% 10
+\Notes\zhu{e}\hl{a}\sk\zqu{c}\ql{H}\zhu{b}\hl{L}\sk\zqu{N}\ql{L}%
+\nextinstrument\beginmel\isslurd{2}{h}\issluru{3}{j}\zqu{j}\ql{h}\endmel\tsslur{2}{g}\tsslur{3}{i}\zqu{i}\ql{g}\zqu{h}\ql{f}\zhu{g}\hl{e}\sk\zqu{i}\ql{e}\en%
+\bar% 11
+\Notes\beginmel\isslurd{0}{K}\zhu{a}\ql{K}\endmel\tsslur{0}{H}\ql{H}\zqu{N}\ql{L}\zhu{a}\hl{a}\sk\zqu{b}\ql{N}%
+\nextinstrument\zhu{j}\hl{e}\sk\zqu{i}\ql{e}\zhu{j}\hl{e}\sk\zqu{i}\ql{e}\en%
+\bar% 12
+\Notes\beginmel\isslurd{0}{a}\issluru{1}{a}\zqu{a}\ql{a}\endmel\tsslur{0}{L}\tsslur{1}{e}\zqu{e}\ql{L}\zqu{c}\ql{M}\zhu{c}\hl{J}\sk\zqu{b}\ql{G}%
+\nextinstrument\beginmel\isslurd{2}{e}\issluru{3}{j}\zqu{j}\ql{e}\endmel\tsslur{2}{g}\tsslur{3}{i}\zqu{i}\ql{g}\zqu{h}\ql{f}\zhu{g}\hl{e}\sk\zqu{i}\ql{d}\en%
+\bar% 13
+ \Notes\beginmel\issluru{1}{b}\zhl{H}\qu{b}\endmel\tsslur{1}{a}\qu{a}\zqu{L}\ql{G}\zhu{c}\hl{F}\sk\zqu{c}\ql{H}%
+\nextinstrument\beginmel\isslurd{2}{e}\loff{\zhu{e}}\ql{d}\endmel\tsslur{2}{c}\ql{c}\zqu{e}\ql{b}%
+\beginmel\isslurd{2}{g}\loff{\zhu{h}}\ql{g}\endmel\tsslur{2}{f}\ql{f}\zqu{g}\ql{e}\en%
+\bar% 14
+\Notes\beginmel\itenl{0}{I}\ibsluru{1}{M}\zhu{M}\pt{I}\hl{I}\sk\qu{c}\endmel\tten{0}\tbsluru{1}{b}\zhu{b}\hl{I}\sk\zqu{b}\ql{N}%
+\nextinstrument\beginmel\itenu{3}{f}\ibslurd{2}{f}\zhl{d}\pt{f}\hu{f}\sk\ql{e}\endmel\tten{3}\tbsluru{2}{f}\zhu{f}\hl{d}\sk\zqu{i}\ql{e}\en%
+\bar% 15
+\Notes\beginmel\issluru{1}{c}\zhl{M}\qu{c}\endmel\tsslur{1}{b}\qu{b}\zqu{b}\ql{L}\beginmel\isslurd{0}{H}\zhu{a}\ql{H}\endmel\tsslur{0}{J}\ql{J}\zqu{M}\ql{I}%
+\nextinstrument\beginmel\isslurd{2}{c}\zhu{h}\ql{c}\endmel\tsslur{2}{d}\ql{d}\zqu{g}\ql{e}\beginmel\isslurd{3}{f}\zhl{c}\qu{f}\endmel\tsslur{3}{e}\qu{e}\zqu{f}\ql{d}\en%
+\bar% 16
+\NOtes\zhu{b}\hl{L}%
+\nextinstrument\zhu{e}\hl{g}\en%
+\Notes\qp\hpp%
+\nextinstrument\qp\hpp\en%
+\Endpiece
+\vfill
+
+\hrule
+\vskip\baselineskip
+Text: Georg Weissel 1642, Melodie: Halle 1704
+
+\bye

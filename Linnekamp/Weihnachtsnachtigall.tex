@@ -1,0 +1,124 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2012-04-08
+%
+
+\fulltitle{Weihnachtsnachtigall}
+ \author{Ruth Linnekamp}
+ \shortauthor{Ruth Linnekamp}
+ \title{Weihnachtsnachtigall}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{18}
+\generalmeter{\meterfrac{4}{4}}
+\generalsignature{4}
+\setclef{1}{\bass}
+
+%\elemskip=.9\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+%\stafftopmarg=7\Interligne
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics1a}{\lyrlayout{\lyrfont}Sing und ju-bi-lie-re, Weih-nachts-nach-ti-gall,}
+\setlyrics{lyrics1b}{\lyrlayout{\lyrfont}pfeif und quin-qui-lie-re mit dem hell-sten Schall.}
+\setlyrics{lyrics1c}{\lyrlayout{\lyrfont}La\ss{} aus dei-nem H\"als-lein sprin-gen, was wir all froh mit dir sin-gen. Sing und ju-bi-lie-re Weih-nachts-nach-ti-gall.}
+\setlyrics{lyrics2}{\lyrlayout{\lyrfont}Sing, sing, Sing, sing,}
+\assignlyrics{1}{lyrics2}
+\assignlyrics{2}{lyrics1a,lyrics1b}
+
+\startpiece
+\Notes\sk\nextinstrument\loffset{1.2}{\verses{\lyric*{1.},\lyric*{}}}\en%
+\NOtes\zwh{b}\wh{L}%
+\nextinstrument\zhl{g}\hu{i}\zhl{g}\hu{i}\en%
+\bar% 2
+\notes\zwh{b}\wh{L}%
+\nextinstrument\beginmel\ibl{1}{g}{-1}\ibu{2}{i}{-1}\zqb{1}{g}\qb{2}{i}\endmel\tbl{1}\tbu{2}\zqb{1}{f}\qb{2}{h}%
+\beginmel\ibl{1}{e}{1}\ibu{2}{g}{1}\zqb{1}{e}\qb{2}{g}\endmel\tbl{1}\tbu{2}\zqb{1}{f}\qb{2}{h}%
+\zql{g}\qu{i}\sk\zql{g}\qu{l}\sk\en%
+\bar% 3
+\Notes\lyricsoff\zqu{b}\ql{K}\zqu{b}\ql{K}\zqu{b}\ql{L}\zqu{b}\ql{L}%
+\nextinstrument\zql{f}\qu{h}\zql{f}\qu{h}\zql{e}\qu{g}\zql{e}\qu{g}\en%
+\bar% 4
+\NOtesp\pt{b}\zhu{b}\hlp{I}%
+\nextinstrument\pt{d}\zhl{d}\hup{f}\en%
+\Notes\qp\nextinstrument\qp\en%
+\setrightrepeat\alaligne% 5
+\assignlyrics{2}{lyrics1c}
+\Notes\zqu{M}\ql{M}%
+\nextinstrument\zql{f}\qu{f}\en%
+\notes\zqu{L}\ql{L}%
+\nextinstrument\rql{f}\beginmel\ibu{2}{g}{1}\qb{2}{g}\endmel\tbu{2}\qb{2}{^h}\en%
+\Notes\zqu{K}\ql{K}\zqu{K}\ql{K}%
+\nextinstrument\zql{f}\qu{i}\zql{i}\qu{i}\en%
+\bar% 6
+\notes\zqu{M}\ql{M}\sk\zqu{M}\ql{M}\sk\zqu{b}\ql{b}\sk\zqu{b}\ql{b}\sk%
+\nextinstrument\beginmel\ibl{1}{h}{-1}\ibu{2}{j}{-1}\zqb{1}{^h}\qb{2}{j}\endmel\tbl{1}\tbu{2}\zqb{1}{g}\qb{2}{i}\zql{h}\qu{j}\sk%
+\beginmel\ibl{1}{i}{1}\ibu{2}{k}{1}\zqb{1}{i}\qb{2}{k}\endmel\tbl{1}\tbu{2}\zqb{1}{j}\qb{2}{l}\zql{k}\qu{m}\sk\en%
+\bar% 7
+\notes\zqu{N}\ql{N}\sk\zqu{a}\ql{^a}\sk\zqu{b}\ql{b}\sk\zqu{K}\ql{K}\sk%
+\nextinstrument\zql{i}\qu{l}\sk\beginmel\ibu{2}{m}{-1}\zql{j}\qb{2}{m}\endmel\tbu{2}\qb{2}{l}%
+\beginmel\ibu{2}{k}{1}\zql{k}\qb{2}{k}\endmel\tbu{2}\qb{2}{l}\beginmel\ibl{1}{i}{-1}\zqu{m}\qb{1}{i}\endmel\tbl{1}\qb{1}{h}\en%
+\bar% 8
+\notes\zqu{L}\ql{L}\sk\zqu{M}\ql{M}\sk\zqu{b}\ql{I}\sk\zqu{b}\ql{I}\sk%
+\nextinstrument\beginmel\ibu{2}{l}{-1}\zql{g}\qb{2}{l}\endmel\tbu{2}\qb{2}{k}\zql{^h}\qu{j}\sk%
+\beginmel\ibl{1}{i}{1}\ibu{2}{k}{-1}\zqb{1}{i}\qb{2}{k}\endmel\tbl{1}\tbu{2}\zqb{1}{j}\qb{2}{j}\zql{i}\qu{i}\sk\en%
+\alaligne% 9
+\NOtes\lyricson\zwh{b}\wh{L}%
+\nextinstrument\zhl{g}\hu{i}\zhl{g}\hu{i}\en%
+\bar% 10
+\notes\zwh{b}\wh{L}%
+\nextinstrument\beginmel\ibl{1}{g}{-1}\ibu{2}{i}{-1}\zqb{1}{g}\qb{2}{i}\endmel\tbl{1}\tbu{2}\zqb{1}{f}\qb{2}{h}%
+\beginmel\ibl{1}{e}{1}\ibu{2}{g}{1}\zqb{1}{e}\qb{2}{g}\endmel\tbl{1}\tbu{2}\zqb{1}{f}\qb{2}{h}%
+\zql{g}\qu{i}\sk\zql{g}\qu{l}\sk\en%
+\bar% 11
+\assignlyrics{1}{}
+\Notes\zqu{b}\ql{I}\zqu{b}\ql{I}\zqu{b}\ql{I}\zqu{a}\ql{I}%
+\nextinstrument\zql{e}\qu{g}\zql{e}\qu{g}\zql{d}\qu{f}\zql{d}\qu{f}\en%
+\bar% 12
+\NOtesp\pt{N}\zhu{N}\hlp{L}%
+\nextinstrument\pt{e}\zhl{e}\hup{e}\en%
+\Notes\qp\nextinstrument\qp\en%
+\Endpiece
+
+{\lyrfont
+\vskip\baselineskip
+\halign{\vtop{\hsize=3em\hfill #}\tabskip=1em&\vtop{\hsize=16cm #}\cr
+2.&Ruf dein hellstes Singen, Weichnachtsnachtigall,\cr
+&da\ss{} es fort tut klingen mit dem hellsten Schall.\cr
+&Ruf hinein in alle Stuben zu den M\"agdlein, zu den Buben.\cr
+&Ruf dein hellstes Singen, Weichnachtsnachtigall.\cr
+\cr
+3.&Pfeif in ihrem Schlummer, Weihnachtsnachtigall,\cr
+&pfeif in ihrem Kummer mit dem hellsten Schall.\cr
+&da\ss{} heut alle fr\"ohlich werden um uns her auf dieser Erden!\cr
+&Pfeif in ihrem Schlummer, Weihnachtsnachtigall.\cr
+\cr
+4.&La\ss{} dein Lied erklingen, Weihnachtsnachtigall,\cr
+&da\ss{} die all heut singen mit dem hellsten Schall.\cr
+&Wenn sich Stimm zu Stimm gesellet, ist die Nacht zum Tag erhellet.\cr
+&La\ss{} dein Lied erklingen, Weihnachtsnachtigall.\cr
+}
+\vfill
+
+\hrule
+\vskip\baselineskip
+traditionell, Satz: Ruth Linnekamp
+
+\bye

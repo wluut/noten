@@ -1,0 +1,126 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+\fulltitle{O Tannenbaum, wie gr\"un sind deine Bl\"atter}
+ \author{Werner Lamm}
+ \shortauthor{Werner Lamm}
+ \title{O Tannenbaum, wie gr\"un sind deine Bl\"atter}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{16}
+\generalmeter{\meterfrac{3}{4}}
+\generalsignature{-1}
+\setclef{1}{\bass}
+
+%\elemskip=.5\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=9\Interligne
+\staffbotmarg=7\Interligne
+\setinterinstrument{1}{7\Interligne}
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics1}{\lyrlayout{\lyrfont}O Tan-nen-baum, o Tan-nen-baum, wie gr\"un sind dei-ne Bl\"at-ter! Du gr\"unst nicht nur zur Som-mer-zeit, nein, auch im Win-ter, wenn es schneit. O Tan-nen-baum, o Tan-nen-baum, wie gr\"un sind dei-ne Bl\"at-ter.}
+\setlyrics{lyrics2}{\lyrlayout{\lyrfont}O Tan-nen-baum, o Tan-nen-baum, du kannst mir sehr ge-fal-len. Wie oft hat doch zur Weih-nachts-zeit ein Baum vor dir mich hoch-er-freut. O Tan-nen-baum, o Tan-nen-baum, du kannst mir sehr ge-fal-len.}
+\setlyrics{lyrics3}{\lyrlayout{\lyrfont}O Tan-nen-baum, o Tan-nen-baum, dein Kleid kann mich was leh-ren: Die Hoff-nung und Be-st\"an-dig-keit gibt Trost und Kraft zu je-der Zeit. O Tan-nen-baum, o Tan-nen-baum, dein Kleid kann mich was leh-ren.}
+\copylyrics{lyrics1}{lyrics1a}
+\copylyrics{lyrics2}{lyrics2a}
+\copylyrics{lyrics3}{lyrics3a}
+\assignlyrics{1}{lyrics1a,lyrics2a,lyrics3a}
+\assignlyrics{2}{lyrics1,lyrics2,lyrics3}
+\startpiece\notes\sk\en%
+\znotes\nextinstrument\loffset{2.2}{\verses{\lyric*{1.},\lyric*{2.},\lyric*{3.}}}\en%
+\Notes\zcu{J}\cl{J}%
+\nextinstrument\zcl{c}\cu{c}\en%
+\bar% 1
+\Notesp\ibl{0}{M}{0}\ibu{1}{M}{0}\pt{M}\zqb{0}{M}\qb{1}{M}%
+\nextinstrument\ibl{2}{a}{0}\ibu{3}{f}{0}\pt{a}\pt{f}\zqb{2}{a}\qb{3}{f}\en%
+\notes\tbbl{0}\tbbu{1}\tbl{0}\tbu{1}\zqb{1}{M}\qb{0}{M}%
+\nextinstrument\tbbl{2}\tbbu{3}\tbl{2}\tbu{3}\zqb{2}{a}\qb{3}{f}\en%
+\NOtes\zqu{M}\ql{M}%
+\nextinstrument\pt{a}\zql{a}\qup{f}\en%
+\Notes\zqu{c}\ql{L}%
+\nextinstrument\sk\zcl{c}\cu{g}\en%
+\bar% 2
+\Notesp\ibl{0}{K}{0}\ibu{1}{a}{0}\pt{a}\pt{K}\zqb{0}{K}\qb{1}{a}%
+\nextinstrument\ibl{2}{f}{0}\ibu{3}{h}{0}\pt{f}\pt{h}\zqb{2}{f}\qb{3}{h}\en%
+\notes\tbbl{0}\tbbu{1}\tbl{0}\tbu{1}\zqb{1}{a}\qb{0}{K}%
+\nextinstrument\tbbl{2}\tbbu{3}\tbl{2}\tbu{3}\zqb{2}{f}\qb{3}{h}\en%
+\NOtes\zqu{a}\ql{K}%
+\nextinstrument\pt{f}\zql{f}\qup{h}\en%
+\Notes\zqu{a}\ql{J}%
+\nextinstrument\sk\zcl{e}\cu{h}\en%
+\bar% 3
+\Notes\ibl{0}{I}{-1}\ibu{1}{d}{-1}\zqb{1}{d}\qb{0}{I}\tbl{0}\tbu{1}\zqb{1}{c}\qb{0}{H}%
+\nextinstrument\ibl{2}{d}{0}\ibu{3}{g}{1}\zqb{2}{d}\qb{3}{g}\tbl{2}\tbu{3}\zqb{2}{d}\qb{3}{h}\en%
+\NOtes\zqu{b}\ql{G}\zqu{N}\ql{J}%
+\nextinstrument\zql{d}\qu{i}\zql{b}\qu{e}\en%
+\bar% 4
+\NOtes\zqu{c}\ql{F}\zqu{c}\ql{M}%
+\nextinstrument\zql{b}\qu{g}\zql{a}\qu{f}\en%
+\Notes\ds\zcu{c}\cl{M}%
+\nextinstrument\ds\zcl{h}\cu{j}\en%
+\alaligne% 5
+\Notes\ibu{1}{c}{-3}\zqb{1}{c}\qlp{M}\tbu{1}\zqb{1}{a}\sk\pt{a}\zqu{a}\sk\cl{K}\ibl{0}{L}{1}\qb{0}{L}\tbl{0}\zcu{M}\qb{0}{M}%
+\nextinstrument\ibl{2}{h}{-3}\ibu{3}{j}{-3}\zqb{2}{h}\qb{3}{j}\tbl{2}\tbu{3}\zqb{2}{f}\qb{3}{h}%
+\ibl{2}{h}{-3}\ibslurd{2}{h}\zqb{2}{h}\qup{k}\tbl{2}\zqb{2}{f}\sk\ibl{2}{g}{1}\tbslurd{2}{g}\zqb{2}{g}\sk\tbl{2}\zqb{2}{h}\cu{j}\en%
+\bar% 6
+\Notes\ibu{1}{N}{5}\zqb{1}{N}\qlp{N}\tbu{1}\zqb{1}{d}\sk\pt{d}\zqu{d}\sk\cl{a}\ibl{0}{N}{-1}\qb{0}{N}\tbl{0}\zcu{d}\qb{0}{M}%
+\nextinstrument\ibl{2}{h}{-1}\ibu{3}{j}{-1}\zqb{2}{h}\qb{3}{j}\tbl{2}\tbu{3}\zqb{2}{g}\qb{3}{i}\pt{g}\zql{g}\qup{i}\sk\sk\zcl{g}\cu{i}\en%
+\bar% 7
+\Notes\ibu{1}{c}{0}\zqb{1}{c}\qlp{L}\tbu{1}\zqb{1}{c}\sk\pt{c}\zqu{c}\sk\cl{J}\ibl{0}{K}{1}\qb{0}{K}\tbl{0}\zcu{c}\qb{0}{L}%
+\nextinstrument\ibl{2}{g}{-3}\ibu{3}{i}{-3}\zqb{2}{g}\qb{3}{i}\tbl{2}\tbu{3}\zqb{2}{e}\qb{3}{g}%
+\ibl{2}{g}{-3}\ibslurd{2}{g}\zqb{2}{g}\qup{j}\tbl{2}\zqb{2}{e}\sk\ibl{2}{f}{1}\tbslurd{2}{f}\zqb{2}{f}\sk\tbl{2}\zqb{2}{g}\cu{i}\en%
+\bar% 8
+\Notes\ibu{1}{d}{-1}\zqb{1}{d}\qlp{M}\tbu{1}\zqb{1}{c}\sk\zqu{c}\sk\cl{N}\raise 3\Interligne\ds\bsk\ibl{0}{M}{-1}\qb{0}{M}\tbl{0}\zcu{N}\qb{0}{L}%
+\nextinstrument\ibl{2}{g}{-1}\ibu{3}{i}{-1}\zqb{2}{g}\qb{3}{i}\tbl{2}\tbu{3}\zqb{2}{f}\qb{3}{h}\zql{f}\qu{h}\sk\sk\zcl{c}\cu{c}\en%
+\alaligne% 9
+\bar% 10
+\Notesp\ibl{0}{K}{0}\ibu{1}{M}{0}\pt{K}\pt{M}\zqb{0}{K}\qb{1}{M}%
+\nextinstrument\ibl{2}{a}{0}\ibu{3}{f}{0}\pt{a}\pt{f}\zqb{2}{a}\qb{3}{f}\en%
+\notes\tbbl{0}\tbbu{1}\tbl{0}\tbu{1}\zqb{1}{M}\qb{0}{K}%
+\nextinstrument\tbbl{2}\tbbu{3}\tbl{2}\tbu{3}\zqb{2}{a}\qb{3}{f}\en%
+\NOtes\beginmel\pt{M}\zqu{M}\isslurd{0}{K}\ql{K}%
+\nextinstrument\pt{a}\zql{a}\qup{f}\en%
+\Notes\endmel\ibl{0}{J}{-1}\tsslur{0}{J}\qb{0}{J}\tbl{0}\zcu{N}\qb{0}{I}%
+\nextinstrument\sk\zcl{d}\cu{g}\en%
+\bar% 11
+\Notesp\ibl{0}{H}{0}\ibu{1}{a}{0}\pt{H}\pt{a}\zqb{0}{H}\qb{1}{a}%
+\nextinstrument\ibl{2}{c}{0}\ibu{3}{h}{0}\pt{c}\pt{h}\zqb{2}{^c}\qb{3}{h}\en%
+\notes\tbbl{0}\tbbu{1}\tbl{0}\tbu{1}\zqb{1}{a}\qb{0}{H}%
+\nextinstrument\tbbl{2}\tbbu{3}\tbl{2}\tbu{3}\zqb{2}{c}\qb{3}{h}\en%
+\NOtesp\pt{a}\zqu{a}\qlp{H}%
+\nextinstrument\pt{c}\zql{c}\qup{h}\en%
+\Notes\zcu{a}\cl{K}%
+\nextinstrument\zcl{f}\cu{h}\en%
+\bar% 12
+\Notes\ibl{0}{I}{-1}\ibu{1}{N}{1}\zqb{1}{N}\qb{0}{I}\tbl{0}\tbu{1}\zqb{1}{a}\qb{0}{H}%
+\nextinstrument\ibl{2}{d}{0}\ibu{3}{g}{1}\zqb{2}{d}\qb{3}{g}\tbl{2}\tbu{3}\zqb{2}{d}\qb{3}{h}\en%
+\NOtes\zqu{b}\ql{G}\zqu{N}\ql{J}%
+\nextinstrument\zql{d}\qu{i}\zql{b}\qu{e}\en%
+\bar% 13
+\NOtes\zqu{c}\ql{M}\zqu{c}\ql{F}%
+\nextinstrument\zql{b}\qu{g}\zql{a}\qu{f}\en%
+\Notes\ds\nextinstrument\ds\en%
+\Endpiece
+
+\vfill
+\hrule
+\vskip\baselineskip
+Text: Ernst Gebhard Salomon Ansch\"utz  1824\par Melodie: Joachim August Christian Zarnack 1819/20
+
+\bye
