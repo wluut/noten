@@ -1,0 +1,171 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2018-05-13
+%
+
+\fulltitle{Ich will dich mit Flei\ss\ bewahren}
+ \author{Johann Sebastian Bach}
+ \shortauthor{Johann Sebastian Bach}
+ \title{Ich will dich mit Flei\ss\ bewahren}
+ \def\voices{SATB}
+ \maketitle
+
+\def\freqbarno{5}
+\instrumentnumber{4}
+\interstaff{14}
+\generalmeter{\meterC}
+\generalsignature{1}
+\setclef{1}{\bass}
+
+\elemskip=.7\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{4}
+\groupbottom{1}{1}
+\sepbarrules
+%\nobarnumbers
+\startbarno=0
+\stafftopmarg=5\Interligne
+\startmuflex
+
+\def\everystaff{\znotes\nextinstrument\zchar{-6}{\eightrm \kern -2\Interligne 8}\en}%
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyricss}{\lyrlayout{\lyrfont}Ich will dich mit Flei\ss{} be-wah-ren, ich will dir le-ben hier, dir will ich ab-fah-ren. Mit dir will ich end-lich schwe-ben vol-ler Freud, oh-ne Zeit dort im an-dern Le-ben.}
+
+\copylyrics{lyricss}{lyricsa}
+\copylyrics{lyricss}{lyricst}
+\copylyrics{lyricss}{lyricsb}
+
+\assignlyrics{1}{lyricsb}
+\assignlyrics{2}{lyricst}
+\assignlyrics{3}{lyricsa}
+\assignlyrics{4}{lyricss}
+
+\lyrraise{1}{b-1\Interligne}%
+
+\startpiece
+\NOtes\qa{NJcb}%
+\nextinstrument\qa{ijfg}%
+\nextinstrument\qa{dedd}%
+\nextinstrument\qa{gghg}\en%
+\bar% 2
+\Notes\qa{a}\sk\qa{_a}\sk\ha{N}%
+\nextinstrument\qa{j}\sk\beginmel\isluru{1}{j}\ibl{1}{j}{1}\qb{1}{j}\endmel\tslur{1}{k}\tbl{1}\qb{1}{k}\beginmel\isluru{1}{l}\qa{l}\sk\endmel\tslur{1}{k}\qa{k}\sk%
+\nextinstrument\qa{e}\sk\qa{=f}\sk\ha{g}%
+\nextinstrument\beginmel\islurd{3}{h}\ibu{3}{h}{1}\qb{3}{h}\endmel\tslur{3}{i}\tbu{3}\qb{3}{i}\qa{j}\sk\beginmel\isluru{3}{j}\qa{j}\sk\endmel\tslur{3}{i}\qa{i}\sk\en%
+\bar% 3
+\NOTes\fermataup{a}\ha{J}%
+\nextinstrument\fermataup{m}\ha{k}%
+\nextinstrument\fermataup{m}\ha{g}%
+\nextinstrument\fermataup{m}\ha{j}\en%
+\Notes\qa{N}\sk\qa{^N}\sk%
+\nextinstrument\beginmel\isluru{1}{n}\ibl{1}{n}{-1}\qb{1}{n}\endmel\tslur{1}{m}\tbl{1}\qb{1}{=m}\qa{l}%
+\nextinstrument\beginmel\islurd{2}{i}\ibu{2}{i}{-1}\qb{2}{i}\endmel\tslur{2}{h}\tbu{2}\qb{2}{h}\qa{i}%
+\nextinstrument\qa{k}\sk\qa{l}\en%
+\bar%4
+\NOTes\fermataup{a}\ha{a}%
+\nextinstrument\fermataup{m}\ha{k}%
+\nextinstrument\fermataup{m}\ha{h}%
+\nextinstrument\fermataup{m}\ha{j}\en%
+\Notes\qa{L}\sk\beginmel\islurd{0}{I}\ibu{0}{I}{1}\qb{0}{I}\endmel\tslur{0}{J}\tbu{0}\qb{0}{J}%
+\nextinstrument\qa{l}\sk\qa{k}%
+\nextinstrument\qa{g}\sk\qa{g}%
+\nextinstrument\beginmel\isluru{3}{i}\ibl{3}{i}{1}\qb{3}{i}\endmel\tslur{3}{j}\tbl{3}\qb{3}{j}\qa{k}\en%
+\bar%5
+\NOTes\fermataup{a}\ha{K}%
+\nextinstrument\fermataup{m}\ha{k}%
+\nextinstrument\fermataup{m}\ha{f}%
+\nextinstrument\fermataup{m}\ha{h}\en%
+\Notes\qa{K}\sk\beginmel\isluru{0}{N}\ibl{0}{N}{-1}\qb{0}{N}\endmel\tslur{0}{M}\tbl{0}\qb{0}{M}%
+\nextinstrument\qa{h}\sk\qa{i}%
+\nextinstrument\qa{f}\sk\qa{g}%
+\nextinstrument\qa{k}\sk\qa{k}\en%
+\bar% 6
+\Notes\qa{L}\sk\qa{K}\sk\beginmel\isluru{0}{J}\qa{J}\sk\endmel\tslur{0}{K}\qa{K}%
+\nextinstrument\qa{j}\sk\qa{k}\sk\beginmel\isluru{1}{l}\qa{l}\sk\ibl{1}{k}{-1}\qb{1}{k}\endmel\tslur{1}{j}\tbl{1}\qb{1}{j}%
+\nextinstrument\qa{g}\sk\qa{g}\sk\beginmel\islurd{2}{g}\qa{g}\sk\endmel\tslur{2}{f}\qa{f}%
+\nextinstrument\qa{j}\beginmel\islurd{3}{i}\ibu{3}{i}{-1}\qb{3}{i}\endmel\tslur{3}{h}\tbu{3}\qb{3}{h}\ha{h}\en%
+\bar% 7
+\NOTes\fermataup{a}\ha{G}%
+\nextinstrument\fermataup{m}\ha{i}%
+\nextinstrument\fermataup{m}\ha{d}%
+\nextinstrument\fermataup{m}\ha{g}\en%
+\Notes\beginmel\islurd{0}{J}\ibu{0}{J}{1}\qb{0}{J}\endmel\tslur{0}{K}\tbu{0}\qb{0}{K}\qa{K}\sk%
+\nextinstrument\qa{j}\sk\qa{g}%
+\nextinstrument\qa{e}\sk\beginmel\islurd{2}{b}\ibu{2}{b}{1}\qb{2}{b}\endmel\tslur{2}{c}\tbu{2}\qb{2}{^c}%
+\nextinstrument\qa{g}\sk\qa{g}\en%
+\bar% 8
+\Notes\beginmel\isluru{0}{K}\ibl{0}{K}{1}\qb{0}{K}\endmel\tslur{0}{L}\tbl{0}\qb{0}{L}\qa{=M}\sk%
+\beginmel\isluru{0}{L}\ibl{0}{L}{-1}\qb{0}{L}\endmel\tslur{0}{K}\tbl{0}\qb{0}{K}\beginmel\isluru{0}{L}\ibl{0}{L}{1}\qb{0}{L}\endmel\tslur{0}{M}\tbl{0}\qb{0}{^M}%
+\nextinstrument\qa{f}\sk\qa{g}\sk\beginmel\islurd{1}{g}\ibu{1}{g}{-1}\qb{1}{g}\endmel\tslur{1}{f}\tbu{1}\qb{1}{=f}%
+\beginmel\islurd{1}{g}\ibu{1}{g}{1}\qb{1}{g}\endmel\tslur{1}{h}\tbu{1}\qb{1}{h}%
+\nextinstrument\beginmel\islurd{2}{d}\ibu{2}{d}{1}\qb{2}{d}\endmel\tslur{2}{c}\tbu{2}\qb{2}{=c}\qa{b}\sk%
+\beginmel\islurd{2}{c}\ibu{2}{c}{1}\qb{2}{c}\endmel\tslur{2}{d}\tbu{2}\qb{2}{d}\beginmel\islurd{2}{c}\ibu{2}{c}{1}\qb{2}{c}\endmel\tslur{2}{d}\tbu{2}\qb{2}{d}%
+\nextinstrument\qa{h}\sk\qa{g}\beginmel\islurd{3}{h}\ibu{3}{h}{1}\qb{3}{h}\endmel\tslur{3}{i}\tbu{3}\qb{3}{i}\qa{j}\sk\en%
+\bar% 9
+\NOtes\beginmel\isluru{0}{N}\qa{N}\endmel\tslur{0}{N}\qa{^N}%
+\nextinstrument\beginmel\issluru{1}{g}\qa{g}\endmel\tslur{1}{l}\qa{l}%
+\nextinstrument\beginmel\islurd{2}{e}\qa{e}\endmel\tslur{2}{d}\qa{d}%
+\nextinstrument\beginmel\isluru{3}{j}\qa{j}\endmel\tslur{3}{i}\qa{i}\en%
+\NOTes\fermataup{a}\ha{a}%
+\nextinstrument\fermataup{m}\ha{l}%
+\nextinstrument\fermataup{m}\ha{c}%
+\nextinstrument\fermataup{m}\ha{j}\en%
+\bar% 10
+\Notes\qa{b}\sk\qa{L}\sk%
+\nextinstrument\beginmel\isluru{1}{k}\ibl{1}{k}{-1}\qb{1}{k}\endmel\tslur{1}{j}\tbl{1}\qb{1}{j}\qa{i}\sk%
+\nextinstrument\qa{f}\sk\qa{^g}\sk%
+\nextinstrument\qa{k}\sk\qa{l}\sk\en%
+\NOTes\fermataup{a}\ha{a}%
+\nextinstrument\fermataup{m}\ha{h}%
+\nextinstrument\fermataup{m}\ha{e}%
+\nextinstrument\fermataup{m}\ha{j}\en%
+\bar% 11
+\Notes\qa{L}\sk\beginmel\isluru{0}{K}\ibl{0}{K}{1}\qb{0}{K}\endmel\tslur{0}{L}\tbl{0}\qb{0}{L}%
+\nextinstrument\beginmel\islurd{1}{g}\ibu{1}{g}{1}\qb{1}{g}\endmel\tslur{1}{h}\tbu{1}\qb{1}{h}\beginmel\islurd{1}{i}\ibu{1}{i}{-3}\qb{1}{i}\endmel\tslur{1}{g}\tbu{1}\qb{1}{g}%
+\nextinstrument\cna{g}\qa{g}\sk\beginmel\islurd{2}{f}\ibu{2}{f}{1}\qb{2}{f}\endmel\tslur{2}{g}\tbu{2}\qb{2}{g}%
+\nextinstrument\beginmel\isluru{3}{i}\ibl{3}{i}{1}\qb{3}{i}\endmel\tslur{3}{j}\tbl{3}\qb{3}{j}\qa{k}\sk\en%
+\NOTes\fermataup{a}\ha{M}%
+\nextinstrument\fermataup{m}\ha{k}%
+\nextinstrument\fermataup{m}\ha{h}%
+\nextinstrument\fermataup{m}\ha{h}\en%
+\bar% 12
+\Notes\beginmel\isluru{0}{N}\ibl{0}{N}{1}\qb{0}{N}\endmel\tslur{0}{a}\tbl{0}\qb{0}{a}\qa{b}\sk%
+\nextinstrument\beginmel\isluru{1}{i}\ibl{1}{i}{1}\qb{1}{i}\endmel\tslur{1}{j}\tbl{1}\qb{1}{j}\qa{k}\sk%
+\nextinstrument\qa{g}\sk\beginmel\islurd{2}{g}\ibu{2}{g}{-1}\qb{2}{g}\endmel\tslur{2}{f}\tbu{2}\qb{2}{f}%
+\nextinstrument\qa{k}\sk\qa{k}\sk\en%
+\Notes\beginmel\isluru{0}{b}\ibl{0}{b}{-1}\qb{0}{b}\endmel\tslur{0}{a}\tbl{0}\qb{0}{a}\beginmel\isluru{0}{b}\ibl{0}{b}{1}\qb{0}{b}\endmel\tslur{0}{c}\tbl{0}\qb{0}{c}%
+\nextinstrument\beginmel\isluru{1}{l}\ibl{1}{l}{1}\qb{1}{l}\endmel\tslur{1}{m}\tbl{1}\qb{1}{m}\qa{n}\sk%
+\nextinstrument\beginmel\islurd{2}{g}\ibu{2}{g}{1}\qb{2}{g}\endmel\tslur{2}{h}\tbu{2}\qb{2}{h}\beginmel\islurd{2}{d}\ibu{2}{d}{1}\qb{2}{d}\endmel\tslur{2}{e}\tbu{2}\qb{2}{e}%
+\nextinstrument\qa{j}\sk\beginmel\islurd{3}{i}\ibu{3}{i}{-1}\qb{3}{i}\endmel\tslur{3}{h}\tbu{3}\qb{3}{h}\en%
+\bar% 13
+\notes\beginmel\isluru{0}{d}\qa{d}%
+\nextinstrument\beginmel\isluru{1}{k}\ibl{1}{k}{-1}\qb{1}{k}\sk\nbbl{1}\qb{1}{j}\tbl{1}\qb{1}{i}%
+\nextinstrument\beginmel\islurd{2}{f}\ca{f}\sk\qa{g}%
+\nextinstrument\ha{h}\en%
+\Notes\endmel\tslur{0}{K}\qa{K}%
+\nextinstrument\endmel\tslur{1}{j}\qa{j}%
+\nextinstrument\sk\endmel\tslur{2}{f}\ca{f}\en%
+\NOTes\fermataup{a}\ha{N}%
+\nextinstrument\fermataup{m}\ha{i}%
+\nextinstrument\fermataup{m}\ha{d}%
+\nextinstrument\fermataup{m}\ha{g}\en%
+\Endpiece
+
+\vfill
+
+\hrule
+\vskip\baselineskip
+Aus: Weihnachtsoratorium
+
+\bye
