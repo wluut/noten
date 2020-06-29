@@ -1,0 +1,150 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+\fulltitle{Der Heiland ist geboren}
+ \author{Werner Lamm}
+ \shortauthor{Werner Lamm}
+ \title{Der Heiland ist geboren}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{16}
+\generalmeter{\meterfrac{3}{4}}
+\generalsignature{-1}
+\setclef{1}{\bass}
+
+%\elemskip=.5\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=3\Interligne
+\staffbotmarg=3\Interligne
+\setinterinstrument{1}{7\Interligne}
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics1a}{\lyrlayout{\lyrfont}Der Hei-land ist ge-bo-ren, freu dich o Chri-sten-heit}
+\setlyrics{lyrics1b}{\lyrlayout{\lyrfont}sonst w\"arn wir gar ver-lo-ren in al-ler E-wig-keit.}
+\setlyrics{lyrics1c}{\lyrlayout{\lyrfont}Freut euch von Her-zen, ihr Chri-sten all, freut auch von Her-zen ihr Chri-sten all, kommt her zum Kind-lein in dem Stall!}
+\assignlyrics{2}{lyrics1a,lyrics1b}
+\startpiece\notes\sk\en%
+\znotes\nextinstrument\loffset{2.2}{\verses{\lyric*{1.}}}\en%
+\NOtes\zqu{M}\ql{M}%
+\nextinstrument\zql{f}\qu{f}\en%
+\bar% 1
+\NOtes\ibslurd{0}{M}\ibsluru{1}{M}\beginmel\zql{M}\qu{M}\tbslurd{0}{J}\tbsluru{1}{J}\endmel\zql{J}\qu{J}\zql{a}\qu{a}%
+\nextinstrument\ibslurd{2}{f}\ibsluru{3}{f}\beginmel\zql{f}\qu{f}\tbslurd{2}{c}\tbsluru{3}{c}\endmel\zql{c}\qu{c}\zql{h}\qu{h}\en%
+\bar% 2
+\NOtes\ibslurd{0}{M}\ibsluru{1}{M}\beginmel\zql{M}\qu{M}\tbslurd{0}{J}\tbsluru{1}{J}\endmel\zql{J}\qu{J}\zql{a}\qu{a}%
+\nextinstrument\ibslurd{2}{f}\ibsluru{3}{f}\beginmel\zql{f}\qu{f}\tbslurd{2}{c}\tbsluru{3}{c}\endmel\zql{c}\qu{c}\zql{h}\qu{h}\en%
+\bar% 3
+\NOtes\beginmel\ibsluru{1}{M}\roff{\zhlp{M}}\qu{Mc}%
+\nextinstrument\beginmel\ibslurd{2}{f}\ibsluru{3}{f}\zql{f}\qu{f}\zql{h}\qu{m}\en%
+\Notes\endmel\tbsluru{1}{d}\qu{d}%
+\nextinstrument\tbslurd{2}{i}\ibu{3}{l}{-1}\zql{i}\qb{3}{l}\endmel\tbsluru{3}{k}\tbu{3}\qb{3}{k}\en%
+\bar% 4
+\NOTes\zhl{M}\hu{c}%
+\nextinstrument\zhl{h}\hu{j}\en%
+\NOtes\zql{J}\qu{c}%
+\nextinstrument\zql{h}\qu{j}\en%
+\bar% 5
+\Notes\zhl{J}\hu{c}\sk\sk\sk\zql{J}\qu{c}%
+\nextinstrument\beginmel\ibslurd{2}{g}\ibsluru{3}{i}\ibl{2}{g}{-1}\zqu{i}\qb{2}{g}\tbl{2}\qb{2}{f}\endmel\tbslurd{2}{e}\tbsluru{3}{g}\zql{e}\qu{g}%
+\beginmel\ibl{2}{d}{1}\zqu{i}\qb{2}{d}\endmel\tbl{2}\qb{2}{e}\en%
+\bar% 6
+\NOtes\zhl{M}\hu{c}%
+\nextinstrument\beginmel\ibsluru{3}{h}\hl{f}\qu{h}\endmel\tbsluru{3}{f}\qu{f}\en%
+\Notes\beginmel\ibl{0}{H}{1}\ibslurd{0}{H}\zqu{c}\qb{0}{H}\endmel\tbl{0}\tbslurd{0}{I}\qb{0}{I}%
+\nextinstrument\zql{f}\qu{h}\en%
+\bar% 7
+\NOTesp\beginmel\ibslurd{0}{J}\ibsluru{1}{c}\zhlp{J}\hup{c}%
+\nextinstrument\beginmel\ibslurd{2}{e}\ibsluru{3}{g}\zhlp{e}\hup{g}\en%
+\bar% 8
+\NOtes\endmel\tbslurd{0}{J}\tbsluru{1}{c}\zql{J}\qu{c}\qp%
+\nextinstrument\endmel\tbslurd{2}{e}\tbsluru{3}{g}\zql{e}\qu{g}\qp\en%
+\leftrightrepeat%
+\assignlyrics{2}{lyrics1c}%
+\NOtes\zql{J}\qu{J}%
+\nextinstrument\zql{e}\qu{j}\en%
+\bar% 9
+\NOtes\beginmel\ibslurd{0}{J}\ibsluru{1}{J}\zqlp{J}\qup{J}%
+\nextinstrument\beginmel\ibslurd{2}{e}\ibsluru{3}{j}\zqlp{e}\qu{j}\en%
+\Notes\sk\endmel\tbslurd{0}{K}\tbsluru{1}{K}\zcl{K}\cu{K}\zql{L}\qu{K}\sk%
+\nextinstrument\tbsluru{3}{g}\qu{g}\endmel\tbslurd{2}{f}\cl{f}\zql{g}\qu{j}\sk\en%
+\bar% 10
+\NOtes\zql{M}\qu{M}\zql{M}\qu{M}\zql{M}\qu{M}%
+\nextinstrument\zql{h}\qu{j}\zql{f}\qu{h}\zql{h}\qu{j}\en%
+\bar% 11
+\NOtes\zhl{J}\hu{c}\sk\zql{J}\qu{c}%
+\nextinstrument\beginmel\ibslurd{2}{h}\ibsluru{3}{j}\zql{h}\qu{j}\endmel\tbslurd{2}{g}\tbsluru{3}{i}\zql{g}\qu{i}\zql{f}\qu{h}\en%
+\bar% 12
+\NOTes\zhl{J}\hu{c}%
+\nextinstrument\zhl{e}\hu{g}\en%
+\rightrepeat%
+\NOtes\zql{M}\qu{M}%
+\nextinstrument\zql{f}\qu{f}\en%
+\bar% 13
+\NOtes\beginmel\ibslurd{0}{M}\ibsluru{1}{M}\zql{M}\qu{M}\endmel\tbslurd{0}{J}\tbsluru{1}{J}\zql{J}\qu{J}\zql{a}\qu{a}%
+\nextinstrument\beginmel\ibslurd{2}{f}\ibsluru{3}{f}\zql{f}\qu{f}\endmel\tbslurd{2}{c}\tbsluru{3}{c}\zql{c}\qu{c}\zql{h}\qu{h}\en%
+\bar% 14
+\NOtes\zql{M}\qu{M}\zql{J}\qu{J}\zql{a}\qu{a}%
+\nextinstrument\zql{f}\qu{f}\zql{c}\qu{c}\zql{h}\qu{h}\en%
+\bar% 15
+\NOtes\beginmel\ibsluru{1}{M}\roff{\zhl{M}}\qu{M}\endmel\tbsluru{1}{a}\qu{a}%
+\nextinstrument\beginmel\ibslurd{2}{f}\ibsluru{3}{f}\zql{f}\qu{f}\endmel\tbslurd{2}{h}\tbsluru{3}{m}\zql{h}\qu{m}\en%
+\Notes\zql{M}\qu{b}%
+\nextinstrument\beginmel\ibsluru{3}{l}\ibu{3}{l}{-1}\zql{i}\qb{3}{l}\endmel\tbsluru{3}{k}\tbu{3}\qb{3}{k}\en%
+\bar% 16
+\NOtes\zhl{M}\hu{c}\sk\zql{J}\qu{c}%
+\nextinstrument\zhl{h}\hu{j}\sk\zql{h}\qu{j}\en%
+\bar% 17
+\Notes\zhl{J}\hu{c}\sk\sk\sk\zql{J}\qu{c}%
+\nextinstrument\beginmel\ibslurd{2}{g}\ibsluru{3}{i}\ibl{2}{g}{-1}\zqu{i}\qb{2}{g}\tbl{2}\qb{2}{f}\endmel\tbslurd{2}{e}\tbsluru{3}{g}\zql{e}\qu{g}\sk%
+\beginmel\ibslurd{2}{d}\ibl{2}{d}{1}\zqu{i}\qb{2}{d}\endmel\tbslurd{2}{e}\tbl{2}\qb{2}{e}\en%
+\bar% 18
+\NOtes\beginmel\ibsluru{1}{c}\zhl{J}\qu{c}\endmel\tbsluru{1}{a}\qu{a}%
+\nextinstrument\beginmel\ibsluru{3}{h}\zhl{f}\qu{h}\endmel\tbsluru{3}{f}\qu{f}\en%
+\Notes\beginmel\ibslurd{0}{H}\ibl{0}{H}{1}\zqu{M}\qb{0}{H}\endmel\tbslurd{0}{I}\tbl{0}\qb{0}{I}%
+\nextinstrument\beginmel\ibsluru{3}{j}\ibu{3}{j}{1}\zql{f}\qb{3}{j}\endmel\tbsluru{3}{k}\tbu{3}\qb{3}{k}\en%
+\bar% 19
+\NOtes\zhl{J}\hu{c}%
+\nextinstrument\beginmel\ibslurd{2}{e}\ibsluru{3}{j}\zqlp{e}\qu{j}\en%
+\Notes\nextinstrument\tbsluru{3}{i}\qu{i}\endmel\tbslurd{2}{d}\cl{d}\en%
+\NOtes\zql{J}\qu{b}%
+\nextinstrument\zql{e}\qu{g}\en%
+\bar% 20
+\NOTes\zhl{M}\hu{a}%
+\nextinstrument\zhl{f}\hu{f}\en%
+\Endpiece
+
+{\lyrfont
+\vskip\baselineskip
+\halign{\vtop{\hsize=3em\hfill #}\tabskip=1em&\vtop{\hsize=16cm #}\cr
+2.&Das Kindlein auserkoren~/ freu dich, o Christenheit!~/\cr
+&so in dem Stall geboren,~/ hat Himmel und Erd erfreut.~/\cr
+&Freut euch\dots\cr\cr
+3.& Die Engel lieblich singen~/ freu dich, o Christenheit!~/\cr
+&uns gute Botschaft bringen,~/ verk\"undigen gro\ss{}e Freud.~/\cr
+&Freut euch\dots\cr\cr
+4.&Der Gnadenbrunn tut flie\ss{}en,~/ freu dich, o Christenheit!~/\cr
+& tut alle Kindlein gr\"u\ss{}en,~/ kommt her zu ihm mit Freud.\cr
+&Freut euch\dots\cr
+}
+
+\vfill
+\hrule
+\vskip\baselineskip
+Text: Strophe 1 Ober\"osterreich 19. Jahrhundert, Stophen 2--4 Glatz\par Melodie:  Innsbruck 1881/1883
+
+\bye
