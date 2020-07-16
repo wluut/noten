@@ -1,0 +1,123 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+%
+% Version 0.1 2020-07-16
+%
+
+\fulltitle{Ich steh an deiner Krippen hier}
+ \author{Johann Sebastian Bach}
+ \shortauthor{Johann Sebastian Bach}
+ \title{Ich steh an deiner Krippen hier}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{16}
+\generalmeter{\meterC}
+\generalsignature{-3}
+\setclef{1}{\bass}
+
+\elemskip=.8\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=7\Interligne
+\setinterinstrument{1}{9\Interligne}
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics1a}{\lyrlayout{\lyrfont}Ich steh an dei-ner Krip-pen hier, o Je-su du mein Le-ben,}
+\setlyrics{lyrics1b}{\lyrlayout{\lyrfont}ich kom-me, bring und schen-ke dir, was du mir hast ge-ge-ben!}
+\setlyrics{lyrics1c}{\lyrlayout{\lyrfont}nimm hin es ist mein Geist und Sinn, Herz, Seel und Mut, nimm al-les hin und lass dirs wohl-ge-fal-len.}
+\setlyrics{lyrics3a}{\lyrlayout{\lyrfont}Ich lag in tie-fer To-des-nacht, du wa-rest mei-ne Son-ne,}
+\setlyrics{lyrics3b}{\lyrlayout{\lyrfont}die Son-ne, die mir zu-ge-bracht Licht, Le-ben, Freud und Won-ne,}
+\setlyrics{lyrics3c}{\lyrlayout{\lyrfont}o Son-ne, die das wer-te Licht des Glau-bens in mir zu-ge-richt', wie sch\"on sind dei-ne Strah-len.}
+\assignlyrics{1}{}
+\assignlyrics{2}{lyrics1a,lyrics1b,lyrics3a,lyrics3b}
+\startpiece
+\znotes\nextinstrument\loffset{2.2}{\verses{\lyric*{1.},,\lyric*{3.}}}\en%
+\Notes\beginmel\ibl{0}{J}{1}\zqu{c}\qb{0}{J}\endmel\tbl{0}\qb{0}{K}%
+\nextinstrument\beginmel\ibl{2}{e}{1}\zqu{g}\qb{2}{e}\endmel\tbl{2}\qb{2}{f}\en%
+\bar % 1
+\Notes\beginmel\ibl{0}{L}{-1}\zqu{c}\qb{0}{L}\endmel\tbl{0}\qb{0}{K}\beginmel\ibl{0}{J}{-1}\zqu{f}\qb{0}{J}\endmel\tbl{0}\qb{0}{=I}%
+\beginmel\ibl{0}{J}{1}\ibu{1}{e}{1}\zqb{0}{J}\qb{1}{e}\endmel\tbl{0}\tbu{1}\zqb{0}{K}\qb{1}{f}%
+\beginmel\ibl{0}{L}{-3}\ibu{1}{g}{-3}\zqb{0}{L}\qb{1}{g}\endmel\tbl{0}\tbu{1}\zqb{0}{J}\qb{1}{e}%
+\nextinstrument\zql{g}\qu{j}\sk\zql{g}\qu{k}\sk\zql{g}\qu{l}\sk\zql{g}\qu{j}\en%
+\bar% 2
+\Notes\beginmel\ibl{0}{K}{-1}\zqu{f}\qb{0}{KI}\endmel\zqu{b}\tbl{0}\qb{0}{J}\cl{K}\zqu{b}\ql{L}\sk\beginmel\ibl{0}{L}{-1}\zqu{N}\qb{0}{L}\endmel\tbl{0}\qb{0}{K}%
+\nextinstrument\beginmel\ibl{2}{f}{-1}\zqup{i}\qb{2}{fd}\endmel\tbl{2}\qb{2}{e}\zcl{f}\cu{h}\zql{e}\qu{g}\sk\zql{e}\qu{i}\en%
+\bar% 3
+\Notes\beginmel\ibl{0}{J}{-5}\zqu{N}\qb{0}{J}\endmel\tbl{0}\qb{0}{G}\beginmel\ibl{0}{J}{-1}\zqu{N}\qb{0}{J}\endmel\tbl{0}\qb{0}{I}%
+\issluru{1}{N}\zqu{N}\ql{H}\sk\tslur{1}{M}\beginmel\zql{H}\cu{M}\endmel\cu{c}%
+\nextinstrument\zqup{e}\ql{e}\sk\beginmel\ql{c}\endmel\cu{d}\zql{c}\qu{e}\sk\beginmel\ibl{2}{d}{-1}\zqu{f}\qb{2}{d}\endmel\tbl{2}\qb{2}{c}\en%
+\bar% 4
+\NOtes\zhl{G}\hu{c}\sk\zql{G}\qu{=b}%
+\nextinstrument\zhl{d}\hu{g}\sk\zql{d}\qu{g}\en%
+\rightrepeat%
+\assignlyrics{1}{}
+\assignlyrics{2}{lyrics1c,lyrics3c}
+\znotes\nextinstrument\loffset{2.2}{\verses{\lyric*{1.},\lyric*{3.}}}\en%
+\Notes\beginmel\ibl{0}{N}{-1}\zqu{e}\qb{0}{N}\endmel\tbl{0}\qb{0}{M}%
+\nextinstrument\beginmel\ibl{2}{i}{-1}\zqu{i}\qb{2}{i}\endmel\tbl{2}\qb{2}{h}\en%
+\bar% 5
+\Notes\beginmel\ibl{0}{L}{1}\zqup{e}\qb{0}{L}\endmel\tbl{0}\qb{0}{M}\beginmel\ibl{0}{N}{-3}\qb{0}{N}\endmel\tbl{0}\zcu{e}\qb{0}{L}%
+\zqlp{a}\qu{e}\sk\beginmel\qu{e}\endmel\cl{N}%
+\nextinstrument\beginmel\ibl{2}{g}{1}\zqu{l}\qb{2}{g}\endmel\tbl{2}\qb{2}{h}\beginmel\ibl{2}{i}{-3}\zqu{i}\qb{2}{i}\endmel\tbl{2}\qb{2}{g}%
+\zql{h}\qu{j}\sk\zql{e}\qu{i}\en%
+\bar% 6
+\Notes\beginmel\ibl{0}{M}{-1}\zqu{c}\qb{0}{M}\endmel\tbl{0}\qb{0}{L}\beginmel\ibl{0}{K}{-3}\zqu{b}\qb{0}{K}\endmel\tbl{0}\qb{0}{I}%
+\zql{L}\qu{b}\sk\beginmel\ibl{0}{L}{-1}\zqu{e}\qb{0}{L}\endmel\tbl{0}\qb{0}{K}%
+\nextinstrument\zqlp{f}\qup{h}\sk\sk\zcl{d}\cu{i}\zql{e}\qu{g}\sk\zql{g}\qu{i}\en%
+\bar% 7
+\Notes\beginmel\ibl{0}{J}{1}\zqup{e}\qb{0}{J}\endmel\tbl{0}\qb{0}{K}\beginmel\ibl{0}{L}{-1}\qb{0}{L}\endmel\tbl{0}\zcu{f}\qb{0}{K}%
+\beginmel\ibl{0}{L}{1}\zqu{e}\qb{0}{L}\endmel\tbl{0}\qb{0}{M}\beginmel\ibl{0}{N}{-3}\zqu{e}\qb{0}{N}\endmel\tbl{0}\qb{0}{L}%
+\nextinstrument\zql{h}\qu{l}\sk\zql{g}\qu{i}\sk\zql{h}\qu{j}\beginmel\ibl{2}{i}{-3}\zqu{i}\qb{2}{i}\endmel\tbl{2}\qb{2}{g}\en%
+\bar% 8
+\Notes\zql{M}\qu{c}\sk\zql{I}\qu{b}\sk\zql{L}\qu{b}\sk\zql{J}\qu{c}\sk%
+\nextinstrument\zql{f}\qup{h}\sk\beginmel\ql{d}\endmel\cu{i}\zql{e}\qu{g}\sk\zql{e}\qu{g}\sk\en%
+\bar% 9
+\Notes\beginmel\ibl{0}{M}{-1}\zqu{c}\qb{0}{M}\endmel\tbl{0}\qb{0}{L}\beginmel\ibl{0}{M}{-3}\zqu{d}\qb{0}{M}\endmel\tbl{0}\qb{0}{K}%
+\zql{L}\qup{c}\sk\beginmel\ql{M}\endmel\cu{e}%
+\nextinstrument\beginmel\ibl{2}{e}{1}\zqu{=h}\qb{2}{e}\endmel\tbl{2}\qb{2}{f}\zql{g}\qu{=i}\sk%
+\beginmel\ibu{3}{j}{3}\zql{g}\qb{3}{j}\endmel\tbu{3}\qb{3}{l}\beginmel\ibu{3}{k}{-1}\zql{h}\qb{3}{k}\endmel\tbu{3}\qb{3}{j}\en%
+\bar% 10
+\Notes\beginmel\ibslurd{0}{N}\ibsluru{1}{d}\ibu{1}{d}{1}\zql{N}\qb{1}{d}\tbu{1}\qb{1}{e}\endmel\tbslurd{0}{G}\tbsluru{1}{f}\zql{G}\qu{f}\sk\zql{J}\qu{=e}%
+\nextinstrument\beginmel\ibslurd{2}{g}\zhu{=i}\ql{g}\sk\endmel\tbslurd{2}{d}\ql{d}\sk\zql{c}\qu{j}\en%
+\Endpiece
+
+{\lyrfont
+\vskip\baselineskip
+\halign{\vtop{\hsize=3em\hfill #}\tabskip=1em&\vtop{\hsize=16cm #}\cr
+2.& Da ich noch nicht geboren war,~/ da bist du mir geboren~/\cr
+& und hast mich dir zu eigen gar,~/ eh ich dich kannt, erkoren.~/\cr
+& Eh ich durch deine Hand gemacht,~/ da hast du schon bei dir bedacht,~/\cr
+& wie du mein wolltest werden.\cr
+\cr
+4.& Ich sehe dich mit Freuden an~/ und kann mich nicht sattsehen;~/\cr
+& und weil ich nun nicht weiter kann,~/ bleib ich anbetend stehen.~/\cr
+& O dass mein Sinn ein Abgrund w\"ar~/ und meine Seel ein weites Meer,~/\cr
+& dass ich dich m\"ochte fassen!\cr
+\cr
+9.& Eins aber, hoff ich, wirst du mir,~/ mein Hei-land nicht versagen:~/\cr
+& dass ich dich m\"oge f\"ur un f\"ur~/ in, bei und an mir tragen.~/\cr
+& So lass mich doch dein Kripplein sein;~/ komm, komm und lege bei mir ein~/\cr
+& dich und all deine Freuden.\cr
+}
+\vfill
+
+\hrule
+\vskip\baselineskip
+Text: Marin Luther 1535\hfill Melodie: Martin Luther 1539
+
+\bye
