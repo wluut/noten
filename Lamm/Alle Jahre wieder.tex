@@ -1,0 +1,87 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+%\smallmusicsize
+\normalmusicsize
+
+\fulltitle{Alle Jahre wieder}
+ \author{Werner Lamm}
+ \shortauthor{Werner Lamm}
+ \title{Alle Jahre wieder}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{16}
+\generalmeter{\meterfrac{4}{4}}
+\generalsignature{0}
+\setclef{1}{\bass}
+
+%\elemskip=.5\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=3\Interligne
+\staffbotmarg=3\Interligne
+\setinterinstrument{1}{10\Interligne}
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics1}{\lyrlayout{\lyrfont}Al-le Jah-re wie-der kommt das Chris-tus-kind auf die Er-de nie-der, wo wir Men-schen sind.}
+\setlyrics{lyrics2}{\lyrlayout{\lyrfont}Kehrt mit sei-nem Se-gen ein in je-des Haus, geht auf al-len We-gen mit uns ein und aus.}
+\setlyrics{lyrics3}{\lyrlayout{\lyrfont}Steht auch mir zur Sei-te, still und un-er-kant, dass es treu mich lei-te an der lie-ben Hand.}
+\setlyrics{lyrics4}{\lyrlayout{\lyrfont}Sagt den Kin-dern al-len, dass ein Va-ter ist, dem sie wohl ge-fal-len, der sie nie ver-gisst.}
+\assignlyrics{2}{lyrics1,lyrics2,lyrics3,lyrics4}
+\startpiece\notes\sk\en%
+\znotes\nextinstrument\loffset{2.2}{\verses{\lyric*{1.},\lyric*{2.},\lyric*{3.},\lyric*{4.}}}\en%
+\NOtesp\zqlp{J}\qup{c}%
+\nextinstrument\zqlp{e}\qup{g}\en%
+\Notes\zcl{J}\cu{c}%
+\nextinstrument\zcl{f}\cu{h}\en%
+\NOtes\zql{J}\qu{c}\zql{K}\qu{M}%
+\nextinstrument\zql{e}\qu{g}\zql{d}\qu{f}\en%
+\bar% 2
+\NOtes\beginmel\ibslurd{0}{L}\ibsluru{1}{a}\zql{N}\qu{a}\endmel\tbslurd{0}{M}\tbsluru{1}{M}\zqu{^M}\ql{^M}\beginmel\ibslurd{0}{N}\loff{\zhu{N}}\ql{N}\endmel\tbslurd{0}{M}\ql{=M}%
+\nextinstrument\zhl{c}\hu{e}\sk\zhl{b}\hu{d}\en%
+\bar% 3
+\NOtes\zql{L}\qu{N}%
+\nextinstrument\zql{c}\qu{c}\en%
+\Notes\beginmel\ibslurd{0}{K}\ibl{0}{K}{-1}\zqu{N}\qb{0}{K}\endmel\tbslurd{0}{J}\tbl{0}\qb{0}{J}%
+\nextinstrument\beginmel\ibslurd{2}{b}\ibsluru{3}{d}\ibl{2}{b}{1}\ibu{3}{d}{1}\zqb{2}{b}\qb{3}{d}\endmel\tbslurd{2}{c}\tbsluru{3}{e}\tbl{2}\tbu{3}\zqb{2}{c}\qb{3}{e}\en%
+\NOtes\zql{I}\qu{N}\zql{J}\qu{N}%
+\nextinstrument\zql{d}\qu{f}\zql{c}\qu{e}\en%
+\bar% 4
+\NOtes\zhlp{N}\hup{N}\sk\sk\qp%
+\nextinstrument\zhlp{b}\hup{d}\sk\sk\qp\en%
+\bar% 5
+\NOtes\zql{J}\qu{N}\zql{L}\qu{N}\zql{M}\qu{M}\zql{N}\qu{d}%
+\nextinstrument\zql{c}\qu{e}\zql{c}\qu{g}\zql{c}\qu{h}\zql{b}\qu{g}\en%
+\bar% 6
+\NOtes\zhl{a}\hu{c}\sk\beginmel\ibslurd{0}{L}\ibsluru{1}{N}\zql{L}\qu{N}\endmel\tbslurd{0}{M}\tbsluru{1}{a}\zql{M}\qu{a}%
+\nextinstrument\beginmel\ibslurd{2}{c}\zhu{j}\ql{c}\endmel\tbslurd{2}{e}\ql{e}\beginmel\ibslurd{2}{g}\ibsluru{3}{i}\zql{g}\qu{i}\endmel\tbslurd{2}{f}\tbsluru{3}{h}\zql{f}\qu{h}\en%
+\bar% 7
+\NOtes\zql{N}\qu{b}%
+\nextinstrument\zql{e}\qu{g}\en%
+\Notes\zql{a}\qu{a}\sk%
+\nextinstrument\beginmel\ibsluru{3}{f}\ibu{3}{f}{-1}\zql{c}\qb{3}{f}\endmel\tbsluru{3}{e}\tbu{3}\qb{3}{e}\en%
+\NOtes\zql{K}\qu{N}\zql{N}\qu{N}%
+\nextinstrument\zql{c}\qu{f}\zql{b}\qu{g}\en%
+\bar% 8
+\NOtes\zhlp{J}\hup{N}\sk\sk\qp%
+\nextinstrument\zhlp{c}\hup{e}\sk\sk\qp\en%
+\Endpiece
+
+
+\vfill
+\hrule
+\vskip\baselineskip
+Text: Wilhelm Hey 1837, Melodie:  Friedrich Silcher 1842 
+
+\bye
