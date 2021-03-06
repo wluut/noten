@@ -1,0 +1,110 @@
+\ifx\mxversion\undefined
+  \input musixtex
+  \input musixadd
+  \input musixlyr
+  \input musixsty
+  \input songs
+\fi
+\smallmusicsize
+%\normalmusicsize
+
+%
+% Version 0.1 2014-05-04
+%
+
+\fulltitle{Morgen, Kinder wird's was geben}
+ \author{Ruth Linnekamp}
+ \shortauthor{Ruth Linnekamp}
+ \title{Morgen, Kinder wird's was geben}
+ \def\voices{SATB}
+ \maketitle
+
+\instrumentnumber{2}
+\interstaff{18}
+\generalmeter{\meterfrac{6}{4}}
+\generalsignature{-1}
+\setclef{1}{\bass}
+
+\elemskip=1.2\elemskip
+\overfullrule=0pt
+
+\grouptop{1}{2}
+\groupbottom{1}{1}
+\sepbarrules
+\nobarnumbers
+\stafftopmarg=4\Interligne
+\setinterinstrument{1}{9\Interligne}
+\startmuflex
+
+%\setsongraise{2}{-2mm}
+\setlyrics{lyrics1}{\lyrlayout{\lyrfont}Mor-gen, Kin-der wird's was ge-ben, mor-gen wer-den wir uns freun! Welch ein Ju-bel, welch ein Le-ben wird in un-serm Hau-se sein!
+Ein-mal wer-den wir noch wach, hei-\ss{}a, dann ist Weih-nachts-tag!}
+\setlyrics{lyrics2}{\lyrlayout{\lyrfont}Wie wird dann die Stu-be gl\"an-zen von der gro-\ss{}en Lich-ter-zahl! sch\"o-ner als bei fro-hen T\"an-zen ein ge-putz-ter Kro-nen-saal.
+Wisst ihr noch, wie vor'-ges Jahr es am Heil'-gen A-bend war?}
+\setlyrics{lyrics3}{\lyrlayout{\lyrfont}Wissr ihr noch mein R\"a-der-pferd-chen, Mal-chens net-te Sch\"a-fe-rin, Jett-chens K\"u-che mit dem Herd-chen und dem blank-ge-putz-ten Zinn?
+Hein-richs bun-ten Har-le-kin mit der gel-ben Vi-o-lin?}
+\setlyrics{lyrics4}{\lyrlayout{\lyrfont}Welch ein sch\"o-ner Tag ist mor-gen! Vie-le Freu-de hof-fen wir, uns-re lie-ben El-tern sor-gen lan-ge lan-ge schon da-f\"ur.
+O ge-wiss wer sie nicht ehrt, ist der gan-zen Lust nicht wert.}
+\copylyrics{lyrics1}{lyrics5}
+\assignlyrics{1}{}
+\assignlyrics{2}{lyrics1,lyrics2,lyrics3,lyrics4,lyrics5}
+
+\startpiece
+\znotes\nextinstrument\loffset{2.2}{\verses{\lyric*{1.},\lyric*{2.},\lyric*{3.},\lyric*{4.},\lyric*{5.}}}\en%
+\NOtes\zql{M}\qu{a}\zql{M}\qu{a}\zql{M}\qu{b}\zql{M}\qu{a}%
+\nextinstrument\zql{f}\qu{f}\zql{c}\qu{c}\zql{d}\qu{d}\zql{c}\qu{c}\en%
+\bar% 2
+\Notes\zql{M}\qu{b}\sk\zql{M}\qu{b}\sk%
+\nextinstrument\beginmel\ibl{2}{d}{2}\ibu{3}{d}{2}\zqb{2}{d}\qb{3}{d}\endmel\tbl{2}\tbu{3}\zqb{2}{f}\qb{3}{f}%
+\beginmel\ibl{2}{e}{2}\ibu{3}{e}{2}\zqb{2}{e}\qb{3}{e}\endmel\tbl{2}\tbu{3}\zqb{2}{g}\qb{3}{g}\en%
+\NOtes\zql{M}\qu{a}\zql{M}\qu{a}%
+\nextinstrument\zql{f}\qu{f}\zql{c}\qu{c}\en%
+\bar% 3
+\NOtes\zql{M}\qu{c}%
+\nextinstrument\zql{f}\qu{h}\en%
+\Notes\zql{M}\qu{c}\sk%
+\nextinstrument\beginmel\ibu{3}{h}{1}\zql{f}\qb{3}{h}\endmel\tbu{3}\qb{3}{i}\en%
+\NOtes\zql{M}\qu{a}\zql{M}\qu{c}%
+\nextinstrument\zql{f}\qu{j}\zql{f}\qu{h}\en%
+\bar% 4
+\NOtes\zql{L}\qu{c}\zql{M}\qu{c}\zhl{J}\hu{c}\sk%
+\nextinstrument\zql{g}\qu{i}\zql{f}\qu{h}\zhl{e}\hu{g}\sk\en%
+\alaligne% 5
+\NOtes\zql{M}\qu{a}\zql{M}\qu{a}\zql{M}\qu{b}\zql{M}\qu{a}%
+\nextinstrument\zql{f}\qu{f}\zql{c}\qu{c}\zql{d}\qu{d}\zql{c}\qu{c}\en%
+\bar% 6
+\Notes\zql{M}\qu{b}\sk\zql{M}\qu{b}\sk%
+\nextinstrument\beginmel\ibl{2}{d}{2}\ibu{3}{d}{2}\zqb{2}{d}\qb{3}{d}\endmel\tbl{2}\tbu{3}\zqb{2}{f}\qb{3}{f}%
+\beginmel\ibl{2}{e}{2}\ibu{3}{e}{2}\zqb{2}{e}\qb{3}{e}\endmel\tbl{2}\tbu{3}\zqb{2}{g}\qb{3}{g}\en%
+\NOtes\zql{M}\qu{a}\zql{M}\qu{a}%
+\nextinstrument\zql{f}\qu{f}\zql{c}\qu{c}\en%
+\bar% 7
+\NOtes\zql{M}\qu{c}%
+\nextinstrument\zql{f}\qu{h}\en%
+\Notes\zql{M}\qu{c}\sk%
+\nextinstrument\beginmel\ibu{3}{h}{1}\zql{f}\qb{3}{h}\endmel\tbu{3}\qb{3}{i}\en%
+\NOtes\zql{M}\qu{a}\zql{M}\qu{c}%
+\nextinstrument\zql{f}\qu{j}\zql{f}\qu{h}\en%
+\bar% 8
+\NOtes\zql{L}\qu{c}\zql{M}\qu{c}\zhl{J}\hu{c}\sk%
+\nextinstrument\zql{g}\qu{i}\zql{f}\qu{h}\zhl{e}\hu{g}\sk\en%
+\bar% 9
+\NOtes\zql{N}\qu{d}\zql{N}\qu{d}\zql{N}\qu{b}\zql{N}\qu{b}%
+\nextinstrument\zql{g}\qu{i}\zql{g}\qu{i}\zql{f}\qu{k}\zql{f}\qu{k}\en%
+\bar% 10
+\NOtes\zql{J}\qu{b}\zql{J}\qu{b}\zhl{M}\hu{a}\sk%
+\nextinstrument\zql{e}\qu{g}\zql{e}\qu{g}\zhl{_e}\hu{j}\sk\en%
+\bar% 11
+\NOtes\zql{b}\qu{b}\zql{b}\qu{b}\zql{N}\qu{d}\zql{N}\qu{d}%
+\nextinstrument\zql{d}\qu{f}\zql{d}\qu{f}\zql{f}\qu{i}\zql{f}\qu{i}\en%
+\bar% 12
+\Notes\zql{J}\qu{c}\sk\zql{J}\qu{c}\sk\zhl{M}\hu{a}\sk%
+\nextinstrument\beginmel\ibu{3}{h}{-1}\zql{e}\qb{3}{h}\endmel\tbu{3}\qb{3}{g}\beginmel\ibu{3}{f}{-1}\zql{c}\qb{3}{f}\endmel\tbu{3}\qb{3}{e}\zhl{c}\hu{f}\sk\en%
+\Endpiece
+\vfill
+
+\hrule
+\vskip\baselineskip
+Text:  Karl Friedrich Splittegarb 1795, Gustav Wustmann 1885\par Melodie: Carl Gottlieb Hering 1809, Martin Friedrich Philipp Bartsch 1811
+
+\bye
